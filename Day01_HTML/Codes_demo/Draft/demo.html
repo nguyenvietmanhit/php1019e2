@@ -1,0 +1,134 @@
+<!-- CẤu trúc trang HTML -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ví dụ đầu tiên về HTML</title>
+	</head>
+	<body>
+		Đây là nội dung trong thẻ body
+
+		<!-- Thẻ h1 - h6 -->
+		<h1>Đây là nội dung trong thẻ h1</h1>
+		<h2>Đây là nội dung trong thẻ h2</h2>
+		<h3>Đây là nội dung trong thẻ h3</h3>
+		<h4>Đây là nội dung trong thẻ h4</h4>
+		<h5>Đây là nội dung trong thẻ h5</h5>
+		<h6>Đây là nội dung trong thẻ h6</h6>
+
+		<!-- Thẻ p - paragraph -->
+		<p>Đây là nội dung 1 trong thẻ p</p>
+		<p>Đây là nội dung 2 trong thẻ p</p>
+
+		<!-- thẻ br - break line -->
+		Đây là nội dung text bất kỳ <br /> Nội dung này đã bị xuống dòng vì đứng sau thẻ br
+
+		<!-- thẻ hr -->
+		<hr />
+		<!-- 3 thẻ tương tự như trong word u, b, i -->
+		<u>Nội dung trong thẻ u sẽ bị gạch chân</u>
+		<br />
+		<b>Nội dung trong thẻ b sẽ được in đậm</b>
+		<br />
+		<i>Nội dung trong thẻ i sẽ được in nghiêng</i>
+		<br />
+
+		<!-- Thẻ div, hay dùng để nhóm các thẻ khác trong việc dựng bố cục thêm -->
+		<div>Đây là nội dung trong thẻ div</div>
+		<div>
+			<b>nội dung trong thẻ b trong thẻ div</b>
+			<p>nội dung trong thẻ p trong thẻ div</p>
+			<div>nội dung trong thẻ div trong thẻ div</div>
+		</div>
+
+		<!-- thẻ span -->
+		<span>Đây là nội dung trong thẻ span</span>
+		<br />
+		<!-- thẻ img -->
+		<img src="qui-trinh-thiet-ke-web.jpg" width="50px" height="80px" alt="Hiển thị khi đường dẫn ảnh sai" title="Hiển thị khi bạn rê chuột qua ảnh">
+
+		<!-- table -tr - td -->
+		<table border="1" cellspacing='0' cellpadding='8'>
+			<tr>
+				<th>Nội dung trong thẻ th được in đậm</th>
+				<th>Nội dung trong thẻ th được in đậm</th>
+				<th>Nội dung trong thẻ th được in đậm</th>
+			</tr>
+			<tr>
+				<td>nội dung cột 1 hàng 2</td>
+				<td>nội dung cột 2 hàng 2</td>
+				<td>nội dung cột 3 hàng 2</td>
+			</tr>
+			<tr>
+				<td>nội dung cột 1 hàng 3</td>
+				<td>nội dung cột 2 hàng 3</td>
+				<td>nội dung cột 3 hàng 3</td>
+			</tr>
+		</table>
+
+		<!-- 2 thuộc tính gộp hàng - rowspan và gộp cột - colspan trong table -->
+		<table border="1" cellspacing="0" cellpadding="14">
+			<tr>
+				<td colspan='2'>Cột 1 hàng 1</td>
+				<!-- <td>Cột 2 hàng 1</td> -->
+			</tr>
+			<tr>
+				<td rowspan="2">Cột 1 hàng 2</td>
+				<td>Cột 2 hàng 2</td>
+			</tr>
+			<tr>
+				<!-- <td>Cột 1 hàng 3</td> -->
+				<td>Cột 2 hàng 3</td>
+			</tr>
+		</table>
+
+		<!-- thẻ sắp xếp ul, ol - luôn đi kèm thẻ con li -->
+		<!-- unorder list -->
+		<ul>
+			<li>Thẻ li thứ nhất trong thẻ ul </li>
+			<li>Thẻ li thứ 2 trong thẻ ul </li>
+			<li>Thẻ li thứ 3 trong thẻ ul </li>
+		</ul>
+
+<!-- order list -->
+		<ol>
+			<li>Thẻ li thứ nhất trong thẻ ol </li>
+			<li>Thẻ li thứ 2 trong thẻ ol </li>
+			<li>Thẻ li thứ 3 trong thẻ ol </li>
+		</ol>
+
+		<!-- Thẻ a - link -->
+		<a href="http://google.vn">
+			Click để tới trang Goole
+		</a>
+		<br />
+		<a href="http://google.vn" target="_blank">
+			Click để tới trang Goole trong tab mới
+		</a>
+
+		<!-- button -->
+		<br />
+		<button>Đây là button</button>
+		<br />
+		<!-- thẻ form -->
+		Form HTML <br />
+		<form action="" method="GET">
+			Username: <input type="text" name="username" value="" placeholder="Nhập username" />
+			<br />
+			Password: <input type="password" name="password" placeholder="Nhập password của bạn" />
+			<br />
+			<!-- name của radio bắt buộc phải giống nhau  để cho phép chọn 1 trong nhiều radio-->
+			Chọn giới tính:
+			<input type="radio" name="gender" /> Name
+			<input type="radio" name="gender" checked/> Nữ
+			<input type="radio" name="gender" /> Khác
+
+			<br />
+			Nhập mô tả:
+			<textarea placeholder="Nhập nội dung mô tả" cols="12" rows="6"></textarea>
+
+			<input type="submit" name="submit" value="Send information" />
+		</form>
+
+	</body>
+</html>
