@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tên trang</title>
+	</head>
+	<body>
+		Nội dung trang
+		<!-- Thẻ h1 - h6 -->
+		<h1>Nội dung trong thẻ h1</h1>
+		<h2>Nội dung trong thẻ h2</h2>
+		<h3>Nội dung trong thẻ h3</h3>
+		<h4>Nội dung trong thẻ h4</h4>
+		<h5>Nội dung trong thẻ h5</h5>
+		<h6>Nội dung trong thẻ h6</h6>
+
+		<!-- Thẻ p - paragraphp -->
+		<p>Nội dung trong thẻ p thứ nhất</p>
+		<p>Nội dung trong thẻ p thứ hai</p>
+
+		<!-- Thẻ br - break -->
+		Đây là nội dung text 1 <br />
+		Đây là nội dung text 2
+
+		<!-- Thẻ hr  -->
+		<hr />
+
+		<!-- Thẻ i - italic -->
+		<i>Nội dung bên trong được in nghiêng</i>
+		<!-- Thẻ b - bold -->
+		<b>Nội dung bên trong được in đậm</b>
+		<!-- Thẻ u - underline -->
+		<u>Nội dung bên trong được gạch chân</u>
+
+		<!-- Thẻ div - divide -->
+		<div>
+			<p>Đây là thẻ p</p>
+			<br />
+			<div></div>
+		</div>
+
+		<!-- Thẻ span -->
+		<span>Nội dung bên trong thẻ span</span>
+
+		<!-- Thẻ img - image -->
+		<img src="rose.jpeg" title="Image" width="50" alt="Hiển thị khi đường dẫn ảnh sai" />
+
+		<!-- Thẻ table, tr, th, td -->
+		<table border="1" cellspacing=0 cellpadding=5>
+			<tr>
+				<td>Cột 1 hàng 1</td>
+				<td>Cột 2 hàng 1</td>
+				<td>Cột 3 hàng 1</td>
+			</tr>
+			<tr>
+				<td>Cột 1 hàng 2</td>
+				<td>Cột 2 hàng 2</td>
+				<td>Cột 3 hàng 2</td>
+			</tr>
+		</table>
+
+		<!-- Thuộc tính gộp hàng và gộp cột trong table -->
+		<table border="1">
+			<tr>
+				<td colspan="2">Data 1</td>
+				<!-- <td>Data 2</td> -->
+			</tr>
+			<tr>
+				<td rowspan="2">Data 3</td>
+				<td>Data 4</td>
+			</tr>
+			<tr>
+				<!-- <td>Data 5</td> -->
+				<td>Data 6</td>
+			</tr>
+		</table>
+
+		<!-- Thẻ ul  - unorder list
+			Thẻ ol  - order list 
+			Thẻ li  -->
+		<ul>
+			<li>Thẻ li thứ nhất</li>
+			<li>Thẻ li thứ hai</li>
+			<li>Thẻ li thứ ba</li>
+		</ul>
+		<ol>
+			<li>Thẻ li thứ nhất</li>
+			<li>Thẻ li thứ hai</li>
+			<li>Thẻ li thứ ba</li>
+		</ol>
+
+		<!-- Thẻ a - link -->
+		<a href="http://google.vn" target="_blank">
+		Click để sang trang Google
+	</a>
+
+	<!-- Thẻ button -->
+	<button>Nội dung thẻ button</button>
+	<center>
+		Nội dung bên trong thẻ center được căn giữa
+	</center>
+	</body>
+
+	<!-- Các thẻ liên quan đến form -->
+	<form>
+		Username: 
+		<input type="text" placeholder="Nhập username" />
+		<br />
+		Age: <input type="number" />
+		<br />
+		Gender:
+		<!-- với radio, bắt buộc phải name phải giống nhau để cho phép chỉ chọn duy nhất 1 trong số các radio -->
+		<input type="radio" name="gender"> Male
+		<input type="radio" name="gender"> Female
+		<input type="radio" name="gender"> Another
+		Infomartion
+		<textarea rows="5" cols="20"></textarea>
+		<select>
+			<option>Red</option>
+			<option>Yellow</option>
+		</select>
+		<br />
+		<input type="submit" value="Show info" />
+	</form>
+</html>
