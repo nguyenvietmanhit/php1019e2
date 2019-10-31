@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nội dung buổi học ngày 2 - CSS</title>
+	<link rel="stylesheet" href="main.css" />
+	<!-- khai báo thẻ meta cho phép xử lý responsive -->
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<style type='text/css'>
+	#p-id {
+		color: red; <!-- mã màu bằng tiếng anh -->
+	}
+	.p-class {
+		color: #ccc; <!-- mã màu hex -->
+	}
+	#div-id a {
+		background: red;
+	}
+	#div-id #span-id {
+		color: yellow;
+	}
+	input[type='text'] {
+		background: yellow;
+	}
+	/*input[name='username'] {
+		background: yellow;
+	}*/
+</style>
+<body>
+	<!-- SELECTOR theo id và class -->
+	<p id='p-id'>Đây là thẻ p</p>
+	<p class='p-class'>Đây là thẻ p</p>
+
+	<!-- SELECTOR theo cấp cha/con -->
+	<div id="div-id">
+		<a href="#">Đây là thẻ a</a>
+		<span id="span-id">Đây là thẻ span</span>
+	</div>
+
+	<!-- SELECTOR theo thuộc tính của thẻ -->
+	<input type="text" placeholder="Nhập tên của bạn" name="username" />
+	<input type="email" placeholder="Nhập tên của bạn" name="username" />
+
+	<!-- SELECTOR theo trạng thái của thẻ -->
+	<style type="text/css">
+		.status-class ul li:first-child {
+			color: red;
+		}
+		.status-class ul li:last-child {
+			color: blue;
+		}
+		.status-class ul li:hover{
+			background: yellow;
+		}
+		.status-class ul li:before {
+			content: 'Đây là nội dung muốn thêm vào trước nội dung trong thẻ <li>';
+		}
+		.status-class ul li:after {
+			content: 'Đây là nội dung muốn thêm vào sau nội dung trong thẻ <li>';
+		}
+	</style>
+	<div class='status-class'>
+		<ul>
+			<li>Thẻ li thứ nhất</li>
+			<li>Thẻ li thứ 2</li>
+			<li>Thẻ li thứ 3</li>
+		</ul>
+	</div>
+
+	<!-- CÁC CÁCH NHÚNG CSS TRONG FILE .html -->
+	<!-- 1 - nhúng inline trong thẻ -->
+	<a href="#" style="color: red;">Đây là thẻ a sẽ nhúng css inline</a>
+	<!-- 2 - nhúng inline trong file .html -->
+	<div id="div-inline-html">
+		Đây là nội dung trong thẻ div
+	</div>
+	<style type="text/css">
+		#div-inline-html {
+			width: 300px;
+			height: 300px;
+			background: red;
+			color: #fff;
+		}
+	</style>
+	<!-- 3 - Nhúng file từ bên ngoài -->
+	<div class="div-external-css">
+		Đây là nội dung trong thẻ div được nhúng từ file .css bên ngoài
+	</div>
+
+
+	<!-- Các thuộc tính css căn bản -->
+	<style type="text/css">
+		/*1 - Nền của phần tử*/
+		#background-a {
+			height: 100px;
+			background-color: yellow;
+			background-image: url('image.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			/*viết gộp*/
+			background: yellow url('image.jpg') no-repeat center;
+		}
+		#font-p {
+			/*2 - Font chữ*/
+			font-family: 'Arial', san-serif;
+			font-style: italic;  
+			font-weight: bold;
+			font-size: 26px;
+		}
+		#text-p {
+			/*3 - text */
+			color: #000;
+			text-align: center; /* left/right/justify */
+			text-decoration: underline;
+			text-transform: capitalize;
+			text-shadow: 3px 3px 8px red;
+		}
+		#border-p {
+			/*4 - border */
+			border-color: red;
+			border-style: dashed;
+			border-width: 10px;
+			border-radius: 20px;
+			/*viết gộp*/
+			border: 10px dashed red;
+		}
+		#margin-p1 {
+			/*4 - margin */
+			margin-bottom: 30px;
+			margin-top: 40px;
+			margin-right: 10px;
+			margin-left: 10px;
+			/*viết gộp*/
+			/*đầy đủ thuộc tính*/
+			margin: 40px 10px 30px 10px;
+			/*trên - dưới = 10px, trái - phải = 20px*/
+			margin: 10px 20px;
+			/*trên - dưới = 10px, trái - phải = auto - tự động căn giữa*/
+			margin: 10px auto;
+		}
+		#padding-p{
+			/*4 - padding */
+			background: blue;
+			padding-top: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			/*viết gộp giống hệt margin*/
+		}
+			/*width-height*/
+			#width-height-p {
+				/*width: 400px;
+				height: 300px;*/
+				max-width: 10px;
+				max-height: 20px;
+				min-width: 10px;
+				min-height: 10px;
+				background: red;
+			}
+	</style>
+	<p id="background-a">Demo background với thẻ p</p>
+	<p id="font-p">Demo font với thẻ p</p>
+	<p id="text-p">Demo text với thẻ p</p>
+	<p id="border-p">Demo border với thẻ p</p>
+	<div id="margin-demo">
+		<p id="margin-p1" style="background: yellow">Đây là thẻ p1</p>
+		<p id="margin-p2" style="background: red">Đây là thẻ p2</p>
+	</div>
+	<p id="padding-p">Đây là thẻ p với css padding</p>
+	<!-- <p id='width-height-p'>Đây là thẻ p với css width - height</p> -->
+	<style type="text/css">
+		#position-p {
+			background: yellow;
+			color: #fff;
+			position: relative;
+			top: 10px;
+			right: 5px;
+			left: 20px;
+			bottom: 10px;
+		}
+		#position-p-absolute {
+			background: blue;
+			color: #fff;
+			/*position: absolute;*/
+			top: 10px;
+			right: 5px;
+			left: 20px;
+			bottom: 10px;
+		}
+		#relative-postion {
+			position: relative;
+			background: yellow;
+		}
+		#absolute-postion {
+			position: absolute;
+			background: red;
+		}
+	</style>
+	<p id="position-p">
+		Đây là thẻ p với css position
+	</p>
+	<p id="position-p-absolute">
+		Đây là thẻ p với css position abslute
+	</p>
+
+	<p style="background: gray;">Đây là thẻ p</p>
+	<div id="relative-postion">
+		<a id="absolute-postion" href="#">Đây là thẻ a</a>
+	</div>
+
+	<p style="position: fixed; background: blue; right: 0; top: 0">Đây là thẻ div có position fixed</p>
+
+	<style type="text/css">
+		#float-wrap {
+			margin-top: 50px;
+			background: #c2c2c2;
+		}
+		#left-sidebar {
+			background: orange;
+			float: left;
+			width: 30%;
+		}
+		#main-content {
+			background: red;
+			float: left;
+			width: 70%;
+		}
+	</style>
+	<div id="float-wrap">
+		<p id="left-sidebar">Sidebar left</p>
+		<p id="main-content">Main content</p>
+		<p style="background: yellow; clear: both">Đây là thẻ a sau float</p>
+	</div>
+
+	<p style="background: yellow">Thẻ p áp dụng css display</p>
+	<style type="text/css">
+		#z-index-parent {
+			position: relative;
+		}
+		#z-index-p1 {
+			width: 50px;
+			height: 50px;
+			background: yellow;
+			position: absolute;
+			z-index: 1000;
+		}
+		#z-index-p2 {
+			width: 30px;
+			height: 30px;
+			background: red;
+			position: absolute;
+			z-index: 100;
+		}
+		#z-index-p3 {
+			width: 100px;
+			height: 100px;
+			background: black;
+			color: #fff;
+			position: absolute;
+		}
+	</style>
+	<div id="z-index-parent">
+		<p id="z-index-p1">p1</p>
+		<p id="z-index-p2">p2</p>
+		<p id="z-index-p3">p3</p>
+	</div>
+
+</body>
+</html> 
+ 140  Day02_CSS/Code_demo_tren_lop/Draft/css.html 
+@@ -0,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<style type="text/css">
+    #id1 {
+        background: #9f7e5a;
+    }
+    .link {
+        color: red;
+    }
+    #personal a {
+        color: yellow;
+    }
+    #personal > a {
+        color: blue;
+    }
+    a[href='http://google.vn'] {
+        background: yellow;
+    }
+    #paragraph:hover {
+        color: red;
+    }
+</style>
+<p id="id1">
+    Div 1
+</p>
+<a href="#" class="link">Link 1</a>
+<a href="#" class="link">Link 2</a>
+
+
+<p id="personal">
+    <a href="#">Link1</a>
+    <span>
+            <a href="">Link2</a>
+        </span>
+</p>
+
+<a href="http://google.vn" target="_blank">google.vn</a>
+
+<p id="paragraph">
+    Hover qua the
+</p>
+
+<style type="text/css">
+    #divide a:first-child {
+        color: red;
+    }
+    #divide a:last-child {
+        color: yellow;
+    }
+    div{
+        /*background: red ;*/
+    }
+    #divide a:nth-child(2) {
+        color: red;
+    }
+    p#p2:before {
+        content: "Before1";
+    }
+    p#p2:after {
+        content: "After1";
+    }
+</style>
+<div id="divide">
+    <a href="#">link1</a>
+    <a href="#">link2</a>
+    <a href="#">link3</a>
+    <a href="#">link4</a>
+</div>
+
+<p id="p2">
+    Paragraph2
+</p>
+<p id="p4">
+    Paragraph 4
+</p>
+<a href="#" id="a4">
+    Link 4
+</a>
+
+<p id="border">
+    Paragraph border
+</p>
+
+<p id="margin1">
+    MArgin 1
+</p>
+<p id="margin2">
+    Margin 2
+</p>
+
+<p id="margin3">
+    MArgin3
+</p>
+
+
+<p id="width-height">
+    <span id="position">
+        Position relative
+    </span>
+</p>
+
+
+<p id="float-1">
+    Float 1
+</p>
+<p id="float-2">
+    Float 2
+</p>
+
+<a href="#" style="margin: 40px;padding: 40px">aaaaaaaaaaaaa</a>
+<img src="#"  title="ád" align="dsadsadsa"/>
+<p style="background: red">aa</p>
+
+<div style="width: 300px; background: red">
+    div1
+</div>
+<div style="width: 400px; background: yellow">
+    div2
+</div>
+<div style="width: 500px; background: black;color: #fff;">
+    div3
+</div>
+</body>
+</html> 
+ 103  Day02_CSS/Code_demo_tren_lop/Draft/demo_ngay2_selector_va_cach_nhung_file.html 
+@@ -0,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Demo ngày 2 - CSS</title>
+	<link rel="stylesheet" href="style.css" />
+	<!-- cặp thẻ này cho phép làm việc với CSS -->
+	<style type="text/css">
+		/* SELECTOR */
+		/* 1 - Theo tên thẻ HTML */
+		p {
+			color:  red;
+		}
+		
+		/* 2 - Theo thuộc tính id và class - 2 cách rất thông dụng */
+		#h1-id {
+			background-color: yellow; 
+		}
+		.h2-class {
+			background-color: #000000;
+		}
+		/* 3 - SELECTOR theo cấp */
+		.div-class a {
+			color:  orange;
+		}
+		/* 4 - SELECTOR theo thuộc tính của thẻ */
+		a[href='http://google.vn'] {
+			font-size:  30px;
+		}
+		/* 5 - SELETOR theo trạng thái thẻ */
+		.button-class:hover {
+			background-color: red;
+		}
+		.ul-class li:first-child{
+			color: red;
+		}
+		.ul-class li:last-child {
+			color: blue;
+		}
+		.ul-class li:before{
+			content: "Dòng text này được thêm vào trước nội dung đang có trong thẻ li, ";
+		}
+		.ul-class li:after{
+			content: ". Dòng text này được thêm vào sau nội dung đang có trong thẻ li";
+		}
+	</style>
+</head>
+<body>
+	<p>Đây là nội dung trong thẻ p</p>
+
+	<h1 id="h1-id">Đây là thẻ h1 với id là h1-id</h1>
+	<h2 class="h2-class h2-class-2">
+		Đây là thẻ h2 với class = h2-class
+	</h2>
+	<a class="h2-class">Đây là thẻ a sử dụng chung class h2-class</a>
+
+	<div class="div-class">
+		<a href="#">Đây là thẻ a trong thẻ div có class=div-class
+		</a>	
+	</div>
+
+	<a href="http://google.vn" target="_blank">
+	Link tới google, sử dụng selector theo thuộc tính href
+	</a>
+
+	<button class="button-class">
+		Hover - di chuột -qua thẻ này thì sẽ đổi màu nền
+	</button>
+
+	<ul class="ul-class">
+		<li>Thẻ li thứ nhất</li>
+		<li>Thẻ li thứ 2</li>
+		<li>Thẻ li thứ 3</li>
+		<li>Thẻ li thứ 4</li>
+	</ul>
+
+	<!-- NHÚNG FILE TRONG CSS -->
+	<!-- 1 - Nhúng inline trong thẻ HTML sử dụng thuộc tính style -->
+	<span style="color: red; font-size: 30px">
+		Đây là thẻ span sử dụng nhúng inline css
+	</span>
+	<!-- 2 - Nhúng inline trong file HTML sử dụng thẻ <style> -->
+		<p class="p-inline-html">
+			Đây là nội dung trong thẻ p, sử dụng nhúng inline trong HTML
+		</p>
+	<style type="text/css">
+		.p-inline-html {
+			color:  blue;
+		}
+	</style>	
+	<!-- 3 - Nhúng từ file .css bên ngoài, khuyến khích dùng trong hệ thống web của bạn, thêm vào sử dụng thẻ <link> ở trong thẻ <head> -->
+</body>
+</html> 
+ 192  Day02_CSS/Code_demo_tren_lop/Draft/demo_ngay2_thuoc_tinh_css_can_ban.html 
+@@ -0,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo các thuộc tính CSS căn bản</title>
+</head>
+<body>
+	<style type="text/css">
+		/* 1 - Màu nền */
+		.p-background {
+			/* background-color: yellow;
+			background-image: url('bt5-image.jpg');
+			background-repeat: no-repeat;
+			background-position: center;  */
+			height: 300px;
+			/* viết gộp */
+			background: url('bt5-image.jpg') yellow no-repeat center;
+		}
+		/* 2 - text */
+		.p-text {
+			font-size: 31px;
+		    color: #cc1717;
+		    text-align: center;
+		    text-decoration: underline;
+		    text-transform: capitalize;
+		    line-height: 33px;
+		}
+		/* 3  - FONT */
+		.p-font {
+			font-family: 'Arial';
+			font-style: italic;
+			font-weight: bold; 
+			font-size: 40px;
+		}
+		/* 4  - BORDER */
+		.p-border {
+			border-color: red;
+			border-style: solid;
+			border-width:  3px;
+			border-radius: 10px;
+		}
+	</style>
+
+	<p class="p-background">
+		Đây là thẻ p, sử dụng css background
+	</p>
+
+	<p class="p-text">
+		Đây là thẻ p sử dụng css liên quan đến text
+	</p>
+	<p class="p-font">
+		Thẻ p sử dụng css font
+	</p>
+
+	<p class="p-border">
+		Thẻ P sử dụng css border
+	</p>
+
+	<style type="text/css">
+		/* 5  -MARGIN */
+		.div-top {
+			height: 100px;
+			width: 100px;
+			background: red;
+			margin-bottom: 40px;
+		    margin-left: 20px;
+		    margin-top: 40px;
+		    margin-right: 20px;
+		    /* viết gộp */
+		    /* top - right - bottom - left */
+		    margin:  10px 20px 15px 10px; 
+		    /* top-bottm left-right */
+		    margin: 40px auto;
+		}
+		/* 6 - PADDING */
+		.div-bottom {
+			height: 200px;
+			width: 200px;
+			background: yellow;
+			padding-top: 20px;
+		    padding-right: 20px;
+		    padding-bottom: 8px;
+		    padding-left: 30px;
+		    /* top right bottom left */
+		    padding:  10px 5px 4px 1px;
+		    /* top-bottom left-right */
+		    padding:  20px 5px;
+		}
+		/* 7  WIDTH - HEIGHT */
+		.p-width-height {
+			background: red;
+			width: 50%;
+			height: 200px;
+			max-width: 100px;
+			/* min-width: 1200px; */
+			/* max-height: 100px; */
+			/* min-height: 100px; */
+		}
+		
+	</style>
+	<div class="div-margin">
+		<div class="div-top">
+			Nội dung div ở trên
+		</div>
+		<div class="div-bottom">
+			Nội dung div ở dưới
+		</div>
+	</div>
+
+	<p class="p-width-height">
+		Thẻ p sử dụng css width - height
+	</p>
+	<style type="text/css">
+		/* 8 - POSITION */
+		.p-position-relative {
+			background: blue;
+			color: #fff;
+			/* căn vị trí dựa vào vị trí hiện tại của chính phần tử đó */
+			position: relative;
+			bottom:  70px;
+		}
+		.p-position-absolute {
+			background: yellow;
+			color: blue;
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+		}
+		
+	</style>
+	<div class="div-position">
+		<p class="p-position-relative">
+			Thẻ p sử dụng position relative
+		</p>
+		<p class="p-position-absolute">
+			Thẻ p sử dụng position absolute
+		</p>
+	</div>
+
+	<style type="text/css">
+		/* 9 - FLOAT */
+		/* FLOAT LEFT */
+		.p-float-left {
+			background: orange;
+			color: #fff;
+			height: 100px;
+			float: left;
+		}
+		.a-after-float-left {
+			background: red;
+		}
+		/* để tránh bị vỡ giao diện khi dùng float, có thể có 2 cách sau */
+		/* 1 - Set css display:table hoặc display:flex cho thành phần cha gần nhất mà bao lấy phần tử bị float */
+		.div-float {
+			display: flex; 
+			/* display: table;  */
+		}
+		/* 2 - Sử dụng css clear:both tại phần tử nào phía sau mà bạn ko muốn bị ảnh hưởng bởi phần tử bị float */
+		.p-clear-both {
+			clear: both;
+		}
+	</style>
+	<div class="div-float">
+		<p class="p-float-left">
+			Thẻ p sử dụng float left
+		</p>
+		<a href="#" class="a-after-float-left">
+			Thẻ a sau thẻ p bị float left
+		</a>
+		<p class="p-float-right">
+			Thẻ p sử dụng float right
+		</p>
+		<a href="#" class="a-after-float-right">
+			Thẻ a sau thẻ p bị float right
+		</a>
+	</div>
+
+	<p class="p-clear-both" style="height: 100px; background: brown; color: #fff">
+		Thẻ p bị ảnh hưởng bởi float
+	</p>
+</body>
+</html> 
+ 65  Day02_CSS/Code_demo_tren_lop/Draft/form-demo.html 
+@@ -0,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Name</td>
+            <td><input name="name" value=""/></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td>
+                <input type="radio" name="sex"/> Male
+                <br/>
+                <input type="radio" name="sex"/> Female
+            </td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td>
+                <select>
+                    <option>green</option>
+                    <option>blue</option>
+                    <option>red</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Check all that apply</td>
+            <td>
+                <input type="checkbox" name="cbx1"/> Checkbox 1
+                <br/>
+                <input type="checkbox" name="cb2"/> Checkbox 2
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Describe ...
+                <br/>
+                <textarea rows="5" cols="24" style="width: 100%"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <input type="submit" value="Enter my information"/>
+                </center>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html> 
+ BIN +7.41 KB Day02_CSS/Code_demo_tren_lop/Draft/image.jpg 
+Binary file not shown.
+ 6  Day02_CSS/Code_demo_tren_lop/Draft/main.css 
+@@ -0,0 +1,6 @@
+.div-external-css {
+	background: blue;
+	color: red;
+	width: 100px;
+	height: 100px;
+} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="full-content">
+        <!--HEADER-->
+        <div id="header">
+            <!--Code HTML header-->
+            <div id="banner">
+
+            </div>
+            <div id="menu"></div>
+        </div>
+        <!--END HEADER-->
+
+        <!--MAIN CONTENT-->
+        <div id="main-content">
+            <!--Code HTML Main Content-->
+        </div>
+        <!--END MAIN CONTENT-->
+
+        <!--FOOTER-->
+        <div id="footer">
+            <!--Code HTML Footer-->
+        </div>
+        <!--END FOOTER-->
+    </div>
+</body>
+</html> 
