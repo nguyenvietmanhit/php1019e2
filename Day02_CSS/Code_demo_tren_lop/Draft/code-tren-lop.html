@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nội dung buổi học ngày 2 - CSS</title>
+	<link rel="stylesheet" href="main.css" />
+	<!-- khai báo thẻ meta cho phép xử lý responsive -->
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<style type='text/css'>
+	#p-id {
+		color: red; <!-- mã màu bằng tiếng anh -->
+	}
+	.p-class {
+		color: #ccc; <!-- mã màu hex -->
+	}
+
+	#div-id a {
+		background: red;
+	}
+
+	#div-id #span-id {
+		color: yellow;
+	}
+
+	input[type='text'] {
+		background: yellow;
+	}
+
+	/*input[name='username'] {
+		background: yellow;
+	}*/
+</style>
+<body>
+	<!-- SELECTOR theo id và class -->
+	<p id='p-id'>Đây là thẻ p</p>
+	<p class='p-class'>Đây là thẻ p</p>
+
+	<!-- SELECTOR theo cấp cha/con -->
+	<div id="div-id">
+		<a href="#">Đây là thẻ a</a>
+		<span id="span-id">Đây là thẻ span</span>
+	</div>
+
+	<!-- SELECTOR theo thuộc tính của thẻ -->
+	<input type="text" placeholder="Nhập tên của bạn" name="username" />
+	<input type="email" placeholder="Nhập tên của bạn" name="username" />
+
+	<!-- SELECTOR theo trạng thái của thẻ -->
+	<style type="text/css">
+		.status-class ul li:first-child {
+			color: red;
+		}
+
+		.status-class ul li:last-child {
+			color: blue;
+		}
+
+		.status-class ul li:hover{
+			background: yellow;
+		}
+
+		.status-class ul li:before {
+			content: 'Đây là nội dung muốn thêm vào trước nội dung trong thẻ <li>';
+		}
+
+		.status-class ul li:after {
+			content: 'Đây là nội dung muốn thêm vào sau nội dung trong thẻ <li>';
+		}
+	</style>
+	<div class='status-class'>
+		<ul>
+			<li>Thẻ li thứ nhất</li>
+			<li>Thẻ li thứ 2</li>
+			<li>Thẻ li thứ 3</li>
+		</ul>
+	</div>
+
+	<!-- CÁC CÁCH NHÚNG CSS TRONG FILE .html -->
+	<!-- 1 - nhúng inline trong thẻ -->
+	<a href="#" style="color: red;">Đây là thẻ a sẽ nhúng css inline</a>
+	<!-- 2 - nhúng inline trong file .html -->
+	<div id="div-inline-html">
+		Đây là nội dung trong thẻ div
+	</div>
+	<style type="text/css">
+		#div-inline-html {
+			width: 300px;
+			height: 300px;
+			background: red;
+			color: #fff;
+		}
+	</style>
+	<!-- 3 - Nhúng file từ bên ngoài -->
+	<div class="div-external-css">
+		Đây là nội dung trong thẻ div được nhúng từ file .css bên ngoài
+	</div>
+
+
+	<!-- Các thuộc tính css căn bản -->
+	<style type="text/css">
+		/*1 - Nền của phần tử*/
+		#background-a {
+			height: 100px;
+			background-color: yellow;
+			background-image: url('image.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			/*viết gộp*/
+			background: yellow url('image.jpg') no-repeat center;
+		}
+		#font-p {
+			/*2 - Font chữ*/
+			font-family: 'Arial', san-serif;
+			font-style: italic;  
+			font-weight: bold;
+			font-size: 26px;
+		}
+
+		#text-p {
+			/*3 - text */
+			color: #000;
+			text-align: center; /* left/right/justify */
+			text-decoration: underline;
+			text-transform: capitalize;
+			text-shadow: 3px 3px 8px red;
+		}
+
+		#border-p {
+			/*4 - border */
+			border-color: red;
+			border-style: dashed;
+			border-width: 10px;
+			border-radius: 20px;
+			/*viết gộp*/
+			border: 10px dashed red;
+		}
+
+		#margin-p1 {
+			/*4 - margin */
+			margin-bottom: 30px;
+			margin-top: 40px;
+			margin-right: 10px;
+			margin-left: 10px;
+			/*viết gộp*/
+			/*đầy đủ thuộc tính*/
+			margin: 40px 10px 30px 10px;
+			/*trên - dưới = 10px, trái - phải = 20px*/
+			margin: 10px 20px;
+			/*trên - dưới = 10px, trái - phải = auto - tự động căn giữa*/
+			margin: 10px auto;
+		}
+
+		#padding-p{
+			/*4 - padding */
+			background: blue;
+			padding-top: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			/*viết gộp giống hệt margin*/
+		}
+
+			/*width-height*/
+			#width-height-p {
+				/*width: 400px;
+				height: 300px;*/
+				max-width: 10px;
+				max-height: 20px;
+				min-width: 10px;
+				min-height: 10px;
+				background: red;
+			}
+	</style>
+	<p id="background-a">Demo background với thẻ p</p>
+	<p id="font-p">Demo font với thẻ p</p>
+	<p id="text-p">Demo text với thẻ p</p>
+	<p id="border-p">Demo border với thẻ p</p>
+	<div id="margin-demo">
+		<p id="margin-p1" style="background: yellow">Đây là thẻ p1</p>
+		<p id="margin-p2" style="background: red">Đây là thẻ p2</p>
+	</div>
+	<p id="padding-p">Đây là thẻ p với css padding</p>
+	<!-- <p id='width-height-p'>Đây là thẻ p với css width - height</p> -->
+	<style type="text/css">
+		#position-p {
+			background: yellow;
+			color: #fff;
+			position: relative;
+			top: 10px;
+			right: 5px;
+			left: 20px;
+			bottom: 10px;
+		}
+
+		#position-p-absolute {
+			background: blue;
+			color: #fff;
+			/*position: absolute;*/
+			top: 10px;
+			right: 5px;
+			left: 20px;
+			bottom: 10px;
+		}
+		#relative-postion {
+			position: relative;
+			background: yellow;
+		}
+		#absolute-postion {
+			position: absolute;
+			background: red;
+		}
+	</style>
+	<p id="position-p">
+		Đây là thẻ p với css position
+	</p>
+	<p id="position-p-absolute">
+		Đây là thẻ p với css position abslute
+	</p>
+
+	<p style="background: gray;">Đây là thẻ p</p>
+	<div id="relative-postion">
+		<a id="absolute-postion" href="#">Đây là thẻ a</a>
+	</div>
+
+	<p style="position: fixed; background: blue; right: 0; top: 0">Đây là thẻ div có position fixed</p>
+
+	<style type="text/css">
+		#float-wrap {
+			margin-top: 50px;
+			background: #c2c2c2;
+		}
+		#left-sidebar {
+			background: orange;
+			float: left;
+			width: 30%;
+		}
+		#main-content {
+			background: red;
+			float: left;
+			width: 70%;
+		}
+	</style>
+	<div id="float-wrap">
+		<p id="left-sidebar">Sidebar left</p>
+		<p id="main-content">Main content</p>
+		<p style="background: yellow; clear: both">Đây là thẻ a sau float</p>
+	</div>
+
+	<p style="background: yellow">Thẻ p áp dụng css display</p>
+	<style type="text/css">
+		#z-index-parent {
+			position: relative;
+		}
+		#z-index-p1 {
+			width: 50px;
+			height: 50px;
+			background: yellow;
+			position: absolute;
+			z-index: 1000;
+		}
+		#z-index-p2 {
+			width: 30px;
+			height: 30px;
+			background: red;
+			position: absolute;
+			z-index: 100;
+		}
+		#z-index-p3 {
+			width: 100px;
+			height: 100px;
+			background: black;
+			color: #fff;
+			position: absolute;
+		}
+	</style>
+	<div id="z-index-parent">
+		<p id="z-index-p1">p1</p>
+		<p id="z-index-p2">p2</p>
+		<p id="z-index-p3">p3</p>
+	</div>
+
+</body>
+</html>

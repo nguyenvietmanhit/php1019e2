@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Demo ngày 2 - CSS</title>
+	<link rel="stylesheet" href="style.css" />
+	<!-- cặp thẻ này cho phép làm việc với CSS -->
+	<style type="text/css">
+		/* SELECTOR */
+		/* 1 - Theo tên thẻ HTML */
+		p {
+			color:  red;
+		}
+
+		
+
+		/* 2 - Theo thuộc tính id và class - 2 cách rất thông dụng */
+		#h1-id {
+			background-color: yellow; 
+		}
+
+		.h2-class {
+			background-color: #000000;
+		}
+
+		/* 3 - SELECTOR theo cấp */
+		.div-class a {
+			color:  orange;
+		}
+
+		/* 4 - SELECTOR theo thuộc tính của thẻ */
+		a[href='http://google.vn'] {
+			font-size:  30px;
+		}
+
+		/* 5 - SELETOR theo trạng thái thẻ */
+		.button-class:hover {
+			background-color: red;
+		}
+
+		.ul-class li:first-child{
+			color: red;
+		}
+
+		.ul-class li:last-child {
+			color: blue;
+		}
+
+		.ul-class li:before{
+			content: "Dòng text này được thêm vào trước nội dung đang có trong thẻ li, ";
+		}
+
+		.ul-class li:after{
+			content: ". Dòng text này được thêm vào sau nội dung đang có trong thẻ li";
+		}
+	</style>
+</head>
+<body>
+	<p>Đây là nội dung trong thẻ p</p>
+
+	<h1 id="h1-id">Đây là thẻ h1 với id là h1-id</h1>
+	<h2 class="h2-class h2-class-2">
+		Đây là thẻ h2 với class = h2-class
+	</h2>
+	<a class="h2-class">Đây là thẻ a sử dụng chung class h2-class</a>
+
+	<div class="div-class">
+		<a href="#">Đây là thẻ a trong thẻ div có class=div-class
+		</a>	
+	</div>
+
+	<a href="http://google.vn" target="_blank">
+	Link tới google, sử dụng selector theo thuộc tính href
+	</a>
+
+	<button class="button-class">
+		Hover - di chuột -qua thẻ này thì sẽ đổi màu nền
+	</button>
+
+	<ul class="ul-class">
+		<li>Thẻ li thứ nhất</li>
+		<li>Thẻ li thứ 2</li>
+		<li>Thẻ li thứ 3</li>
+		<li>Thẻ li thứ 4</li>
+	</ul>
+
+	<!-- NHÚNG FILE TRONG CSS -->
+	<!-- 1 - Nhúng inline trong thẻ HTML sử dụng thuộc tính style -->
+	<span style="color: red; font-size: 30px">
+		Đây là thẻ span sử dụng nhúng inline css
+	</span>
+	<!-- 2 - Nhúng inline trong file HTML sử dụng thẻ <style> -->
+		<p class="p-inline-html">
+			Đây là nội dung trong thẻ p, sử dụng nhúng inline trong HTML
+		</p>
+	<style type="text/css">
+		.p-inline-html {
+			color:  blue;
+		}
+	</style>	
+	<!-- 3 - Nhúng từ file .css bên ngoài, khuyến khích dùng trong hệ thống web của bạn, thêm vào sử dụng thẻ <link> ở trong thẻ <head> -->
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo các thuộc tính CSS căn bản</title>
+</head>
+<body>
+	<style type="text/css">
+		/* 1 - Màu nền */
+		.p-background {
+			/* background-color: yellow;
+			background-image: url('bt5-image.jpg');
+			background-repeat: no-repeat;
+			background-position: center;  */
+			height: 300px;
+			/* viết gộp */
+			background: url('bt5-image.jpg') yellow no-repeat center;
+
+		}
+
+		/* 2 - text */
+		.p-text {
+			font-size: 31px;
+		    color: #cc1717;
+		    text-align: center;
+		    text-decoration: underline;
+		    text-transform: capitalize;
+		    line-height: 33px;
+		}
+
+		/* 3  - FONT */
+		.p-font {
+			font-family: 'Arial';
+			font-style: italic;
+			font-weight: bold; 
+			font-size: 40px;
+		}
+
+		/* 4  - BORDER */
+		.p-border {
+			border-color: red;
+			border-style: solid;
+			border-width:  3px;
+			border-radius: 10px;
+		}
+	</style>
+
+	<p class="p-background">
+		Đây là thẻ p, sử dụng css background
+	</p>
+
+	<p class="p-text">
+		Đây là thẻ p sử dụng css liên quan đến text
+	</p>
+	<p class="p-font">
+		Thẻ p sử dụng css font
+	</p>
+
+	<p class="p-border">
+		Thẻ P sử dụng css border
+	</p>
+
+	<style type="text/css">
+		/* 5  -MARGIN */
+		.div-top {
+			height: 100px;
+			width: 100px;
+			background: red;
+			margin-bottom: 40px;
+		    margin-left: 20px;
+		    margin-top: 40px;
+		    margin-right: 20px;
+		    /* viết gộp */
+		    /* top - right - bottom - left */
+		    margin:  10px 20px 15px 10px; 
+		    /* top-bottm left-right */
+		    margin: 40px auto;
+		}
+
+		/* 6 - PADDING */
+		.div-bottom {
+			height: 200px;
+			width: 200px;
+			background: yellow;
+			padding-top: 20px;
+		    padding-right: 20px;
+		    padding-bottom: 8px;
+		    padding-left: 30px;
+		    /* top right bottom left */
+		    padding:  10px 5px 4px 1px;
+		    /* top-bottom left-right */
+		    padding:  20px 5px;
+		}
+
+		/* 7  WIDTH - HEIGHT */
+		.p-width-height {
+			background: red;
+			width: 50%;
+			height: 200px;
+			max-width: 100px;
+			/* min-width: 1200px; */
+			/* max-height: 100px; */
+			/* min-height: 100px; */
+		}
+
+		
+	</style>
+	<div class="div-margin">
+		<div class="div-top">
+			Nội dung div ở trên
+		</div>
+		<div class="div-bottom">
+			Nội dung div ở dưới
+		</div>
+	</div>
+
+	<p class="p-width-height">
+		Thẻ p sử dụng css width - height
+	</p>
+	<style type="text/css">
+		/* 8 - POSITION */
+		.p-position-relative {
+			background: blue;
+			color: #fff;
+			/* căn vị trí dựa vào vị trí hiện tại của chính phần tử đó */
+			position: relative;
+			bottom:  70px;
+		}
+
+		.p-position-absolute {
+			background: yellow;
+			color: blue;
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+		}
+
+		
+	</style>
+	<div class="div-position">
+		<p class="p-position-relative">
+			Thẻ p sử dụng position relative
+		</p>
+		<p class="p-position-absolute">
+			Thẻ p sử dụng position absolute
+		</p>
+	</div>
+
+	<style type="text/css">
+		/* 9 - FLOAT */
+		/* FLOAT LEFT */
+		.p-float-left {
+			background: orange;
+			color: #fff;
+			height: 100px;
+			float: left;
+		}
+		.a-after-float-left {
+			background: red;
+		}
+
+		/* để tránh bị vỡ giao diện khi dùng float, có thể có 2 cách sau */
+		/* 1 - Set css display:table hoặc display:flex cho thành phần cha gần nhất mà bao lấy phần tử bị float */
+		.div-float {
+			display: flex; 
+			/* display: table;  */
+		}
+		/* 2 - Sử dụng css clear:both tại phần tử nào phía sau mà bạn ko muốn bị ảnh hưởng bởi phần tử bị float */
+		.p-clear-both {
+			clear: both;
+		}
+	</style>
+	<div class="div-float">
+		<p class="p-float-left">
+			Thẻ p sử dụng float left
+		</p>
+		<a href="#" class="a-after-float-left">
+			Thẻ a sau thẻ p bị float left
+		</a>
+		<p class="p-float-right">
+			Thẻ p sử dụng float right
+		</p>
+		<a href="#" class="a-after-float-right">
+			Thẻ a sau thẻ p bị float right
+		</a>
+	</div>
+
+	<p class="p-clear-both" style="height: 100px; background: brown; color: #fff">
+		Thẻ p bị ảnh hưởng bởi float
+	</p>
+</body>
+</html>
