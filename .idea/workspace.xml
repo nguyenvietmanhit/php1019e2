@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Day01_HTML/Bai_tap_ve_nha/Nhan_xet_bai_tap_ngay_1_HTML.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Day01_HTML/Bai_tap_ve_nha/Nhan_xet_bai_tap_ngay_1_HTML.docx" afterDir="false" />
-    </list>
+    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,38 +122,6 @@
               <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
               <item name="Danh_sach_nop_bai" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="Danh_sach_nop_bai" type="462c0819:PsiDirectoryNode" />
-              <item name="CaoTuAnh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="Danh_sach_nop_bai" type="462c0819:PsiDirectoryNode" />
-              <item name="Day1_PHP1019E2_BachNgocHung" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="Danh_sach_nop_bai" type="462c0819:PsiDirectoryNode" />
-              <item name="PHP1019E2_DoanQuangLinh_ngày01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="Danh_sach_nop_bai" type="462c0819:PsiDirectoryNode" />
-              <item name="PHP1019E2_VuThiHoaiLinh_Ngay01" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -198,16 +164,15 @@
       <option name="presentableId" value="Default" />
       <updated>1572451831102</updated>
       <workItem from="1572451832347" duration="2283000" />
-      <workItem from="1572501073297" duration="2285000" />
+      <workItem from="1572501073297" duration="2538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4568000" />
+    <option name="totallyTimeSpent" value="4821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
