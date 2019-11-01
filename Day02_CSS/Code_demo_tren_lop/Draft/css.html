@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<style type="text/css">
+    #id1 {
+        background: #9f7e5a;
+    }
+
+    .link {
+        color: red;
+    }
+
+    #personal a {
+        color: yellow;
+    }
+
+    #personal > a {
+        color: blue;
+    }
+
+    a[href='http://google.vn'] {
+        background: yellow;
+    }
+
+    #paragraph:hover {
+        color: red;
+    }
+</style>
+<p id="id1">
+    Div 1
+</p>
+<a href="#" class="link">Link 1</a>
+<a href="#" class="link">Link 2</a>
+
+
+<p id="personal">
+    <a href="#">Link1</a>
+    <span>
+            <a href="">Link2</a>
+        </span>
+</p>
+
+<a href="http://google.vn" target="_blank">google.vn</a>
+
+<p id="paragraph">
+    Hover qua the
+</p>
+
+<style type="text/css">
+    #divide a:first-child {
+        color: red;
+    }
+
+    #divide a:last-child {
+        color: yellow;
+    }
+
+    div{
+        /*background: red ;*/
+    }
+    #divide a:nth-child(2) {
+        color: red;
+    }
+
+    p#p2:before {
+        content: "Before1";
+    }
+
+    p#p2:after {
+        content: "After1";
+    }
+</style>
+<div id="divide">
+    <a href="#">link1</a>
+    <a href="#">link2</a>
+    <a href="#">link3</a>
+    <a href="#">link4</a>
+</div>
+
+<p id="p2">
+    Paragraph2
+</p>
+<p id="p4">
+    Paragraph 4
+</p>
+<a href="#" id="a4">
+    Link 4
+</a>
+
+<p id="border">
+    Paragraph border
+</p>
+
+<p id="margin1">
+    MArgin 1
+</p>
+<p id="margin2">
+    Margin 2
+</p>
+
+<p id="margin3">
+    MArgin3
+</p>
+
+
+<p id="width-height">
+    <span id="position">
+        Position relative
+    </span>
+</p>
+
+
+<p id="float-1">
+    Float 1
+</p>
+<p id="float-2">
+    Float 2
+</p>
+
+<a href="#" style="margin: 40px;padding: 40px">aaaaaaaaaaaaa</a>
+<img src="#"  title="ád" align="dsadsadsa"/>
+<p style="background: red">aa</p>
+
+<div style="width: 300px; background: red">
+    div1
+</div>
+<div style="width: 400px; background: yellow">
+    div2
+</div>
+<div style="width: 500px; background: black;color: #fff;">
+    div3
+</div>
+</body>
+</html>
