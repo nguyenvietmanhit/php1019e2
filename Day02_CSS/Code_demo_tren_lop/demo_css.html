@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Demo css</title>
+		<style type="text/css">
+			span {
+				color: red;
+			}
+			/*SELECTOR*/
+			/*1 - selector theo thuộc tính id và class của thẻ HTML*/
+			/*p {
+				color: red;
+			}*/
+			#p-paragraph {
+				color: red;
+			}
+			.a-link {
+				color: yellow;
+			}
+
+			/*2 - CSs theo cấp cha con*/
+			#personal a {
+				color: #000;
+			}
+
+			.abc p {
+
+			}
+
+			/*3 - Selector theo thuộc tính của thẻ*/
+			input[type="text"], input[type="password"] {
+				background: #000;
+			}
+			/*4 - Selector theo trạng thái selector*/
+			#a-hover:hover {
+				color: red;
+			}
+			#div-child p:first-child{
+				background: green;
+			}
+
+			#div-child p:last-child {
+				background: yellow;
+			}
+
+			#div-child p:nth-child(2) {
+				background: blue;
+			}
+		</style>
+		<style type="text/css">
+			
+		</style>
+		<!-- 3 - Nhúng từ file .css bên ngoài -->
+		<link rel="stylesheet" href="demo.css" />
+	</head>
+	<body>
+		<p id="p-external">
+			Thẻ p đc css từ file demo.css
+		</p>
+		<div id="div-child">
+			<p>Thẻ p thứ nhất</p>
+			<p>Thẻ p thứ 2</p>
+			<p>Thẻ p thứ 3</p>
+			<p>Thẻ p thứ 4</p>
+		</div>
+
+		<a href="#" id="a-hover">
+			Khi hover qua thẻ sẽ đổi màu
+		</a>
+		<input type="text" value="123" placeholder="Nhập thứ gì đó" />
+
+		<input type="password" value="123" placeholder="Nhập thứ gì đó" />
+
+		<div id="personal">
+			<a href="#">Link</a>
+
+			<div class="abc">
+				<p>Nội dung p</p>
+			<div>
+		</div>
+		<p id="p-paragraph">
+			Đây là nội dung bên trong thẻ p
+		</p>
+		<a href="#" class="a-link">
+			Nội dung bên trong thẻ a
+		</a>
+		<p class="a-link class-new">
+			Nội dung bên trong thẻ p
+		</p>
+		<span>
+			Đây là thẻ span
+		</span>
+
+
+		<!-- Cách nhungs code CSS -->
+		<!-- 1 - Nhúng trực tiếp trong thẻ HTML - nhúng inline trong thẻ HTML -->
+		<a style="color: red">
+			Thẻ này được nhúng trực tiếp CSS
+		</a>
+		
+		<!-- 2 - NHúng inline trong file html --> 
+		<p id="p-inline-html">
+			Thẻ p sử dụng nhúng inline html
+		</p>
+		<style type="text/css">
+			#p-inline-html {
+				background: yellow;
+			}
+		</style>
+
+		<!-- CÁC THUỘC TÍNH TRONG CSS -->
+		<!-- 1 - Background -->
+		<p id="p-background">
+			Thẻ p với css background
+		</p>
+		<style type="text/css">
+			#p-background {
+				height: 400px;
+				background-color: red;
+				background-image: url('rose.jpeg');
+				background-repeat: no-repeat;
+				background-position: center;
+				/*trong css rất hay dùng cú pháp viết tắt*/
+				background: red url('rose.jpeg') no-repeat center;
+			}
+
+			/*2 - Font*/
+			.a-font {
+				font-family: Arial;
+				font-style: italic;
+				font-weight: bold;
+				font-size: 30px;
+			}
+
+			/*3 - Text*/
+			#p-text{
+				color: #ccc;
+				text-align: center;
+				text-decoration: underline;
+				text-transform: uppercase;
+				text-shadow: 5px 6px 8px red;
+			}
+			/*4 - Border*/
+			#p-border {
+				border-color: red;
+				border-style: solid;
+				border-width: 5px;
+				border-radius: 10px;
+				/*cú pháp viết tắt*/
+				/*border: 5px solid red;*/
+			}
+			/*5 - Margin*/
+			#p-margin-1 {
+				background: red;
+				color: #fff;
+				/*margin-top: 60px;
+				margin-left: 40px;
+				margin-right: 20px;
+				margin-bottom: 40px;*/
+				/*cách viết gộp*/
+				/* giá trị thì sẽ là top - right - bottom - left*/
+				/*margin: 10px 40px 30px 10px;*/
+				/*2 giá trị thì sẽ là top-bottom left-right*/
+				/*margin: 30px 20px;*/
+				margin: 40px auto;
+			}
+			/*6 - Padding*/
+			#p-padding {
+				background: yellow;
+				border: 1px solid #000;
+				padding-top: 20px;
+				padding-right: 40px;
+				padding-bottom: 30px;
+				padding-left: 50px;
+				/*cú pháp viết tắt giống hệt margin*/
+				/*padding: 30px 20px;*/
+				/*padding: 40px 30px 20px 10px;*/
+			}
+			/*7 - Width - height*/
+			#width-height {
+				background: green;
+				width: 400px;
+				height: 300px;
+				line-height: 30px;
+				max-width: 500px;
+				/*max-height, min-height, min-width/ */
+			}
+
+			/*8 - Possition*/
+			#div-position-relative {
+				width: 100px;
+				height: 100px;
+				background: pink;
+				position: relative;
+				top: 20px;
+				right: 15px;
+				left: 30px;
+				bottom: 20px;
+			}
+
+			#div-position-absolute {
+				width: 200px;
+				height: 200px;
+				background: red;
+				position: absolute;
+			}
+			#relative {
+				width: 500px;
+				height: 500px;
+				background: pink;
+			}
+			#position-fixed {
+				width: 800px;
+				height: 800px;
+				background: blue;
+				position: fixed;
+				top: 0;
+			}
+		</style>
+		<div id="position-fixed">
+			Thẻ div sử dụng css position fixed
+		</div>
+		<div id="relative">
+			<div id="div-position-absolute">
+				Thẻ div sử dụng css position absolute
+			</div>
+		</div>
+		<div id="div-position-relative">
+			Thẻ div sử dụng css position
+		</div>
+
+		<div id="width-height">
+			Nội dung trong thẻ div <br />
+			Nội dung trong thẻ div <br />
+			Nội dung trong thẻ div <br />
+		</div>
+		<p id="p-padding">
+			Thẻ p sử dụng padding
+		</p>
+
+		<p id="p-margin-1">
+			Nội dung thẻ p1
+		</p>
+		<p id="p-margin-2">
+			Nội dung thẻ p2
+		</p>
+		<p id="p-border">
+			Thẻ p sử dụng css border
+		</p>
+
+		<p id="p-text">
+			Thẻ p sử dụng css text
+		</p>
+
+		<a href="#" class="a-font">
+			Thẻ a sử dụng css font
+		</a>
+	</body>
+
+
+</html>
