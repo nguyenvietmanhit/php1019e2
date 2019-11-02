@@ -1,0 +1,20 @@
+/*import font-face*/
+@font-face {
+	font-family: 'Pacifico';
+	src: url("../fonts/Pacifico.ttf");
+}
+
+/*@font-face {
+	font-family: 'Pacifico 2', sans-serif;
+	src: url("../fonts/Pacifico2.ttf");
+}*/
+.header {
+	background: #2f2f2f;
+	padding: 10px 15px;
+}
+
+.header span {
+	font-size: 40px;
+    color: #fff;
+    font-family: 'Pacifico';
+}

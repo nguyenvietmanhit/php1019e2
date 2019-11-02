@@ -1,0 +1,13 @@
+/* import font sử dụng css @font-face */
+@font-face {
+	font-family: 'Pacifico';
+	src: url('../fonts/Pacifico.ttf');
+}
+
+body {
+	font-family: 'Myriad Pro';
+}
+.bloom-text {
+	font-size: 40px;
+    font-family: 'Pacifico';
+}

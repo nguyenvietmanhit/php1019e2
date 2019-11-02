@@ -14,7 +14,7 @@
     <session id="1126690923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.opened" value="3" />
@@ -116,6 +116,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php1019e2\Day02_CSS\Bai_tap_ve_nha\images" />
       <recent name="C:\xampp\htdocs\php1019e2\Day01_HTML\Bai_tap_ve_nha" />
       <recent name="C:\xampp\htdocs\php1019e2\Day01_HTML\Bai_tap_ve_nha\Danh_sach_nop_bai" />
       <recent name="C:\xampp\htdocs\php1019e2\Day01_HTML\Bai_tap_ve_nha\PhamThuyDuong" />
@@ -145,12 +146,12 @@
       <updated>1572451831102</updated>
       <workItem from="1572451832347" duration="2283000" />
       <workItem from="1572501073297" duration="2538000" />
-      <workItem from="1572658794087" duration="262000" />
+      <workItem from="1572658794087" duration="494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6883000" />
+    <option name="totallyTimeSpent" value="7115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

@@ -1,0 +1,74 @@
+/* CSS BT3 */
+.container {
+	max-width: 600px;
+    border: 2px solid #000;
+    min-height: 300px;
+    margin: 30px auto;
+}
+.mock-1-wrap {
+	border-bottom: 2px solid #000;
+}
+
+.main-content {
+	min-height: 200px;
+/*     background: yellow; */
+    padding: 15px;
+}
+
+.same-item {
+	height: 100px;
+	border: 2px solid;
+}
+
+.pink-item{
+	background: pink;
+}
+
+.blue-item {
+	background: blue;
+}
+
+.col-item {
+	float: left;
+}
+
+.col-md-3 {
+	width: 25%;
+}
+
+.col-md-9 {
+	width: 75%;
+}
+
+.row {
+	display: flex;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.item-content {
+	margin: 0 10px;
+}
+
+.yellow {
+	margin: 0;
+	background: yellow;
+}
+
+/* END CSS BT3 */
+
+
+/* CSS BT 4 */
+/* .bt4 .same-item {
+	text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    height: auto;
+    padding: 50px;
+}
+
+.bt4 .header {
+	padding: 20px;
+} */
+/* END CSS BT 4 */

@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url("../fonts/Pacifico.ttf");
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Myriad Regular', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.header {
+  background: #2f2f2f;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-logo, .header-li {
+  display: inline-block;
+  font-weight: normal;
+}
+
+.header-logo {
+  font-size: 40px;
+  padding: 25px 0;
+}
+
+.header-ul {
+  float: right;
+}
+
+.header-link {
+  color: #fff;
+  padding-left: 40px;
+}
+
+.header-li {
+  margin-top: 60px;
+}
+
+.top-left-heading {
+  margin-top: 0;
+}
+
+.main-top {
+  background: #f1f1f1;
+  padding: 60px 0;
+}
+
+.main-top-item {
+  float: left;
+
+}
+
+.main-top-item .item-content {
+  padding: 0 15px;
+}
+
+.col-md-5 {
+  width: 40%;
+}
+
+.col-md-7 {
+  width: 60%;
+}
+
+.row {
+  display: table;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.top-right-img {
+  height: 220px;
+  width: 100%;
+}
+
+.main {
+  color: #565656;
+}
+
+.top-left-description {
+  line-height: 22px;
+}
+
+.learn-more {
+  background: #f99640;
+  display: inline-block;
+  padding: 6px 30px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.top-left-description-wrap {
+  margin-bottom: 30px;
+}
+
+.learn-more-link {
+  color: #fff;
+}
+
+.main-center {
+  padding: 60px 0;
+}
+
+.col-md-4 {
+  float: left;
+  width: 33.33%;
+}
+
+.main-center .top-left-heading {
+  margin-bottom: 20px;
+}
+
+.main-center .center-content {
+  padding: 0 15px;
+}
+
+.main-center .center-image {
+  background: #2f2f2f;
+  height: 200px;
+}
+
+.center-h3 {
+  color: #303030;
+}
+
+.bottom-content {
+  padding: 0 15px;
+}
+
+.main-bottom {
+  background: #2f2f2f;
+  color: #f3f3f3;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.table-cell p {
+  margin: 0;
+}
+
+.date-time {
+  padding: 5px 10px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.bottom-left-title {
+  padding-left: 15px;
+  vertical-align: top;
+}
+
+.bottom-left-item, .bottom-content-social {
+  margin-bottom: 15px;
+}
+
+.bottom-img-social{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.bottom-text-social {
+  font-size: 16px;
+}
+
+.main-bottom {
+  padding: 30px 0
+}
+
+.footer {
+  color: #0e1d1f;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 11px;
+}
