@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chua bai tap 4 ngay 2</title>
+	<style type="text/css">
+		.container {
+			border: 3px solid #000;
+			padding: 15px;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.header {
+			border: 3px solid #000;
+			padding: 15px 0;
+		}
+
+		.footer {
+			border: 3px solid #000;
+			padding: 10px 0;
+		}
+
+		.sidebar, .main-content {
+			padding: 30px 10px;
+			float: left;
+		}
+
+		.col-md-2 {
+			width: 20%;
+		}
+
+		.col-md-10 {
+			width: 80%;
+		}
+
+		.row {
+			display: flex;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+		.item-content {
+			padding: 40px 10px;
+			border: 3px solid #000;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- HEADER -->
+		<div class="header">
+			HEADER
+		</div>
+		<!-- END HEADER -->
+
+		<!-- MAIN -->
+		<div class="main">
+			<div class="row">
+				<div class="sidebar col-md-2">
+					<!-- đối với cấu trúc hàng - cột nên tạo 1 khối bao lấy nội dung bên trong, chứ chưa vội viết trực tiếp nội dung -->
+					<div class="item-content">
+						SIDEBAR
+					</div>
+				</div>
+				<div class="main-content col-md-10">
+					<div class="item-content">
+						CONTENT
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END MAIN -->
+
+		<!-- FOOTER -->
+		<div class="footer">
+			FOOTER
+		</div>
+		<!-- ENDF FOOTER -->
+	</div>
+
+
+	<!-- xây dựng menu bài 19 ngày 2 -->
+	<style type="text/css">
+		ul {
+			background: gray;
+		}
+		ul li {
+			list-style: none;
+			display: inline-block;
+			padding: 5px 20px;
+			border-right: 1px solid #000;
+		}
+
+		ul li:last-child {
+			border-right: none;
+		}
+		 ul li a {
+		 	color: #fff;
+		 	text-decoration: none;
+		 }
+	</style>
+	<ul>
+		<li>
+			<a href="#">Link 1</a>
+		</li>
+		<li>
+			<a href="#">Link 2</a>
+		</li>
+		<li>
+			<a href="#">Link 3</a>
+		</li>
+		<li>
+			<a href="#">Link 4</a>
+		</li>
+		<li>
+			<a href="#">Link 5</a>
+		</li>
+	</ul>
+</body>
+</html>
