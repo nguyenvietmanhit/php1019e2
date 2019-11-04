@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01_HTML/Bai_tap_ve_nha/~$an_xet_bai_tap_ngay_1_HTML.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,28 +16,129 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="17" />
+          <entry key="html" value="32" />
+          <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="17" />
+          <entry key="HTML" value="32" />
+          <entry key="Image" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="477" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="477" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2__BuiAnhVu_BTVNDay2/Day2/bai1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2__BuiAnhVu_BTVNDay2/Day2/bai6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-765" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_DoanQuangLinh_ngày02/PHP1019E2_DoanQuangLinh_ngày02/bai1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_DoanQuangLinh_ngày02/PHP1019E2_DoanQuangLinh_ngày02/bai6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="80" column="12" lean-forward="true" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Buổi2/PHP1019E2_NguyenHuuHung_Buổi2/Bài1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Buổi2/PHP1019E2_NguyenHuuHung_Buổi2/Bai6.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day2/PHP1019E2_NguyenThiHienTrang_Day2/bai2.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day2/PHP1019E2_NguyenThiHienTrang_Day2/bai1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Ngay01/btvnbuoi1/bai1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_VuThiHoaiLinh_Ngay02/PHP1019E2_VuThiHoaiLinh_Ngay02/bai1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PhiLong/BT2.html" />
+        <option value="$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_DoanQuangLinh_ngày02/PHP1019E2_DoanQuangLinh_ngày02/bai6.html" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -58,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,13 +202,121 @@
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
               <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2__BuiAnhVu_BTVNDay2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2__BuiAnhVu_BTVNDay2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_DoanQuangLinh_ngày02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_DoanQuangLinh_ngày02" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_DoanQuangLinh_ngày02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_NguyenHuuHung_Buổi2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_NguyenHuuHung_Buổi2" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_NguyenHuuHung_Buổi2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_NguyenThiHienTrang_Day2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_NguyenThiHienTrang_Day2" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_NguyenThiHienTrang_Day2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_NguyenThiHienTrang_Ngay01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_NguyenThiHienTrang_Ngay01" type="462c0819:PsiDirectoryNode" />
+              <item name="btvnbuoi1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_VuThiHoaiLinh_Ngay02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_VuThiHoaiLinh_Ngay02" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP1019E2_VuThiHoaiLinh_Ngay02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,10 +327,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php1019e2\Day02_CSS\Bai_tap_ve_nha\DSNB" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day02_CSS\Bai_tap_ve_nha" />
       <recent name="C:\xampp\htdocs\php1019e2\Day02_CSS\Bai_tap_ve_nha\images" />
       <recent name="C:\xampp\htdocs\php1019e2\Day01_HTML\Bai_tap_ve_nha" />
       <recent name="C:\xampp\htdocs\php1019e2\Day01_HTML\Bai_tap_ve_nha\Danh_sach_nop_bai" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day01_HTML\Bai_tap_ve_nha\PhamThuyDuong" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -147,16 +359,17 @@
       <workItem from="1572451832347" duration="2283000" />
       <workItem from="1572501073297" duration="2538000" />
       <workItem from="1572658794087" duration="494000" />
+      <workItem from="1572833570981" duration="9520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7115000" />
+    <option name="totallyTimeSpent" value="16635000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26012793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -201,5 +414,97 @@
     <entry file="file://$PROJECT_DIR$/Day01_HTML/Bai_tap_ve_nha/bitpvnhbui1nguynvnvinh/ok.html" />
     <entry file="file://$PROJECT_DIR$/Day01_HTML/Bai_tap_ve_nha/PHP1019E2__PhamLeVietTu_Buoi1/BTVN/Bai_1.html" />
     <entry file="file://$PROJECT_DIR$/Day01_HTML/Bai_tap_ve_nha/NguyenTuanAnh/day1.html" />
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PhiLong/anh.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PhiLong/BT1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PhiLong/BT2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PhiLong/BT3.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PhiLong/BT4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PhiLong/BT6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2__BuiAnhVu_BTVNDay2/Day2/bai1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2__BuiAnhVu_BTVNDay2/Day2/bai6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_DoanQuangLinh_ngày02/PHP1019E2_DoanQuangLinh_ngày02/bai1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_DoanQuangLinh_ngày02/PHP1019E2_DoanQuangLinh_ngày02/bai6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="80" column="12" lean-forward="true" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Buổi2/PHP1019E2_NguyenHuuHung_Buổi2/Bài1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Buổi2/PHP1019E2_NguyenHuuHung_Buổi2/Bai6.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day2/PHP1019E2_NguyenThiHienTrang_Day2/bai2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day2/PHP1019E2_NguyenThiHienTrang_Day2/bai1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Ngay01/btvnbuoi1/bai1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_VuThiHoaiLinh_Ngay02/PHP1019E2_VuThiHoaiLinh_Ngay02/bai1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
