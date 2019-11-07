@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "QlassikBold_TB";
+    src: url("../fonts/QlassikBold_TB.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+
+input[type=text], input[type=password] {
+    display: block;
+    margin: 10px 0;
+    height: 30px;
+    width: 1200px;
+    border-radius: 5px;
+}
+
+input[type=submit], input[type=reset] {
+    padding: 10px 25px;
+    background: #001fff;
+    color: #fff;
+}
+
+h3 {
+    font-family: 'QlassikBold_TB';
+}
+
+/*CSS for Mobile*/
+/*Khi làm việc với Mobile sẽ có 2 thuộc tính*/
+/*quan trọng max-width và min-width*/
+/*@media (max-width: 425px) {*/
+    /*input[type=text], input[type=password]{*/
+        /*width: 100%;*/
+    /*}*/
+/*}*/
+
+@media (max-width: 768px) {
+    input[type=text], input[type=password]{
+    width: 100%;
+    }
+}
