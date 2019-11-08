@@ -1,0 +1,52 @@
+@font-face {
+	src: url('../fonts/Pacifico.ttf');
+	font-family: 'Pacifico';
+}
+
+body {
+	margin: 0;
+}
+
+.header-wrap {
+	background: #2f2f2f;
+}
+
+.common {
+	padding: 0 50px;
+}
+
+.header-bloom {
+	font-family: Pacifico;
+    color: #fff;
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.header-ul {
+	list-style: none;
+}
+
+.header-ul li {
+	display: inline-block;
+}
+
+.header-ul li a {
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 0 15px;
+	font-family: 'Myriad Pro';
+}
+
+.row {
+	display: flex;
+}
+.col-md-6 {
+	float: left;
+	width: 50%;
+}
+
+.header-menu {
+	margin-top: 8px;
+}
