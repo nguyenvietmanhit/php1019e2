@@ -1,0 +1,58 @@
+body{
+	margin: 0px;
+}
+@font-face{
+	font-family: 'QlassikBold_TB';
+	src: url('fonts/QlassikBlod_TB.otf');
+}
+.Header-item{
+	background: #d2e2e3;
+	height: 121px;
+}
+.Header-content{
+	font-size: 30px;
+	padding: 40px 0px 0px 200px;
+	color: #4a7174;
+	font-family: 'QlassikBold_TB', sans-serif;
+}
+.Main{
+	background: #564033;
+	height: 200px;
+	width: 100%;
+}
+.Footer{
+	background: #b1a38d;
+	height: 629px;
+	width: 100%;
+}
+.Main-content{
+	width: 60%;
+	height: 800px;
+	position: absolute;
+	background: #fff;
+	left: 20%;
+	top: 40%;
+}
+.Main-header{
+	float: left;
+}
+.Main-header ul{
+	background: #89ad3a;
+	margin: 0px;
+	list-style-type: none;
+	float: left;
+}
+.Main-header ul li{
+	text-align: center;
+	display: inline-block;
+}
+.lii{
+	border-right: 1px solid #bbdc75;
+}
+.Main-header ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: arial;
+	font-size: 14px;
+	padding-right: 10px;
+}

@@ -1,0 +1,9 @@
+@font-face {
+	src: url('../fonts/Pacifico.ttf');
+	font-family: "Pacifico";
+}
+
+.header-logo {
+	font-size: 22px;
+	font-family: "Pacifico";
+}

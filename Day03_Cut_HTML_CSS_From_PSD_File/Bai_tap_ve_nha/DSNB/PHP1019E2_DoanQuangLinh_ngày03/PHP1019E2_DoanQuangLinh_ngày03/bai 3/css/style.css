@@ -1,0 +1,108 @@
+@font-face
+{
+	src:url('../fonts/Inconsolata-Regular.ttf');
+	font-family: Inconsolata;
+}
+@font-face
+{
+	src:url('../fonts/PlayfairDisplay-Regular.ttf');
+	font-family: PlayfairDisplay;
+}
+@font-face
+{
+	src:url('../fonts/Ubuntu-Light.ttf');
+	font-family: Ubuntu;
+}
+
+#MINIMO
+{
+	font-family: Inconsolata;
+	font-size: 20px;
+	margin-left: 110px;
+}
+.text-head
+{
+	color: #c0c0c0;
+	font-family:  PlayfairDisplay;
+	font-size: 12px;
+	margin-left: 85px;
+
+}
+.tieude
+{
+	color: #beb8ab;
+	font-family: Ubuntu;
+	font-size: 12px;
+}
+.h2-1
+{
+	font-family: PlayfairDisplay;
+	color: #626262;
+}
+#text-1
+{
+	color: #b6b6b6;
+	font-family:  PlayfairDisplay;
+}
+.img-1
+{
+	display: inline-block;
+}
+.img-2
+{
+	display: inline-block;
+}
+.sign-up
+{
+	background: #f0f0f0;
+	font-family: PlayfairDisplay;
+	height: 300px;
+}
+#BT
+{
+	border-style: solid;
+	border-width: 1px;
+	background: none;
+	color: black;
+	font-size: 17px;
+	height: 40px;
+	width: 120px;
+	margin-top: 100px;
+}
+.button
+{
+	height: 800px;
+	margin-left: 570px;
+}
+.link-2
+{
+	text-decoration: none;
+	margin-left: 70px;
+	font-family: PlayfairDisplay;
+	color: black;
+}
+.main
+{
+	margin-top: 100px;
+}
+.icon
+{
+	margin-left: 70px;
+	vertical-align: middle;
+}
+.icon-fly
+{
+	margin-left: 500px;
+	margin-top: 50px;
+	font-size: 12px;
+}
+.E-mail
+{
+	font-family: PlayfairDisplay;
+	color: #626262; 
+}
+.hr
+{
+	margin-left:500px;
+	width: 250px; 
+}

@@ -1,0 +1,80 @@
+@font-face
+{
+	src:url('../fonts/QlassikBold_TB.otf');
+	font-family: Qlass;
+}
+.header
+{
+	background: #ddedee;
+	font-family: Qlass;
+	height: 80px;
+	font-size: 20px;
+	width: 1400px;
+}
+.header-content
+{
+	margin-left: 200px;
+}
+.backgorundbody-1
+{
+	background: #503c2f;
+	height: 200px;
+	width: 1400px;
+	position: absolute;
+}
+.backgorundbody-2
+{
+	background: #b1a38d;
+	height: 600px;
+	width: 1400px;
+	position: absolute;
+	margin-top: 200px;
+}
+.button-1
+{
+	background: #8aaf3b;
+	display: inline-block;
+	text-decoration: none;
+	width: 189px;
+	height: 40px;
+	border-right: 1px;
+	border-left: 1px;
+	border-style: solid;
+	border-color: white; 
+	color: white;
+}
+.div-BT
+{
+	display: inline-block;
+}
+.main-body
+{
+	position: relative;
+	width: 1200px;
+
+}
+.main-header
+{
+	margin-left: 200px;
+	padding-bottom: 10px;
+	background: white;
+
+}
+.main-bottom
+{
+	background: white;
+	margin-left: 200px;
+}
+.end-link
+{
+	color:#463328;
+	text-decoration: none;
+	border-left: solid;
+	border-width: 1px;
+	padding-left: 2px;
+	margin-right: 2px;
+}
+.END
+{
+	margin-left: 250px;
+}

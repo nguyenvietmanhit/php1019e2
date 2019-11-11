@@ -1,0 +1,118 @@
+@font-face{
+	src: url('../fonts/Inconsolata-Regular.ttf');
+	font-family: 'Inconsolata-Regular'
+}
+@font-face{
+	src: url('../fonts/PlayfairDisplay-Regular.ttf');
+	font-family: 'PlayfairDisplay-Regular'
+}
+@font-face{
+	src: url('../fonts/Ubuntu-Light.ttf');
+	font-family: 'Ubuntu-Light'
+}
+.font-play{
+	font-family: 'PlayfairDisplay-Regular';
+}
+body{
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+.header{
+	padding-left: 60px;
+}
+.miniso{
+	font-family: 'Inconsolata-Regular';
+	font-size: 27px;
+	letter-spacing: 4px;
+	padding: 50px 0px 40px 0;
+	display: inline-block;
+}
+.header-ul{
+	display: inline-block;
+	margin-left: 325px;
+}
+.header-li{
+	display: inline-block; 
+	margin-top: 15px;
+	margin-right: 10px;
+	padding-right: 90px;
+}
+.header-link{
+	text-decoration: none;
+	color: #626262;
+	font-size: 15px;
+}
+.row{
+	margin-left: 130px;
+	display: flex;
+	max-width: 830px;
+}
+.main-content{
+	font-size: 25px;
+	color: #626262;
+}
+.text{
+	font-size: 13px;
+	color: #7d7d7d;
+}
+.img-content{
+	font-size: 13px;
+	font-family: 'Ubuntu-Light';
+	color: #d2cec6;
+}
+.col-1{
+	float: left;
+	padding-right: 60px;
+}
+.col-img{
+	padding-top: 90px;
+	width: 380px;
+}
+
+.center{
+	margin-top: 70px;
+	background: #f0f0f0;
+	padding: 20px 0 50px 0;
+}
+.sign-up{
+	margin-left: 390px;
+	font-size: 25px;
+}
+.icon-fly{
+	margin-left: 390px; 
+}
+.icon{
+	vertical-align: middle;
+}
+.email{
+	font-size: 11px;
+	padding-right: 140px;
+}
+.hr{
+	width: 310px;
+	margin-left: 0px;
+}
+.loadmore{
+	background: #fff;
+  	display: inline-block;
+  	padding: 7px 20px;
+  	border: 1px solid #626262;
+  	margin: 110px 0 500px 480px;
+}
+.link-loadmore{
+	text-decoration: none;
+	color: #707070;
+}
+.last{
+	background: #f0f0f0;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+}
+.last-link {
+	text-decoration: none;
+	color: #000;
+}
+.icon-social{
+	padding-left: 5px;
+}

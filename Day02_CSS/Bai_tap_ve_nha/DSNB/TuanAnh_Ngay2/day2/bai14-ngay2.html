@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bài14</title>
+	<style type="text/css">
+		#hab{
+			background: #6699FF;
+			width: 50%;
+
+		}
+		#content{
+			margin:  25px 15px;
+			background: white;
+			display: inline-block;
+			
+		}
+		.abe{
+			margin-left: 60px; 
+			display: block-inline;
+			clear: both;
+		}
+		.t01, .t02{
+			float: left;
+			padding: 8px 15px;
+			width: 25%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="hab">
+		<h2 style="text-align: center;">Survey Form</h2>
+		<div id="content">
+			<p style="text-align: center;">Let us know how we can improve freeCodeCamp</p>
+			<div class="abe">
+				<div class="t01">*Name:</div>
+				<div class="t02"><input type="text" placeholder="Enter your name"></div>
+			</div>
+			<div class="abe">
+				<div class="t01">*Email:</div>
+				<div class="t02"><input type="text" placeholder="Enter your Email"></div>
+			</div>
+			<div class="abe">
+				<div class="t01">*Age:</div>
+				<div class="t02"><input type="text" placeholder="Age"></div>
+			</div>
+			<div class="abe">
+				<div class="t01">which option best describes your current role:</div>
+				<div class="t02"><select><option>Student</option></select></div>
+			</div>
+			<div class="abe">
+				<div class="t01">How likely is that you would recommend freeCodeCamp to a friend</div>
+				<div class="t02">
+					<input type="radio" name="Selection">Definitely <br>
+					<input type="radio" name="Selection">Maybe <br>
+					<input type="radio" name="Selection">Not sure
+				</div>
+			</div>
+			<div class="abe">
+				<div class="t01">What do you like most in FCC</div>
+				<div class="t02"><select><option>select an option</option></select></div>
+			</div>
+			<div class="abe">
+				<div class="t01">Things that should be improved in the future(Check all that apply</div>
+				<div class="t02">
+					<input type="checkbox">Front-end Projects <br>
+					<input type="checkbox">Back-end Projects <br>
+					<input type="checkbox">Data Visualization <br>
+					<input type="checkbox">Challengers <br>
+					<input type="checkbox">Open Source Community <br>
+					<input type="checkbox">Gitter help roams <br>
+					<input type="checkbox">Videos <br>
+					<input type="checkbox">City meetups <br>
+					<input type="checkbox">Wiki <br> 
+					<input type="checkbox">Forum <br>
+					<input type="checkbox">Additional Courses <br>
+				</div>
+			</div>
+			<div class="abe">
+				<div class="t01">Any comments or Suggestion?</div>
+				<div class="t02"><textarea rows="5" cols="30" placeholder="Enter your comment here..."></textarea></div>
+			</div>
+			
+			<div class="abe">
+				<div class="t01"></div>
+				<div class="t02"><input type="submit" value="Submit" style="background-color: powderblue ;border-radius:5px;" ></div>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

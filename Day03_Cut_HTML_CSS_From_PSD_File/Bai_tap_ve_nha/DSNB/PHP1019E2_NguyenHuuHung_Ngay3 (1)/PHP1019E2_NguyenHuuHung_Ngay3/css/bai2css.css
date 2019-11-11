@@ -1,0 +1,136 @@
+body{
+	margin: 0px;
+}
+@font-face{
+	font-family: 'QlassikBold_TB';
+	src: url('../fonts/QlassikBold_TB.ttf');
+}
+@font-face{
+	font-family: 'georgiai';
+	src: url('../fonts/georgiai.ttf');
+}
+.Header{
+	background: #d2e2e3;
+	height: 121px;
+}
+.Header-content{
+	font-family: 'QlassikBold_TB', sans-serif;
+	font-size: 30px;
+	padding: 40px 0px 0px 21%;
+	color: #4a7174;
+}
+.Main-background{
+	background: #564033;
+	height: 200px;
+}
+.Footer{
+	background: #b1a38d;
+	height: 549px;
+}
+.Main-content{
+	width: 60%;
+	height: 720px;
+	position: absolute;
+	background: #fefae8;
+	left: 20%;
+	top: 150px;
+	text-align: center;
+}
+.item-1 ul{
+	background: #89ad3a;
+	margin: 0px;
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0px;
+	overflow: hidden;
+}
+.item-1 ul li{
+	height: 40px;
+	width: 20%;
+	line-height: 40px;
+	float: left;
+}
+.item-1 .Content-li{
+	border-right: 1px solid #bbdc75;
+	margin-right: -1px;
+}
+.item-1 ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: arial;
+	font-size: 14px;
+	display: block;
+}
+.item-1 ul li a:active{
+	background: #fefae8;
+	color: #000;
+}
+.item-2{
+	padding: 20px 0px;
+}
+.item-2 img{
+	width: 95%;
+	border: 3px solid #e3d8c5;
+}
+.item-3{
+	border-top: 1px solid #e3d7c5;
+	border-bottom: 1px solid #e3d7c5;
+	width: 95%;
+	margin-left: 2.5%;
+	font-family: 'georgiai',sans-serif;
+	padding: 10px;
+}
+.item-3 .font-1{
+	font-style: italic;
+	float: left;
+	font-size: 14px;
+}
+.item-3 .font-2{
+	display: inline-block;
+}
+.item-3 .font-2 a{
+	text-decoration: none;
+	padding: 7px 15px;
+	border-radius: 10px;
+	background: #d79328;
+	color: #fff;
+	font-family: arial;
+}
+.item-4{
+	float: left;
+	width: 45%;
+	padding: 0px 20px;
+	text-align: left;
+}
+.item-4 .p-content{
+	font-size: 14px;
+}
+.item-4 .p-label{
+	color: #7b9d33;
+	font-size: 24px;
+	font-weight: bold;
+}
+.item-4 b{
+	color: #cf8b1f;
+}
+.end ul{
+	list-style-type: none;
+	background: #b1a38d;
+	margin: 0px;
+	padding-left: 21%;
+	overflow: hidden;
+	height: 60px;
+}
+.end ul li{
+	float: left;
+	text-decoration: none;
+	margin: 20px 0px;
+	padding: 0px 5px;
+}
+.end ul .Content-li{
+	border-right: 1px solid #463328;
+}
+.end ul li a{
+	color: #463328;
+	text-decoration: none;
+}

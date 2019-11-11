@@ -1,0 +1,228 @@
+body{
+	margin: 0px;
+}
+@font-face{
+	font-family: 'Pacifico';
+	src: url('../fonts/Pacifico Regular.ttf');
+}
+@font-face{
+	font-family: 'MyriadPro-Blod';
+	src: url('../fonts/MyriadPro-Blod.otf');
+}
+@font-face{
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/Myriad Pro Regular.ttf');
+}
+.header{
+	height: 109.5px;
+	background: #2f2f2f;
+}
+#header-content-1{
+	font-family: 'Pacifico', sans-serif;
+	color: #fff;
+	font-size: 45px;
+	width: 40%;
+	float: left;
+	padding: 0px 150px;
+}
+#header-content-2 ul{
+	list-style-type: none;
+	float: left;
+	padding: 30px 0px;
+	margin-left: -80px;
+}
+#header-content-2 ul li{
+	display: inline-block;
+}
+#header-content-2 ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-family: 'MyriadPro-Blod', sans-serif;
+	font-size: 17px;
+	padding-right: 20px;
+	font-weight: bold;
+}
+.main-1{
+	clear: both;
+	float: left;
+	height: 350px;
+	background: #f1f1f1;
+}
+#main-1-content-1{
+	width: 40%;
+	float: left;
+	padding: 30px 0px  0px 150px;
+}
+#main-1-content-1 #p-font-MyriadPro-Blod{
+	font-family: 'MyriadPro-Blod',sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+}
+#main-1-content-1 #p-font-MyriadPro-Regular{
+	font-family: 'MyriadPro-Regular', sans-serif;
+	font-size: 14px;
+}
+.a-link{
+	background: #f99640;
+	width: 125.94px;
+	height: 30.69px;
+	border-radius: 7px;
+}
+.a-link p a{
+	text-decoration: none;
+	color: #fff;
+}
+.a-link p{
+	padding-top: 5px; 
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'MyriadPro-Regular',sans-serif
+}
+#main-1-content-2{
+	float: left;
+	padding-top: 60px;
+}
+.main-2{
+	clear: both;
+	height: 500px;
+	padding-left: 150px;
+}
+#p-fisrt-main-2{
+	font-weight: bold;
+	font-family: 'MyriadPro-Blod',sans-serif;
+	font-size: 26px;
+	padding-top: 40px;
+}
+.main-2-item{
+	width: 25%;
+	float: left;
+	padding-right: 80px;
+}
+.main-2-content-1{
+	width: 100%;
+	height: 195px;
+	background: #2f2f2f;
+}
+.main-2-content-2 .p-2{
+	font-family: 'MyriadPro-Blod',sans-serif;
+	font-weight: bold;
+}
+.main-2-content-2 .p-3{
+	font-family: 'MyriadPro-Regular',sans-serif;
+	font-size: 14px;
+}
+.main-3{
+	clear: both;
+	height: 344.22px;
+	background: #2f2f2f;
+	padding-left: 150px;
+}
+.main-3-p-labell{
+	font-weight: bold;
+	font-family: 'MyriadPro-Blod',sans-serif;
+	font-size: 21px;
+	color: #fff;
+	padding-top: 30px;
+}
+.main-3-p-label{
+	font-weight: bold;
+	font-family: 'MyriadPro-Blod',sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 30px;
+}
+.main-3-content{
+	display: inline-block;
+	float: left;
+}
+.main-3-item-1{
+	width: 25%;
+	float: left;
+	padding-right: 10px;
+	clear: both;
+	padding-right: 100px;
+}
+.main-3-item-1 .div-1{
+	width: 48.72px;
+	background: #fff;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	padding: 5px;
+	clear: both;
+}
+.main-3-item-1 .div-1 .font-1{
+	padding-top: 10px;
+	font-size: 12.18px;
+	font-family: 'my',sans-serif;
+	text-align: center;	
+}
+.main-3-item-1 .div-1 .font-2{
+	font-size: 18,27px;
+	font-weight: bold;
+	font-family: 'MyriadPro-Blod',sans-serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.main-3-item-1 .div-2{
+	clear: both;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+}
+.main-3-item-1 .div-2 .div-1_1{
+	font-weight: bold;
+	font-family: 'MyriadPro-Blod',sans-serif;
+	font-size: 14.47px;
+	color: #fff;
+}
+.main-3-item-1 .div-2 .div-1_2{
+	font-family: 'MyriadPro-Regular',sans-serif;
+	font-size: 12.18px;
+	color: #e1e1e1;
+	display: inline-block;
+}
+.main-3-item-2{
+	display: inline-block;
+	float: left;
+	padding-right: 100px;
+	width: 30%;
+}
+.main-3-item-2 .main-3-p{
+	font-family: 'MyriadPro-Regular',sans-serif;
+	font-size: 12.18px;
+	color: #e1e1e1;
+	display: inline-block;
+}
+.main-3-item-3{
+	display: inline-block;
+	float: left;
+}
+.main-3-item-3 .item{
+	clear: both;
+}
+.main-3-item-3-img{
+	float: left;
+ 	width: 26.06px;
+ 	height: 26.03px;
+ 	padding: 5px 0px;
+}
+.main-3-item-3-div{
+	padding: 7px 20px;
+	float: left;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'MyriadPro-Regular',sans-serif;
+}
+.end{
+	clear: both;
+	height: 50px;
+	background: #fff;
+}
+.end .the-end{
+	text-align: center;
+	font-family: 'MyriadPro-Regular',sans-serif;
+	font-size: 12px;
+	padding: 20px;
+}
+
+
