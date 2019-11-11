@@ -1,0 +1,85 @@
+/* CSS BT2 slide trên lớp */
+.bt2 .header {
+	background: #5555e8;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.bt2 .title-login::after {
+	margin: 10px auto;
+    content: '';
+    border-top: 3px solid #a2a6d5;
+    width: 50px;
+    display: block;
+}
+
+.bt2 .not-account {
+	margin-top: 10px;
+    display: inline-block;
+}
+
+.bt2 .sign-up {
+	text-decoration: underline;
+    cursor: pointer;
+}
+
+.bt2 .main {
+	padding: 50px;
+}
+
+.bt2 input[type=checkbox] {
+	transform: scale(1.6);
+}
+
+.bt2 .form-check-label {
+	margin-left: 12px;
+}
+
+.bt2 button[type=submit] {
+	margin: 30px 0;
+    border-radius: 0;
+}
+
+.bt2 form {
+	border-bottom: 1px solid #ccc;
+}
+
+.bt2 .footer {
+	padding: 0 50px;
+    margin-top: -30px;
+    padding-bottom: 20px;
+}
+
+.bt2 .container {
+	max-width: 500px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    padding: 0;
+}
+
+
+/* CSS BT5 ngay 4 */
+.bt5 .avatar {
+	background: #000;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.bt5 .content-wrap {
+	border: 1px solid #ccc;
+    padding: 0 15px 25px 15px;
+}
+
+.bt5 .link {
+	text-decoration: underline;
+    background: #ccc;
+    padding: 0 10px 20px 0;
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+	.description {
+		color:  red;
+	}
+}
