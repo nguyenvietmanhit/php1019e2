@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="" />
+    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +14,7 @@
     <session id="1126690923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.opened" value="7" />
@@ -56,60 +58,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day01_HTML/Bai_tap_ve_nha/Danh_sach_nop_bai/PHP1019E2_Nguyễn văn Hển_day1/btapvn/bai1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/NguyenThiVanAnh_Ngay2/bai1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day04_Bootstrap/Code_demo_tren_lop/index.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day03_Cut_HTML_CSS_From_PSD_File/Code_demo_tren_lop/chua_bt_4_ngay2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2__PhamLeVietTu_Buoi2.ra/Buoi_2/Bai_1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2__PhamLeVietTu_Buoi2.ra/Buoi_2/Bai_6.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/TuanAnh_Ngay2/day2/bai7_ngay2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -185,13 +142,6 @@
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
               <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="Danh_sach_nop_bai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -204,13 +154,6 @@
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
               <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day02_CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
@@ -259,6 +202,23 @@
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day04_Bootstrap" type="462c0819:PsiDirectoryNode" />
               <item name="Code_demo_tren_lop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day04_Bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="Slide_bai_giang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day05_FontAwesome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day05_FontAwesome" type="462c0819:PsiDirectoryNode" />
+              <item name="Slide_bai_giang" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -312,15 +272,16 @@
       <workItem from="1572833570981" duration="12787000" />
       <workItem from="1573188187795" duration="1541000" />
       <workItem from="1573437759321" duration="2277000" />
-      <workItem from="1573450906640" duration="4449000" />
+      <workItem from="1573450906640" duration="7977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28169000" />
+    <option name="totallyTimeSpent" value="31697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2782516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -441,13 +402,6 @@
     <entry file="file://$PROJECT_DIR$/Day04_Bootstrap/Code_demo_tren_lop/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day03_Cut_HTML_CSS_From_PSD_File/Code_demo_tren_lop/chua_bt_4_ngay2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2__PhamLeVietTu_Buoi2.ra/Buoi_2/Bai_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -466,6 +420,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day03_Cut_HTML_CSS_From_PSD_File/Code_demo_tren_lop/chua_bt_4_ngay2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript ngay 1</title>
+    <script type="text/javascript" src="js/javascript_1.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+<!--Trình bày cách nhúng Javascript-->
+<!--1 - Inline HTML-->
+<a href="#" onclick="var a = 5; document.write(a)">
+    Click để show popup
+</a>
+<!--2 - Nhúng trong file HTML-->
+<form onsubmit="return abcd()" action="">
+    <input type="text" id="abc" value="1121" />
+    <input type="text" id="abc1" value="1121" />
+    <input type="submit" value="Submit" />
+</form>
+<script type="text/javascript">
+    // alert('Hello Manh - Nhúng trong file HTML');
+</script>
+<!--3 - Nhúng từ file .js bên ngoài-->
+
+
+<script type="text/javascript">
+    //
+    <!--Chương trình JS đầu tiên-->
+    //
+    <!--in ra dòng text Hello World trên màn hình-->
+    document.write("Hello, World");
+
+    function abcd() {
+        document.write(document.getElementById('abc').value);
+        console.log(document.getElementById('abc1').value);
+    }
+
+    var name = 'Mạnh';
+    // let abc = 1;
+    var age = 30;
+    var isTrue = true;
+    document.write("<br />");
+    document.write("Tên của bạn: " + name);
+    document.write("<br />");
+    document.writeln(["Tuổi của bạn", "abc"]);
+    // document.write("<br />");
+    document.writeln(["<span>p1</span>", "<span>p2</span>"]);
+
+    var country = "Việt NAm";
+    document.write
+    ("<p style='color: red'>" + country + "</p>");
+
+    // var abc123 = csads121
+    //khai báo biến sai
+    // var 1abc = '1';
+    // var abc#123;
+    // _
+
+    // HẰNG
+    const PI = 3.14;
+    document.write("<br />");
+    document.write("Giá trị của hằng PI = " + PI);
+    // PI  = 1;
+
+    //Kiểu dữ liệu của biến: 7 kiểu
+    // 1 - Number
+    // php: int, float/double
+    var number1 = 1234;
+    var number2 = -1121234;
+    var number3 = -1.12121;
+    // document.write("<br />");
+    // document.write('<pre>');
+    document.write("<br />");
+    document.writeln("Number1 = " + number1);
+    document.write("<br />");
+    document.writeln("Number2 = " + number2);
+    document.write("<br />");
+    document.writeln("Number3 = " + number3);
+    document.write("<br />");
+    //có thể sdung hàm typeof để kiểm tra kiểu
+    // dữ liệu của biến
+    console.log
+    ("bien number 1 co kieu du lieu = " + typeof number1);
+    // 2 - String
+    var string1 = 'abc';
+    var string2 = '123';
+    var string3 = "abc123";
+    document.write("string1 = " + string1);
+    document.write("string2 = " + string2);
+    document.write("string3 = " + string3);
+    //3 - Boolean
+    //chỉ bao gồm đúng 2 giá trị là true và false
+    var booleanTrue = true;
+    var booleanFalse = false;
+    document.write("<br />");
+    document.write("booleanTrue = " + booleanTrue);
+    document.write("<br />");
+    document.write("booleanFalse = " + booleanFalse);
+    document.write("<br />");
+
+    // 4 - null
+    //chỉ có duy nhất 1 giá trị là null
+    var varNull = null;
+    document.write("varNull = " + varNull);
+    document.write("<br />");
+
+    // 5 - undefined
+    //chỉ có 1 giá trị duy nhất là undefined
+    var varUndefined = undefined;
+    console.log(typeof varUndefined);
+    document.write("<pre>");
+    // 6 - array
+    //Chứa danh sách các kiểu dữ liệu
+    var varArray = [1, 'abc', true, null, undefined];
+    document.writeln("Phần tử đầu tiên = " + varArray[0]);
+    document.writeln("Phần tử thứ ba = " + varArray[2]);
+    console.log(varArray);
+
+    //7 - object
+    // Mô tả 1 đối tượng
+    var varObject = {
+        name: 'MẠnh',
+        age: 15,
+        varBoolean: true
+    }
+    document.writeln("Name của object = " + varObject.name);
+
+    function sum(number1, number2) {
+        var sumFunction = number1 + number2;
+
+        // document.writeln("Tổng của 2 số = " + sumFunction);
+        // Chú ý với lệnh return
+        //1 - khi gặp lệnh return, các lệnh ddwangf sau nó
+        // sẽ không được chạy
+        // 2 - KHi có lệnh return, hàm sẽ tương đương như 1 biến
+        // , có thể được sử dụng cho các xử lý logic khác
+        return sumFunction;
+        document.writeln("Lệnh chạy sau return");
+    }
+
+    //Sau khi định nghĩa ra hàm, cần gọi hàm
+    //  để sử dụng
+    var sum1 = sum(1, 2);
+    document.writeln("Tổng của 2 số = " + sum1);
+
+    //BT: tự định nghĩa 1 hàm, hiển thị ra tên và tuỏi
+    // của bạn
+    function display(name, age) {
+        document.writeln("TÊn: " + name);
+        document.writeln("Tuổi: " + age);
+    }
+
+    display("Long", 23);
+    display("Vỹ", 24);
+
+
+    //BT: viết hàm tính tích của 3 số cho trước
+    //Kí hiệu của phép nhân trong JAvsacript là *
+    function multiple(number1, number2, number3) {
+        var multipleValue = number1 * number2 * number3;
+
+        return multipleValue;
+    }
+
+    var multiple = multiple(1, 2, 3);
+    document.writeln("Tích của 2 sô = " + multiple);
+
+    //Thao tác sẵn 1 số hàm hữu ích trong slide
+    function displayAlert(){
+        alert("Tên: MẠnh, Tuổi: 30");
+    }
+</script>
+
+<a href="#" onclick="displayAlert()" >
+    Click để show alert
+</a>
+
+<!--BTVN: Thao tác lại với toàn bộ sự kiện
+ được liệt kê trong slide-->
+</body>
+</html>

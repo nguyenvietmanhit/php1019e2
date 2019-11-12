@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo Javacscript</title>
+</head>
+<body>
+	<!-- Có 3 cách nhúng -->
+	<!-- 1 - Nhúng inline trong thẻ html, phải thông qua sự kiện của JS -->
+	<p onclick="document.write('Nhúng inline JS');">
+		Đây là thẻ p sử dụng cú pháp nhúng inline
+	</p>
+
+	<!-- 2 - Nhúng trong file html -->
+	<script type="text/javascript">
+		var name = "Manh";
+		console.log(name);
+	</script>
+
+	<!-- 3 - Nhúng từ file .js bên ngoài -->
+	<script src="js/main.js"></script>
+</body>
+</html>

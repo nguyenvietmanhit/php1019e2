@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Chương trình javascript đầu tiên</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("Hello world");
+
+		// 1 - Biến trong javascript
+		document.write("<h1>Biến</h1>");
+		var name;
+		var name, age = 29;
+		var address = "Hà nội";
+		address = "Địa chỉ khác";
+		var _name;
+
+		//chữa ví dụ
+		var username = 'nvmanh';
+		var password = 123456;
+		var undefine = null;
+
+		var name = "Mạnh";
+		var age = 29;
+		var address = "Hoài đức - Hà Nội";
+
+		document.write("<b>Tên của bạn: " + name + "</b>");
+		document.write('<br />');
+		document.write("<b>Tuổi của bạn: " + age + "</b>");
+		document.write('<br />');
+		document.write("<b>Địa chỉ của bạn: " + address + "</b>");
+
+		// 2 HẰng
+		// constanst
+		const AGE = 13;
+		const NAME = 'Manh', ADDRESS = 'Hà Nội';
+		//nếu cố tình gán lại giá trị cho hằng thì sẽ báo lỗi
+		// AGE = 15;
+		document.write("<h1>HẰng</h1>");
+		document.write("Tuổi: " + AGE);
+		document.write("<br />");
+		document.write("Name: " + NAME);
+		document.write("<br />");
+
+		// KIỂU DỮ LIỆU
+		document.write("<h1>Kiểu dữ liệu</h1>");
+		// 1 - Number - kiểu dữ liệu nguyên thủy
+		var number1 = 1;
+		var number2 = 1.23;
+		var number1 = -1;
+		document.write("Kiểu dữ liệu của biến number1 đang là: " + typeof number1);
+
+		// 2 - String - kiểu dữ liệu nguyên thủy
+		var string1 = "String 1";
+		var string2 = 'String2';
+		var string3 = "String 3 'string'";
+		document.write("<br />");
+		document.write("Kiểu dữ liệu của biến string1 đang là: " + typeof string1);
+
+		// 3 - Boolean - kiểu dữ liệu nguyên thủy
+		// chỉ có đúng 2 giá trị là true và false viết thường
+		var boolean1 = true;
+		var boolean2 = false;
+		// var boolean3 = TRUE;
+		document.write("<br />");
+		document.write("Kiểu dữ liệu của biến boolean3 đang là: " + typeof boolean3);
+
+		// 4 - undefined 
+		var undefined1;
+		document.write("<br />");
+		document.write("Kiểu dữ liệu của biến undefined1 đang là: " + typeof undefined1);
+
+		// 5 - array
+		var arr = [1, 'string', true, [1, 2]];
+		document.write("<br />");
+		document.write("Kiểu dữ liệu của biến arr đang là: " + typeof arr);
+
+		// 6 - object
+		var obj = {
+			name: 'Manh',
+			age: 17,
+			arr: [1, 2, 'string']
+		};
+		document.write("<br />");
+		document.write("Kiểu dữ liệu của biến obj đang là: " + typeof obj);
+
+		// HÀM - PHƯƠNG THỨC
+		// khai báo hàm sử dụng từ khóa function, theo sau là tên hàm tự đặt và danh sách tham số nếu có trong cặp ngoặc tròn
+		/*
+			Hàm không có tham số truyền vào
+		*/
+		function funtion_add() {
+			document.write("<p>Show nội dung trong hàm add</p>");
+		} 
+		//hàm chỉ đc sử dụng khi đc gọi
+		funtion_add();
+
+		// hàm có tham số truyền vào
+		function sum(a, b) {
+			var sum = a + b;
+			document.write("Tổng 2 số là: " + sum);
+		}
+
+		//gọi hàm có tham số, cần truyền tham số tương ứng khi khai báo hàm
+		sum(1, -2);
+		sum(5, 5);
+
+		//hàm sử dụng lệnh return
+		// return có tác dụng lưu lại giá trị cho hàm,  đồng thời có tác dụng thoát khỏi hàm, các lệnh sau lệnh return nếu có sẽ không được thực thi
+		function multiple(a, b) {
+			var multiple = a * b;
+
+			return multiple;
+
+			document.write("Lệnh sau return sẽ không chạy");
+		}
+
+		//gọi hàm
+		var result = multiple(2, 3);
+		document.write("<br />");
+		document.write("Multiple = " + result);
+		document.write("<br />");
+		result += 5;
+		document.write("Giá trị mới sau khi cộng tích lũy với 5 = " + result);
+
+		// hàm khởi tạo luôn các giá trị cho tham số
+		function default_param(number1 = 5, number2 = 10) {
+			var sum = number1 + number2;
+
+			return sum;
+		}
+
+		//gọi hàm
+		var sum2 = default_param();
+		var sum3 = default_param(3, 6);
+		document.write("Tổng của 2 số = " + sum2);
+		document.write("Tổng sum3 = " + sum3);
+
+		// alert('Đây là cảnh báo dạng popup');
+		//hàm prompt cho phép nhập dự liệu và lưu vào biến dưới dạng popup
+		// var namePrompt = prompt("Nhập tên của bạn:");
+		// var agePrompt = prompt("Nhập tuổi của bạn: ");
+		// document.write("Tên của bản sử dung hàm prompt:" + namePrompt);
+		// document.write("<br />");
+		// document.write("Tuổi của bản sử dung hàm prompt:" + agePrompt);
+		document.write("<br />");
+		//hàm confirm()
+		// var isDelete = confirm("Bạn có muốn xóa không?");
+		// if (isDelete == true) {
+		// 	document.write("<p>Đã xóa!</p>");
+		// }
+		// else {
+		// 	document.write("<p>Không thực hiện gì cả</p>");
+		// }
+	</script>
+
+	<p style="background: yellow" id="p-js">
+		Đây là nội dung trong thẻ p với id là p-js
+	</p>
+	<p style="background: blue" id="p-blue" title="new">
+		Đây là nội dung trong thẻ p với id là p-blue
+	</p>
+	<script type="text/javascript">
+		//lấy nội dung bên trong của thẻ dựa vào id của thẻ
+		//1 - sử dụng hàm document.getElementById('id-phần-tử').innerHTML
+		document.getElementById('p-js').innerHTML = "<h1>Nội dung mới trong thẻ p</h1>";
+
+		//2 - sử dụng hàm document.getElementById('id-phần-tử').innerText
+		document.getElementById('p-blue').innerText = "<b>New text</b>";
+		console.log(document.getElementById('p-blue'));
+	</script>
+
+<a href="#" onclick="alert('Bạn vừa click link Google');">
+	Click để show popup
+</a>
+
+<br />
+<a href="http://google.com.vn" onclick="alert('Click Google'); return false;">
+Click google
+</a>
+
+<p onmouseenter="handleHover();" 
+onmouseleave="handleLeave()" 
+id="p-hover" style="background: blue">
+	Thẻ p với sự kiện hover
+</p>
+	<script type="text/javascript" >
+		// SỰ KIỆN
+		function handleHover() {
+			document.getElementById('p-hover').style = "background: red";
+		}
+
+		function handleLeave() {
+			document.getElementById('p-hover').style = "background: blue";
+		}
+	</script>
+
+	<form id="form" onsubmit="return handleSubmit()">
+		Name: <input type="text" name="username" placeholder="Nhập username" id="username" />
+		<br />
+		Age: <input type="number" name="age" value="29" id="age" />
+		<br />
+		<input type="submit" value="Get info" />
+	</form>
+
+	<p id="result">
+		Nội dung sau khi submit form hiển thị ở đây
+	</p>
+
+	<script type="text/javascript">
+		function handleSubmit() {
+			var name = document.getElementById('username').value;
+			var age = document.getElementById('age').value;
+
+			var result = '';
+			result += "Name: " + name;
+			result += "<br />";
+			result += "Age: " + age;
+
+			document.getElementById('result').innerHTML = result;
+			// document.write("Name: " + name);
+			// document.write('<br />');
+			// document.write("Age: " + age);
+			return false;
+		}
+	</script>
+</body>
+</html>

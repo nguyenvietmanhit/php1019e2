@@ -1,0 +1,1 @@
+document.write("Đoạn code này được nhúng bởi file main.js");
