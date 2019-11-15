@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo Javascript Ngay 6</title>
+</head>
+<body>
+<!-- CÁch khai báo JS - giống hệt CSS-->
+<!-- Chú ý: nên đặt mã JS mà các bạn viết ra ở cuối trang, cụ
+thể là trước thẻ đóng </body> -->
+<!-- 1 - Nhúng inline trong thẻ HTML thông qua tên sự kiện như click, hover ... -->
+<p onclick="alert('Hello Javascript')">
+	Click vào thẻ p này để xem kết quả
+</p>
+<!-- <p onmouseenter="alert('Hover qua the p')">
+	Rê chuột qua thẻ p để xem hiệu ứng
+</p> -->
+<!-- 2 - Nhúng trong file HTML thông qua cặp thẻ script -->
+<script type="text/javascript">
+	document.write("Hello Javascript 2");
+</script>
+
+<!-- 3 - Sử dụng file .js để lưu  -->
+<script type="text/javascript" src="main.js"></script>
+
+<script type="text/javascript">
+	//chương trình javascript đầu tiên
+	document.write("<h1>Hello, World</h1>");
+	document.write("<h1>Các khái niệm cơ bản của lập trình</h1>");
+	// 1 - Biến trong Javascript
+	var name; 
+	var age = 15;
+	var name1, name2, name = "abc";
+	//các khai báo biến sai
+	// var 1abc, abc$^ads, if;
+	var $abc;
+	var name, namE;
+	//toán tử nối chuỗi trong javascipt là toán tử +
+	var name = "Mạnh";
+	document.write("Tên của tôi là: " + name);
+
+	var username = "nvmanh";
+	var password = 123456;
+	var undefined = null;
+
+	var name = "Mạnh";
+	var age = 29;
+	var address = "Hà Nội";
+	document.write("Tên của bạn là: " + name + "<br />");
+	document.write("Tuổi của bạn là: " + age + "<br />");
+	document.write("Địa chỉ của bạn là: " + address + "<br />");
+
+	// 2 - Hằng
+	//dùng từ khóa const, tên hằng nên viết hoa
+	const AGE = 15;
+	document.write("Hằng AGE đang có giá trị là: " + AGE);
+	//cố gán lại giá trị cho hằng là sai
+	// AGE = 13;
+	// document.write("Hằng AGE sau khi gán giá trị là: " + AGE);
+
+	// 3 - Kiểu dữ liệu trong Javascript
+	// Kiểu số - Number
+	var number1 = 123;
+	var number2 = 1.23;
+	//sử dụng hàm console.log để debug, sẽ hiển thị trên tab console
+	// của trình duyệt
+	console.log("Số number1 đang có giá là: " + number1);
+	console.log("Số number1 đang có kiểu dữ liệu là: " + typeof number1);
+
+	// Kiểu chuỗi - string
+	var name = "Mạnh";
+	var address = 'Ha Noi';
+	document.write("Biến name có kiểu dữ liệu là: " + typeof name);
+
+	// kiểu boolean - true/false
+	// nó chỉ gồm đúng 2 giá trị là true và fasle viết thường nhé
+	var is_true = true;
+	var is_false = false;
+	document.write("Biến is_true có kiểu dữ liệu là: " + typeof is_true);
+
+	//kiểu undefined
+	//khi chỉ khai báo biến mà ko gán trị cho nó
+	var x1;
+	document.write(typeof x1);
+
+	//kiểu mảng - array
+	//js sẽ xử lý mảng như là 1 object
+	var arr1 = [1, "abc", true, [1, 2]];
+	document.write(typeof arr1);
+
+	//đối tượng - object
+	var obj1 = {
+		name: "Manh",
+		age: 29,
+		study: function() {
+			document.write("Studying");
+		}
+	}
+	document.write(typeof obj1);
+
+	document.write("<h1>Hàm - Function</h1>");
+
+//khai báo hàm
+function display() {
+	document.write("Đây là nội dung bên trong function");
+} 
+//gọi hàm
+display();
+
+//phân loại hàm
+// - Hàm có sẵn
+// document.write(""), alert()
+// - Hàm tự định nghĩa
+// Hàm có tham số
+// function displayName() {
+// 	document.write("Tôi là Trang");
+// }
+// displayName();
+// function displayName2() {
+// 	document.write("Tôi là Quang Linh");
+// }
+function displayName(name) {
+	document.write("Tôi tên là: " + name);
+}
+
+displayName('Trang');
+displayName('Quang Linh');
+displayName('Lập');
+
+//khai báo hàm có tham số và tham số được khởi tạo giá trị mặc định
+function sum(number1 = 1, number2 = 5) {
+	var sum = number1 + number2;
+	document.write("Tổng 2 số = " + sum);
+}
+sum(2, 3);
+sum();
+
+//hàm có giá trị trả về
+//sử dụng return return
+function sum1(number1, number2) {
+	var sum = number1 + number2;
+
+	return sum;
+	//lệnh sau return sẽ không được chạy
+	document.write("Có chạy không?");
+}
+
+var sum = sum1(1, 2); //var sum  = 3
+document.write("Giá trị sum = " + sum);
+
+//1 số hàm có sẵn trong javascript
+document.write("Document write");
+console.log("console.log");
+// alert("Alert");
+// var number1 = prompt("Nhập vào số a");
+// var number2 = prompt("Nhập vào số b");
+// var sum = number1 + number2;
+// document.write("Tổng 2 số là: " + sum);
+// var is_confirm = confirm("Có chắc chắn muốn xóa không?");
+// if (is_confirm == true) {
+// 	document.write("Thực hiện xóa");
+// }
+// else {
+// 	document.write("Không làm gì cả");
+// }
+
+</script>
+<p id="p-id">
+	Thẻ p
+	<a style="color: red">Thẻ a</a>
+</p>
+<script type="text/javascript">
+	// lấy nội dung thẻ p với id = p-id vừa khai báo
+	// var content_p = document.getElementById('p-id').innerHTML;
+
+	//lấy nội dung
+	var obj_p = document.getElementById('p-id');
+	var content_p = obj_p.innerHTML;
+	document.write("Nội dung thẻ p vừa lấy được = " + content_p);
+
+	var content_p_text = obj_p.innerText;
+	document.write("<br />Nội dung thẻ p lấy theo text = " + content_p_text);
+
+	//set nội dung
+	// obj_p.innerHTML = "<b>Nội dung thẻ p mới</b>";
+	obj_p.innerText = "<b>Nội dung thẻ p mới</b>";
+
+	document.write("<h1>Sự kiện trong Javascript</h1>");
+
+	//các cách gọi sự kiện trong javascript
+	// 1 - gọi trực tiếp trong thẻ HTML
+</script>
+<select onchange="alert('selected')">
+	<option>Name 1</option>
+	<option>Name 2</option>
+	<option>Name 3</option>
+</select>
+
+<p id="p-click">
+	Thẻ p sử dụng sự kiện theo cách 2
+</p>
+<script type="text/javascript">
+	var obj_p = document.getElementById('p-click');
+	//gán sự kiện cho đối tượng vừa tìm dược
+	function handleClick() {
+		alert("Clicked!");
+	}
+	//truyền hàm theo kiểu callback - truyền tham số lại là 1 hàm
+	// khác
+	//giải thích code bên dưới:
+	// sẽ chờ sự kiện click chạy xong thì mới chạy hàm handleClick
+	// cách 1: viết tách các hàm
+	 // obj_p.addEventListener('click', handleClick);
+	 // cách 2: viết gộp luôn, nên sử dụng cách thứ 2
+	obj_p.addEventListener('click', function() {
+		alert("123");
+	})
+</script>
+<h1>Thực hành</h1>
+<form action="" method="post" onsubmit="return handleSubmit();">
+	Họ tên: 
+	<input id="name" type="text" value="" placeholder="Nhập tên của bạn" /> <br />
+	Tuổi:
+	<input id="age" type="number" placeholder="Nhập tuổi của bạn"> <br />
+	<input type="submit" value="Hiển thị thông tin" />
+</form>
+<div id="result" style="color: green">
+	
+</div>
+<script type="text/javascript">
+	function handleSubmit() {
+		//lấy ra thông tin các đối tượng tên và tuổi với id tương ứng
+		var obj_name = document.getElementById('name');
+		var name = obj_name.value;
+		var obj_age = document.getElementById('age');
+		var age = obj_age.value;
+		//thực hiện hiển thị ra màn hình
+		var obj_result = document.getElementById('result');
+		//tạo biến kết quả 
+		var string = "Tên vừa nhập: " + name + "<br />";
+			string = string + "Tuổi vừa nhập: " + age;
+			//hiển thị vào div với id result đang chờ sẵn
+		obj_result.innerHTML = string;
+
+		//trả về giá trị false để ngăn ngừa form submit
+		return false;
+	}
+</script>
+</body>
+</html>

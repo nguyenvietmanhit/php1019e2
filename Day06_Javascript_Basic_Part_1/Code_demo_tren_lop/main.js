@@ -1,0 +1,1 @@
+document.write("Code js được nhúng từ file bên ngoái");
