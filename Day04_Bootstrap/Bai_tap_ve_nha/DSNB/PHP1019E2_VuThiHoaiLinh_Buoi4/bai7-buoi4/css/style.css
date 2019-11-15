@@ -1,0 +1,68 @@
+@media (max-width: 767px) {
+	.description {
+		color:  red;
+	}
+}
+.bt7 .container {
+	width: 767px;
+    /*margin: 30px auto;*/
+    border: 1px solid #0B3861;
+    padding: 0px;
+}
+.bt7 .header-1 {
+	
+	border: 1px solid #a3e9e1;
+	background: #0a7b67;
+	display: flex;
+	color: #fff;
+
+}
+.bt7 .header-2{
+	text-align: center;
+	
+	padding: 10px;
+	background: #009682;
+	color: #fff;
+	font-size: 30px;
+}
+
+.bt7 .header-3 {
+	
+	padding-left: 735px;
+	font-size: 30px;
+	
+}
+.bt7 .main-1 {
+    text-align: center;
+    background: #019589;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.bt7 .main-p{
+	margin-top:10px;
+	margin-left:5px; 
+}
+.bt7 .main-2 img{
+	
+	padding: 10px 0px 5px 0px;
+	width: 767px;
+}
+
+.bt7 .footer {
+    padding: 30px 105px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.icon-bar a {
+    float: left;
+    /* width: 33.333%; */
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 15pxpx;
+    margin: 0px 80px;
+}

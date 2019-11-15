@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai-1</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/> 
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  
+ <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body class="bt1">
+	<form>
+	<div class="container">
+		<h1>Job Application With Resume Upload</h1>
+		<h2>Contact Information</h2>
+	<div class="form-row">
+		<!-- Firstname -->
+    	<div class="form-group col-md-6">
+      		<label for="inputFirstname">Firstname*</label>
+      		<input type="firstname" class="form-control" id="inputFirtsname" >
+    	</div>
+    	<!-- lastname -->
+    <div class="form-group col-md-6">
+      <label for="inputLastname">Lastname*</label>
+      <input type="lastname" class="form-control" id="inputLastname">
+    </div>
+  </div>
+	<!-- email -->
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email*</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" >
+    </div>
+  </div>
+  <!-- Phone -->
+  <div class="form-group row">
+    <label for="inputPhone" class="col-sm-2 col-form-label">Phone*</label>
+    <div class="col-sm-10">
+      <input type="phone" class="form-control" id="inputPhone">
+    </div>
+  </div>
+  <!-- radio -->
+  <!-- <fieldset class="form-group"> -->
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Are you willing to relocate?</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            No
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          <label class="form-check-label" for="gridRadios3">
+            Not sure
+          </label>
+        </div>
+      </div>
+    </div>
+  <!-- </fieldset> -->
+  <div class="form-group">
+    <label for="exampleFormControl">Example file input</label><br>
+    <input type="file" class="form-control" id="exampleFormControl">
+  </div>
+
+
+  <div class="form-group row">
+    <label for="input" class="col-sm-2 col-form-label">Last company you worked for</label>
+    <div class="col-sm-10">
+      <input type="company" class="form-control" id="input" >
+    </div>
+  </div>
+<!-- Comments -->
+	<div class="form-group">
+    	<label for="exampleFormControlTextarea1">Comments</label>
+    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  	</div>
+  <!-- submit -->
+  <button class="btn btn-primary" type="submit">Submit</button>
+
+</form>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</div>
+</body>
+</html>

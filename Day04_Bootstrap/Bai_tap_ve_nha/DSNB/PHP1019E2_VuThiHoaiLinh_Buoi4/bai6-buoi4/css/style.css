@@ -1,0 +1,45 @@
+/*@media (max-width: 767px) {
+	.description {
+		color:  red;
+	}
+}*/
+.bt6 .container{
+	border: 1px solid #ecf0f1;
+    text-align: center;
+    background: #eef0ef;
+    border-top: 3px solid #ef4641;
+}
+.bt6 .title-login{
+	
+	margin: 35px;
+}
+.bt6 .row{
+	padding:  35px;
+}
+
+.bt6 .main-1{
+	margin: auto 75px;
+}
+.bt6 .main-2{
+	width: 70%;
+    margin: 30px 390px;
+}
+
+.bt6 .input-group-append{
+	margin: auto 35px;
+}
+.bt6 .input-group {
+	width: 50%;
+}
+.bt6 .input-group-append{
+	width: auto;
+}
+.bt6 .col-md-3 i{
+	color: #ef4641;
+	 font-size: 50px;
+}
+.bt6 .col-md-3 .card{
+	min-height: 300px;
+
+}
+

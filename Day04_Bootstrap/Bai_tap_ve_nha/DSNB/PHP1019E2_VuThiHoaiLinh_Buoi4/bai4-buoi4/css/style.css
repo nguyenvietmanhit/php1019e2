@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+	.description {
+		color:  red;
+	}
+}
+.bt4 .container {
+    max-width: 500px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+
+.bt4 .main-1{
+	padding: 15px 0px;
+}
+.bt4 .title-login {
+    text-align: center;
+}
+
+
+.bt4 .footer {
+
+    margin: 15px 0px;
+}
+
+
+
+
+
+
+

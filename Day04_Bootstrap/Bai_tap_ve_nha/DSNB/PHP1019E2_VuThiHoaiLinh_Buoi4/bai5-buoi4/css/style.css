@@ -1,0 +1,27 @@
+.bt5 .avatar {
+	background: #000;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.bt5 .content-wrap {
+	border: 1px solid #ccc;
+    padding: 0 15px 25px 15px;
+}
+
+.bt5 .link {
+	text-decoration: underline;
+    background: #ccc;
+    padding: 0 10px 20px 0;
+    display: inline-block;
+}
+
+.bt5 .description u {
+	color: #5FB404;
+}
+
+@media (max-width: 767px) {
+	.description {
+		color:  #000;
+	}
+}

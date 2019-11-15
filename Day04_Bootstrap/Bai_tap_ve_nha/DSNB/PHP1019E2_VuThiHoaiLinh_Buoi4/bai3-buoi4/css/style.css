@@ -1,0 +1,17 @@
+/*@media (max-width: 767px) {
+	.description {
+		color:  red;
+	}
+}*/
+.bt3 .container {
+
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+.bt3 .btn{
+	text-align: center;
+	margin: 0px 110px ;
+}
+
