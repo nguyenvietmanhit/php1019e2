@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    document.writeln("<pre>");
+    //toan tu
+    var a = 7;
+    var b = 4;
+    document.writeln("a = " + a);
+    document.writeln(";");
+    document.writeln("b = " + b);
+    document.writeln("<br />");
+    //toan tu so hoc
+    document.writeln("a + b = " + (a + b));
+    document.writeln("<br />");
+    document.writeln("a - b = " + (a - b));
+    document.writeln("<br />");
+    document.writeln("a * b = " + (a * b));
+    document.writeln("<br />");
+    document.writeln("a / b = " + (a / b));
+    document.writeln("<br />");
+    document.writeln("a % b = " + (a % b));
+    document.writeln("<br />");
+    a++; //a = a + 1
+    document.writeln("a = " + a);
+    document.writeln("<br />");
+    a--;//a = a - 1
+    document.writeln("a = " + a);
+    document.writeln("<br />");
+
+    //toan tu so sanh
+    document.writeln("a == b " + (a == b));
+    document.writeln("<br />");
+    document.writeln("a != b " + (a != b));
+    document.writeln("<br />");
+    document.writeln("a > b " + (a > b));
+    document.writeln("<br />");
+    document.writeln("a >= b " + (a >= b));
+    document.writeln("<br />");
+    document.writeln("a < b " + (a < b));
+    document.writeln("<br />");
+    document.writeln("a <= b " + (a <= b));
+    document.writeln("<br />");
+
+    //toan tu logic
+    document.writeln("a == b AND a != b " + (a == b && a != b));
+    document.writeln("<br />");
+    document.writeln("a == b OR a != b " + (a == b || a != b));
+    document.writeln("<br />");
+    document.writeln("NOT (a == b)" + (!(a == b)));
+
+    //toan tu gan
+    document.writeln("<br />");
+    a += b;
+    document.writeln("a += b: " + a);
+    document.writeln("<br />");
+    var a = 7;
+    var b = 4;
+    a -= b;
+    document.writeln("a -= b: " + a);
+    document.writeln("<br />");
+    var a = 7;
+    var b = 4;
+    a *= b;
+    document.writeln("a *= b: " + a);
+    document.writeln("<br />");
+    var a = 7;
+    var b = 4;
+    a /= b;
+    document.writeln("a /= b: " + a);
+    document.writeln("<br />");
+    var a = 7;
+    var b = 4;
+    a %= b;
+    document.writeln("a %= b: " + a);
+
+
+    // IF
+    var x = 3;
+    if (x > 0) {
+        document.writeln(x + " > 0");
+    }
+    // IF - ELSE
+    var y = 4;
+    if (y > 0) {
+        document.writeln(x + " > 0");
+    }
+    else {
+        document.writeln(x + " <= 0");
+    }
+
+    //if...else..if
+    var z = 4;
+    if (z == 1) {
+        document.writeln(z + " == 1");
+    }
+    else if (z == 2) {
+        document.writeln(z + " == 2");
+    }
+    else if (z == 3) {
+        document.writeln(z + " == 3");
+    }
+    else if (z == 4) {
+        document.writeln(z + " == 4");
+    }
+
+    //switch...case
+    var day = [1, 2, 3];
+    switch (day) {
+        case 1:
+            document.writeln("Monday");
+            break;
+        case 2:
+            document.writeln("Tuesday");
+            break;
+        case 3:
+            document.writeln("Wednesday");
+            break;
+        default:
+            document.writeln("Another day");
+    }
+
+    //toan tu rut gon if..else
+    var text = 3 > 0 ? "3 > 0 is true" : "3 < 0 is false";
+    document.write(text);
+
+    //vong lap
+    //for
+    for(var i = 0; i < 10; i++) {
+        document.writeln(i);
+    }
+
+    // while
+    var i = 1;
+    while(i < 10){
+        document.writeln(i + "<br>");
+        i++; //Câu lệnh này giúp cho điều kiện dần trở thành bị SAI
+    }
+
+    // do...while
+    var j = 1;
+    do {
+        document.write("Luôn hiển thị dòng này dù điều kiện trong while đang bị sai")
+    }
+    while(3 < 0);
+    //
+    var i = 0;
+    do{
+        document.write(i);
+        i++;
+    }while(i < 10);
+
+    //break
+    var number = 1;
+    for(var i = 1; i <= 10;i++){
+        document.write(number + "<hr>");
+        number++;
+        if(number==5){
+            break;
+        }
+    }
+
+    //continue
+    for(var i = 1; i <= 10;i++){
+        if(i==2 || i==5 || i==9){
+            continue;
+        }
+        document.write(i + "<br>");
+    }
+
+    var a = 6;
+    var sum = 9;
+    sum -= ++a + --a - 2 + (a++ * 2) + a--;
+    document.write(sum);
+
+</script>
+<h1>đâs</h1>
+</body>
+</html>

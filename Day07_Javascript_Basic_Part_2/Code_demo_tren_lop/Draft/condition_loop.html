@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Thực hành Cấu trúc điều khiển và vòng lặp trong JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// CÂU LỆNH ĐIỀU KIỆN
+		document.write("<h1>Câu lệnh điều kiện IF</h1>");
+		document.write("<br />");
+		// 1 - IF
+		// Chỉ xảy ra duy nhất 1 trường hợp
+		var a = 2;
+		document.write("a = " + a);
+		if(a % 2 != 0) {
+			document.write("Biến a chia hết cho 2");
+			document.write("<br />");
+		}
+		// 2 - IF ELSEIF ELSE
+		// Khi cần kiểm tra nhiều trường hợp khác nhau
+		if (a == 1) {
+			document.write("Biến a = 1");
+			document.write("<br />");
+		}
+
+		else if (a == 2) {
+			document.write("Biến a = 2");
+			document.write("<br />");
+		}
+
+		else if (a == 3) {
+			document.write("Biến a = 3");
+			document.write("<br />");
+		}
+		else {
+			document.write("Biến a ko có giá trị = 1 - 2 -3 ");
+			document.write("<br />");
+		}
+
+		//bài toán
+		// kiểm tra xem học sinh đang xếp loại gì
+		// tbm > 8 => in ra giỏi
+		// tbm > 6.5 và <= 8 => in ra khá
+		// tbm > 5 và <= 6.5 => in ra TB khá
+		// ngược lại yếu
+		var point = 8;
+		if (point > 8) {
+			document.write("Giỏi");
+			document.write("<br />");
+		}
+		else if(point > 6.5) {
+			document.write("Khá");
+			document.write("<br />");
+		}
+		else if(point > 5) {
+			document.write("TB khá");
+			document.write("<br />");
+		}
+		else {
+			document.write("Yếu");
+			document.write("<br />");
+		}
+
+		//SWITCH CASE
+		//chỉ nhận các kiểu dữ liệu nguyên thủy(string, number, boolean) làm giá trị đầu vào
+		// có thể thay thế khi mà sử dụng if-elseif quá nhiều
+		number = 2;
+		switch(number) {
+			case 1:
+				document.write("number = 1");
+				break;
+			case 2:
+				document.write("number = 2");
+				break;
+			case 3:
+				document.write("number = 3");
+				break;
+			default:
+				document.write("number khác 1, 2, 3");
+		}
+
+		// VÒNG LẶP
+		// Lặp đi lặp lại các hành động giống hệt nhau
+		// 1 - VÒng lặp FOR
+		// vòng lặp for thường được dùng khi bạn biết trước số lần lặp r, hay còn gọi là vòng lặp xác định
+		//với vòng lặp luôn phải xác định điều kiện dừng vòng lặp, để tránh trường hợp bị vòng lặp vô hạn
+		for(var i = 0; i <= 20; i++) {
+			document.write("<br />");
+			document.write(i);
+
+		}
+
+		// WHILE
+		// thường được dùng khi không biết trường số lần lặp
+		var j = 10;
+		//20
+		while(j < 20) {
+			document.write("<br />");
+			document.write(j);
+			//can thiệp vào biến ban đầu để thay đổi biến đó, làm sao sau khi lặp qua 1 số làn nào đó, thì điều kiện j < 20 trở thành FALSE
+			j += 2;//10 12 14 16 18
+		}
+
+		// kiểm tra số sau có phải số nguyên tố hay không
+		// sử dụng vòng lặp và các câu lệnh điều kiện nếu cần
+		var number = 11; //12
+		function checkSoNguyenTo(number) {
+			// return
+			for(var i = 2; i < number; i++) {
+				if (number % i == 0) {
+					return false;
+				}
+			}
+			return true;
+		}
+		document.write(checkSoNguyenTo(11));
+
+		//VÒNG LĂP DO WHILE
+		// điểm khác biệt duy nhât so với while là do while luôn thực thi ít nhất 1 lần khối lệnh trong do cho dù điều kiện trong while là false
+		var c = -5;
+		do {
+			document.write("Luôn chạy dòng này cho dù điều kiện trong while là false");
+		}
+		while(c > 0);
+
+
+        var x = 2; var y = -4; var sum = 12; sum *= x++ - --y * (++sum * 2 * ++x - 2 * y--) - ++sum;
+
+		// TỪ KHÓA BREAK - CONTINUE
+		// đều được sử dụng trong vòng lặp
+		// 1 - BREAK
+		// được sử dụng để thoát vòng lặp
+		for(var i = 1; i <= 10; i++) {
+			if (i == 5) {
+				break;
+			}
+			document.write("<br />");
+			document.write(i);
+
+			//
+		}
+
+		// 2 - CONTINUE
+		// BỎ QUA LẦN LẶP HIỆN TẠI -> không thực thi code sau từu khóa này nữa -> nhảy đến vòng lặp kế tiếp
+
+		document.write("<h1>TỪ khóa CONTINUE</h1>");
+		for(var i = 1; i <= 10; i++) {
+			if (i == 3 || i == 5) {
+				continue;
+			}
+			document.write("<br />");
+			document.write(i);
+		}
+	</script>
+	<p id="error" style="color: red"></p>
+	<form action="" method="get" onsubmit="return add();">
+		Số thứ nhât: <input type="text" id="number1" />
+		<br />
+		Số thứ hai: <input type="text" id="number2" />
+		<br />
+		<input type="submit" value="Cộng 2 số" />
+	</form>
+	<p id='result'></p>
+	<script type="text/javascript">
+		function add() {
+			var number1 = document.getElementById('number1').value;
+			var number2 = document.getElementById('number2').value;
+
+			if (number1 == '' || number2 == '') {
+				document.getElementById('error').innerHTML = "KHông được để trống các trường";
+				document.getElementById('result').innerHTML = '';
+			}
+
+			else if(isNaN(number1) || isNaN(number2)) {
+				document.getElementById('error').innerHTML = "Bắt buộc phải nhập số";
+				document.getElementById('result').innerHTML = '';
+			}
+
+			else {
+				//debug
+				// console.log(number1, number2);
+				// do javascript quy định dữ liệu từ input luôn là string nên cần phải thêm bước chuyển đổi thành số với các trường hợp thao tác với số
+				number1 = parseInt(number1);
+				number2 = parseInt(number2);
+				var sum = number1 + number2;
+				document.getElementById('result').innerHTML = "Tổng  = " + sum;
+				document.getElementById('error').innerHTML = '';
+			}
+			return false;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style type="text/css">
+		td[colspan='2'] {
+			text-align: center;
+			padding-top: 10px;
+		}
+	</style>
+</head>
+<body>
+<h1>Form Information</h1>
+<form action="" method="get" onsubmit="return handleSubmit()">
+	<table cellspacing="0">
+		<tr>
+			<td>Họ tên</td>
+			<td><input type="text" id="name" placeholder="Nhập tên của bạn..."/></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>
+				<input type="email" name="email" id="email" placeholder="Nhập email của bạn..."/>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<input type="submit" name="submit" value="Show popup"/>
+			</td>
+		</tr>
+	</table>
+	<p>
+		<b id="show"></b>
+	</p>
+</form>
+<script type="text/javascript">
+    function handleSubmit() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var show = "Tên vừa nhập: " + name;
+        show += "\n";
+        show += "Email vừa nhập: " + email;
+        alert(show);
+        return false;
+    }
+</script>
+</body>
+</html>

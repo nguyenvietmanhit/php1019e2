@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<p id="test-get-id">Test hàm document.getElementByID</p>
+<input type="text" value="test-input-id" id="input-id"/>
+<body>
+<script type="text/javascript">
+    //thuực hành các thông dụng trong JS
+    //document.write: in ra màn hình text
+    //console.log: debug trong tab console
+    //alert: hiển thị text trong popup trên trình duyệt
+    //prompt: lấy dữ lieuj nhập từ client dưới dạng popup
+    // var age = prompt("Nhập vào tuổi của bạn: ");
+    // console.log(age);
+    //document.getElementById(): trả về phần tử HTML tương
+    // ứng với id truyền vào
+    var pID = document.getElementById('test-get-id');
+    var inputID = document.getElementById('input-id');
+    var valueInput = inputID.value;
+    var typeInput = inputID.type;
+    console.log(pID);
+    console.log(inputID);
+    console.log("value input = " + valueInput);
+    console.log("type input = " + typeInput);
+    // function displayDate() // camelCase
+    //document.getElementById('id').innerHTML
+    // test-get-id
+    var paragraph = document.getElementById('test-get-id');
+    //set text mới
+    // paragraph.innerHTML = 'Text mới của thẻ p';
+    //lấy text hiện tại của thẻ
+    console.log(paragraph.innerHTML);
+
+
+</script>
+<form onsubmit="return handleSubmit()" action="" method="get">
+    Nhập tên của bạn <br/>
+    <input type="text" id="nameId" name="nameInput"
+           value="" placeholder="Nhập tên của bạn"/>
+    <br/>
+    Gender:
+    <input type="radio" name="radioInput"
+           value="Radio 1"/> Radio 1
+    <input type="radio" name="radioInput"
+           value="Radio 2"/> Radio 2
+    <br/>
+    <button type="submit">Submit form</button>
+    <p id="show-result">
+        <!--nơi hiển thị name mà user nhập-->
+    </p>
+</form>
+<script type="text/javascript">
+    //Bài toán: submit form ở trên thì hiển thị thông tin name
+    //mà user nhập
+    function handleSubmit() {
+        var nameInput = document.getElementById('nameId');
+        var nameValue = nameInput.value;
+        var showResult = document.getElementById('show-result');
+        showResult.innerHTML = "Name user = " + nameValue;
+        // document.write("Name: " + nameValue);
+        //để ngăn chặn sự kiện xảy ra, bắt buộc phải return
+        // giá trị false cho sự kiện đó
+        return false;
+    }
+</script>
+
+<a onclick="return false;" href="https://google.vn" target="_blank">
+    Click để search Google
+</a>
+Check event arrow:
+<input id="on-key-up" type="text" onkeyup="checkOnKeyUp(event)"/>
+<script type="text/javascript">
+    function checkOnKeyUp(event) {
+        console.log(event.key);
+        if (event.keycode == 'ArrowUp') {
+            alert("Bạn vừa nhấn mũi tên lên");
+        }
+        // return false;
+    }
+
+</script>
+
+<script type="text/javascript">
+    //PHẦN TOÁN TỬ
+    // 1 - Toán tử số học
+    var a = 9;
+    var b = 5;
+    // var sum = number1 + number2;
+    document.write("<pre>");
+    document.writeln("a = " + a);
+    document.writeln("b = " + b);
+    document.writeln("a + b = " + (a + b));
+    document.writeln("a - b = " + (a - b));
+    document.writeln("a * b = " + (a * b));
+    document.writeln("a / b = " + (a / b));
+    document.writeln("a % b = " + (a % b));
+    a++;
+    b--;
+    console.log("Biến a sau ++ = " + a); //9 or 10?
+    console.log("Biến b sau -- = " + b); //9 or 10?
+
+    //CÂu lênh điều kiện
+    // 1 - If
+    var x = 10;
+    if (x < 0) {
+        document.writeln("Biến x < 0");
+    }
+    // if (x > 10) {
+    //     document.writeln("Biến x > 0");
+    // }
+
+    //2 If...else
+    var y = 12;
+    //bài toán: nếu y chia hết cho 3 thì hiển thị thông báo
+    // y chia hết cho 3, ngược lại báo y không chia
+    // hết cho 3
+    if (y % 3 == 0) {
+        document.writeln("y chia cho 3");
+    }
+    else {
+        document.writeln("y không chia hết cho 3");
+    }
+
+    //3 If...elseif...else
+    var currentDay = 5;
+    if (currentDay == 2) {
+        document.writeln("Hôm nay là thứ 2");
+    }
+    else if (currentDay == 3) {
+        document.writeln("Hôm nay là thứ 3");
+    }
+    else if (currentDay == 4) {
+        document.writeln("Hôm nay là thứ 4");
+    }
+    else if (currentDay == 5) {
+        document.writeln("Hôm nay là thứ 5");
+    }
+    else {
+        document.writeln("Hôm nay có thể là thứ 6,7,cn");
+    }
+
+    //switch...case
+    var currentDay = 3;
+    switch (currentDay) {
+        case 2:
+            document.writeln("Hôm nay là thứ 2");
+            break;
+        case 3:
+            document.writeln("Hôm nay là thứ 3");
+            // break;
+        case 4:
+            document.writeln("Hôm nay là thứ 4");
+            // break;
+        case 5:
+            document.writeln("Hôm nay là thứ 5");
+            // break;
+        default:
+            document.writeln("Hôm nay có thể là thứ 6,7,cn");
+    }
+</script>
+</body>
+</html>
