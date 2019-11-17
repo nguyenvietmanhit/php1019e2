@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form action="" method="post" onsubmit="return clickSubmit();">
+		<h1>Form Information</h1>
+		<div>
+			<div class="col-1">Họ tên</div>
+			<input id="name" type="text" name="" placeholder="Nhập tên của bạn...">
+		</div>
+		<div>
+			<div class="col-1">Email</div> 
+			<input id="email" type="email" name="" placeholder="Nhập email của bạn...">
+		</div>
+		<div id="div-row-3">
+			<input id="submit" type="submit" name="" value="Show popup">
+		</div>
+	</form>
+	<script type="text/javascript">
+		function clickSubmit(){
+			var obj_name = document.getElementById('name');
+			var name = obj_name.value;
+			var obj_email = document.getElementById('email');
+			var email = obj_email.value;
+			alert( "Tên vừa nhập: " + name + "\n"+ "Tuổi vừa nhập: " + email);	
+		}
+	</script>
+</body>
+</html>

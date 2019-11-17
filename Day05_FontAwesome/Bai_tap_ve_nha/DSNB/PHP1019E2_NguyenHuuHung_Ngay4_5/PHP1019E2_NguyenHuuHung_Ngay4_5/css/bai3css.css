@@ -1,0 +1,22 @@
+form{
+	width: 400px;
+	border: 1px solid #ced4da;
+	padding: 10px 30px;
+}
+.row{
+	padding: 10px;
+}
+.row-1{
+	text-align: center;
+}
+.row-1 select{
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+.row-1 .form-control{
+	border: none;
+	border-bottom: 1px solid #ced4da;
+}
+.fas{
+	color: #007bff;
+}

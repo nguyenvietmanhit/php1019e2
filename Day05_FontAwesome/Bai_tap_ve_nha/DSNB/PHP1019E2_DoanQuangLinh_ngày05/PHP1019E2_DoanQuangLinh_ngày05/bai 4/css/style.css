@@ -1,0 +1,37 @@
+.container
+{
+	max-width: 1000px;
+	border-style: 1px solid;
+	background: #EEEEEE;
+}
+.content
+{
+	max-width: 300px;
+	margin: auto;
+	background: none;
+}
+.bt2
+{
+	background: #AAAAAA;
+	width: 295px;
+	border-radius: 5px;
+	display: block;
+	margin-bottom: 5px;
+}
+.bt1
+{
+	width: 295px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+h1
+{
+	text-align: center;
+}
+@media(max-width: 767px)
+{
+	.content
+	{
+		margin-right: 60px;
+	}
+}

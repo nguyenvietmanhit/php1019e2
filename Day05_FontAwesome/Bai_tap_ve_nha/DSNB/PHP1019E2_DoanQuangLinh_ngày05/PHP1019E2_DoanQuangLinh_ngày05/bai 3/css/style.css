@@ -1,0 +1,35 @@
+.dropdown-menu 
+{
+	display: ;
+}
+.text
+{
+	border: none;
+	border-bottom: 1px solid lightgray;
+}
+.bt1
+{
+	background: blue;
+	color: white;
+}
+.container
+{
+	max-width: 450px;
+	border: 1px solid lightgray;
+}
+.row
+{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+h1
+{
+	color: lightgray;
+	text-align: center;
+}
+.fa-trash-alt
+{
+	color: blue;
+}
+@media(max-width: 767px)
+{}

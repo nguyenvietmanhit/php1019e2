@@ -1,0 +1,24 @@
+@media (max-width: 400px){
+	
+}
+.container{
+	width: 450px;
+}
+h4{
+	line-height: 50px;
+    overflow: hidden;
+    background: #e88e0917;
+    margin: 0px;
+    text-align: center;
+    border: 1px solid #9e9e9ea8;
+}
+form{
+	border: 1px solid #9e9e9ea8;
+	padding: 30px;
+}
+#form-group{
+	margin: auto;
+}
+button{
+	width: 100%;
+}

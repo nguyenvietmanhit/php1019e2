@@ -1,0 +1,152 @@
+#main{
+    padding: 80px;
+    /*src: url("../fonts/TitilliumWeb-Bold.ttf");*/
+}
+body{
+    font-family: "Myriad Pro";
+}
+#main1{
+    color: white;
+    padding: 40px;
+    background:#17c2a4;
+    text-align: center;
+}
+#main2{
+    background: #e7f1f8;
+    padding:70px;
+    text-align: center;
+
+}
+
+#main2 h1 :after{
+    border: 3px solid #cac3c3;
+    content: ' ';
+    display: block;
+    margin: auto;
+}
+
+#main3
+{
+    background: #ffffff;
+    padding:100px;
+    text-align: center;
+}
+#main3 p{
+    padding-left: 200px;padding-right: 200px;
+}
+
+#main4{
+    padding:100px;
+    text-align: center;
+    background: #ffdd99;
+}
+#main4 img{
+    height: 300px;width: 400px;
+}
+#main5{
+    padding:70px;
+    text-align: center;
+    background: #d74680;
+    color:white;
+
+}
+#main6{
+    padding:70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    background: #3c5499;
+    color:white;
+
+}
+#header{
+    font-family: "ErasBold";
+    src: url("../fonts/ErasBoldITC.ttf");
+    font-size: 40px;
+    text-align: center;
+    padding-top:5px;
+}
+#border{
+    border-top-color: #1b1e21;
+}
+body h1:after{
+    width: 50px;
+    border: 1px solid #cac3c3;
+    content: ' ';
+    display: block;
+    margin: auto;
+}
+
+body h1 b:after{
+    width: 50px;
+    border: 1px solid #cac3c3;
+    content: ' ';
+    display: block;
+    margin: auto;
+}
+#distance{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#chinh{
+    position: relative;
+    min-height: 100%;
+}
+#footer{
+    background-color: #344b8e;
+    position:absolute;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+#footer ul li a{
+    color: white;
+}
+@media(max-width: 576px){
+    #body{
+        padding:30px
+    }
+
+    #main3 img{
+        width: 100px;
+        height: 100px;
+    }
+    #main3 p{
+        padding: 10px;
+    }
+
+    #main4 p {
+        padding: 0
+    }
+    #main4 img{
+        width: 150px;
+        height: 150px;
+    }
+    #distance{
+        padding:0px;
+    }
+    #main3 h1 {
+        font-size: 30px;
+    }
+    #main2 img{
+        width: 50px;
+        height: 50px;
+    }
+    #main5 {
+        text-align: center;
+    }
+    #main5 img{
+        height: 200px;
+    }
+    #main6{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #footer{
+        text-align: center;
+        width: 100%;
+        font-size: 10px;
+    }
+}

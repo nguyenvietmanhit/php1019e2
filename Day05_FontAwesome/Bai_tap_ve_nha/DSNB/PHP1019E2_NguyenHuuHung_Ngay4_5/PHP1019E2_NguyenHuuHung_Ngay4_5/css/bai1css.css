@@ -1,0 +1,36 @@
+@media (max-width: 400px){
+	.container-fluid{
+		width: 100%;
+		padding: 10px;
+	}
+	.form-max-width-400{
+		display: block;
+	}
+	.form-control{
+		width: 250px;
+	}
+}
+.container-fluid{
+	padding: 10px;
+}
+form{
+	width: 400px;
+}
+.label-1{
+	font-size: 20px;
+	padding: 0px;
+	display: block;
+}
+.label-2{
+	font-size: 18px;
+	padding: 0px;
+	margin-top: 10px;
+	display: block;
+}
+.form-row .col label{
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+.span-red{
+	color: red;
+}

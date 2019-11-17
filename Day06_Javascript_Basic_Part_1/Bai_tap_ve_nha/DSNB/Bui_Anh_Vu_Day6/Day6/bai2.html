@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bai 2</title>
+	<style type="text/css">
+		.button{
+				margin-left: 5%
+		}
+	</style> 
+</head>
+<body>
+	<form action="" method="post" onsubmit="return handleSubmit();">
+		<div class="container">
+			<div class="infomation">
+				<h1>Form Information</h1>
+			</div>
+			<div class="form">
+				<table>
+					<tr>
+						<td> Họ tên: </td>
+						<td><input id="name" type="text" placeholder="Nhập họ tên của bạn..."></td> 
+					</tr>
+					<tr>
+						<td> Email: </td>
+						<td> <input id="email" type="text" placeholder="Nhập Email của bạn..."></td>
+					</tr>
+				</table>
+					<input class="button" type="submit" value="Show popup" />
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript">
+		function handleSubmit()
+		{
+			var obj_name = document.getElementById('name');
+			var name=obj_name.value;
+			var obj_Email = document.getElementById('email');
+			var email=obj_Email.value;
+			var string1 = "Tên vừa nhập: " + name ;
+				string2 = "Email vừa nhập là: " + email;
+			alert(string1 + '\n\ ' + string2);
+		}
+	</script>
+</body>
+</html>

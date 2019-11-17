@@ -1,0 +1,42 @@
+.bt2 .header
+{
+	background: #007bff;
+	 color: #fff;
+	 text-align: center;
+	 padding: 10px 0;
+}
+.container
+{
+	max-width: 500px;
+}
+.signup-link
+{
+	color: #fff;
+}
+.bt2 h1.login-text:after
+{
+	content: '';
+	display: block;
+	width: 50px;
+	border-top: 2px solid;
+	margin: 10px auto;
+}
+.main, .footer
+{
+	padding: 30px;
+	background: #fafaff;
+}
+.bt2 .footer {
+	padding-top: 0;
+}
+@media(max-width: 767px)
+{
+	.container
+	{
+		padding: 0;
+	}
+	.main .footer
+	{
+		padding: 15px;
+	}
+}

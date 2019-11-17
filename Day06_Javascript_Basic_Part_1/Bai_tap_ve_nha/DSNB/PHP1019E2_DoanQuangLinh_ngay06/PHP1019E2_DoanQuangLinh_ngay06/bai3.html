@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài 3</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		@media(max-width: 767px) {
+		}
+		.container{
+			max-width: 490px;
+			margin-top: 30px;
+		}
+		.header{
+			background: papayawhip;
+			padding: 15px 0;
+			border: 1px solid lightgray;
+			border-top: none;
+			text-align: center;
+		}
+		.main{
+			border: 1px solid lightgray;
+			border-top: none;
+		}
+		.input{
+			background: gold;
+			border: none;
+			font-weight: bold;
+			margin: 15px 10px 20px 10px; 
+			width: 437px;
+			padding: 10px 0;
+			border-radius: 5px;
+		}
+		.form{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h4>Javascript Onsubmit Event Example</h4>
+		</div>
+		<div class="main">
+			<form method="post" onsubmit="return handleSubmit()">
+				<div class="form">
+					<span class="text">Name :</span>
+					<input id="name" type="text" class="form-control" placeholder="Enter name">	
+				</div>
+				<div class="form">
+					<span class="text">Email :</span>
+					<input id="email" type="email" class="form-control" placeholder="Enter email">
+				</div>
+				<div class="form">
+					<span class="text">Contact No:</span>
+					<input id="contact" type="number" class="form-control" placeholder="Enter Contact No">	
+				</div>
+				<input class="input" type="Submit" value="Submit">
+			</form>
+			<div id="result"></div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		function handleSubmit(){
+			obj_name=document.getElementById('name')
+			var name=obj_name.value
+			obj_email=document.getElementById('email')
+			var email=obj_email.value
+			obj_contact=document.getElementById('contact')
+			var contact=obj_contact.value
+			var obj_result = document.getElementById('result')
+			var string ="Name: "+name+ "<br>"
+				string += "Email: " + email +"<br>"
+				string += "Contact No: " + contact +"<br>"
+			obj_result.innerHTML=string
+			return false;
+		}
+	</script>
+</body>
+</html>

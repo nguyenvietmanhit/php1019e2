@@ -1,0 +1,28 @@
+.Wifi
+{
+	background: none;
+	border: 1px solid ;
+	border-color: green;
+	height: 40px;
+	color: green;
+	border-radius: 5px;
+	width: 87px;
+}
+.Download
+{
+	background: none;
+	border: 1px solid ;
+	border-color: green;
+	height: 40px;
+	color: green;
+	border-radius: 5px;
+	width: 140px;
+}
+.bt
+{
+	margin-left: 5px;
+}
+@media(max-width:767px)
+{
+	
+}

@@ -1,0 +1,14 @@
+form{
+	width: 20%;
+}
+.col-1{
+	display: inline-block;
+	width: 50px;
+}
+#submit{
+	margin: 5px auto;
+}
+#div-row-3{
+	text-align: center;
+	padding: 5px;
+}

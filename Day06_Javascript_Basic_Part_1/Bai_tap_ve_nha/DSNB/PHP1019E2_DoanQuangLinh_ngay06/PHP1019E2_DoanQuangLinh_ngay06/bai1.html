@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bài 1</title>
+	<style type="text/css">
+		.container,#result
+		{
+			 margin-left: 400px;
+		}
+
+	</style>
+	</style>
+</head>
+<body>
+		<form action="" method="post" onsubmit="return handleSubmit();">
+		<div class="container">
+			<div class="infomation">
+				<h1>Form Information</h1>
+			</div>
+			<div class="form">
+				<table>
+						<tr>
+								<td> Họ tên: </td>
+								 <td><input id="name" type="text" placeholder="nhập họ tên của bạn..."></td> 
+						</tr>
+						<tr>
+									<td> Email: </td>
+									<td> <input id="age" type="text" placeholder="nhập tuổi của bạn..."></td>
+						</tr>
+				</table>
+						<input style="margin-left: 50px;" type="submit" value="Hiển thị thông tin" />
+			</div>
+		</div>
+	</form>
+<div id="result" style="font-size: 17px; font-weight: bold;">
+	
+</div>
+<script type="text/javascript">
+	function handleSubmit() {
+		//lấy ra thông tin các đối tượng tên và tuổi với id tương ứng
+		var obj_name = document.getElementById('name');
+		var name = obj_name.value;
+		var obj_age = document.getElementById('age');
+		var age = obj_age.value;
+		//thực hiện hiển thị ra màn hình
+		var obj_result = document.getElementById('result');
+		//tạo biến kết quả 
+		var string = "Tên vừa nhập: " + name + "<br />";
+			string = string + "Tuổi vừa nhập: " + age;
+			//hiển thị vào div với id result đang chờ sẵn
+		obj_result.innerHTML = string;
+		//trả về giá trị false để ngăn ngừa form submit
+		return false;
+	}
+</script>
+</body>
+</html>

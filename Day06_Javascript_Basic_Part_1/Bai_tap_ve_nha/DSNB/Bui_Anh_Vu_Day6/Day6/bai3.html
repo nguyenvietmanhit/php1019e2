@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Bai 3</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+	<style type="text/css" media="screen">
+		.header-logo{
+			
+			background: lightyellow;
+			text-align: center;
+		}
+		.form-group{
+			padding: 0 10%;
+		}
+	</style>
+</head>
+<body>
+	<div class="header-logo">
+		<h2>Javascript Onsubmit Event Example</h2>
+	</div>
+	<form action="" method="post" onsubmit="return handleSubmit();">
+		<div class="form-group">
+    	<label for="formGroupExampleInput">Name :</label>
+    	<input type="text" id="name" class="form-control" id="formGroupExampleInput" value="Mạnh">
+  		</div>
+  		<div class="form-group">
+    	<label for="exampleInputEmail1">Email :
+    	</label>
+    	<input type="email" id="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="nguyenvietmanhit@gmail.com">	
+  		</div>
+  		<div class="form-group">
+    	<label for="formGroupExampleInput">Contact No :</label>
+    	<input type="text" id="contact-no" class="form-control" id="formGroupExampleInput" value="0988888888">
+  		</div>
+  		<button type="submit" style="width: 80%; margin-left: 10%;" class="btn btn-primary btn-lg btn-warning">Submit</button>
+	</form>
+	<div id="result" style="padding-left: 10%">
+		
+	</div>
+<script type="text/javascript">
+	function handleSubmit() {
+		var obj_name = document.getElementById('name');
+		var name = obj_name.value;
+
+		var obj_email = document.getElementById('email');
+		var email = obj_email.value;
+
+		var obj_contactno = document.getElementById('contact-no');
+		var contact_no = obj_contactno.value;
+
+		var obj_result = document.getElementById('result');
+
+		var string = "Tên: " + name + "<br/>";
+			string += "Email: " + email +"<br/>" ;
+			string += "Contact No: " + contact_no;
+
+		obj_result.innerHTML = string;
+		return false; 
+
+	}
+</script>
+</body>
+</html>

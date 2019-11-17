@@ -1,0 +1,19 @@
+.container{
+	width: 600px;
+}
+.btn-warning {
+    color: #212529;
+    background-color: #ffc1079c;
+    border-color: #ffc1079c;
+}
+.btn-info {
+    color: #fff;
+    background-color: #11afc7;
+    border-color: #11afc7;
+}
+.btn-outline-dark{
+	border: none;
+}
+.btn{
+	margin-bottom: 20px;
+}

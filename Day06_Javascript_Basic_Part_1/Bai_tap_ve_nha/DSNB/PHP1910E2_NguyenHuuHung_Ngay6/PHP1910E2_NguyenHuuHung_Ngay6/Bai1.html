@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form action="" method="post" onsubmit="return clickSubmit();">
+		<h1>Form Information</h1>
+		<div>
+			<div class="col-1">Họ tên</div>
+			<input id="name" type="text" name="" placeholder="Nhập tên của bạn...">
+		</div>
+		<div>
+			<div class="col-1">Tuổi</div> 
+			<input id="age" type="number" name="" placeholder="Nhập tuổi của bạn...">
+		</div>
+		<div id="div-row-3">
+			<input id="submit" type="submit" name="" value="Hiển thị thông tin">
+		</div>
+	</form>
+	<div id="result">
+					
+		</div>
+	<script type="text/javascript">
+		function clickSubmit(){
+			var obj_name = document.getElementById('name');
+			var name = obj_name.value;
+			var obj_age = document.getElementById('age');
+			var age = obj_age.value;
+			var obj_result = document.getElementById('result');
+			var string = "<b>Tên vừa nhập: </b>" + "<b>"+ name + "</b>" + "<br>";
+				string = string + "<b>Tuổi vừa nhập: </b>" + "<b>" + age + "</b>";
+			obj_result.innerHTML = string;
+		return false; 
+		}
+	</script>
+</body>
+</html>
