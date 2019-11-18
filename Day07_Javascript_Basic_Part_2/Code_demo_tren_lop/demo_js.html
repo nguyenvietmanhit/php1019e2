@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo Javascript phần 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1 - TOÁN TỬ
+		// 3 + 5 = 8
+		var number1 = 3;
+		var number2 = 5;
+		var cal1 = number1 + number2; //8
+		var cal2 = number1 - number2; //-2
+		var cal3 = number1 * number2; //15
+		var cal4 = number1 / number2; //0.6
+		var cal5 = number2 % number1; //2
+		number1++;//4
+		number2--;//4
+		--number1;//3
+		--number2;//3
+		document.write("Cal1 = " + cal1);
+		document.write("<br />");
+		document.write("Cal2 = " + cal2);
+		document.write("<br />");
+		document.write("Cal3 = " + cal3);
+		document.write("<br />");
+		document.write("Cal4 = " + cal4);
+		document.write("<br />");
+		document.write("Cal5 = " + cal5);
+		document.write("<br />");
+		document.write("Number1 = " + number1);
+		document.write("<br />");
+		document.write("Number2 = " + number2);
+		document.write("<br />");
+
+		//demo tăng giảm tích lũy
+		// var a = 1;
+		// a++;
+		// a - 5;
+
+		// var b = 2;
+		// --b;
+		// b - 2;
+		var a = 5;
+		var sum = a++ - a--;
+		//sum   =  5  - 6 = -1
+		document.write(sum);
+		var x = 5;
+		var sum = x++ * ++x + 2 * --x
+		//47 sum=  5  *  7  + 2 *  6 = 47
+		document.write(sum);
+// x = x+1;
+		var y = -2;
+		var sum = y++ * --y + (y-- % 2) / y--;
+		//-4 4  =  -2 *  -2 + (-2 % 2)  / -3 = 4
+		document.write(sum);
+
+		// 2 - Toán tử so sánh
+		var a = 5;
+		var b = 6;
+		var operator1 = a == b; //false
+		var operator2 = a != b; //true
+		var operator3 = a > b; //false
+		var operator4 = a >= b ; //false
+		var operator5 = a < b; //true
+		var operator6 = a <= b; //true
+		document.write("Oparator1 = " + operator1);
+		document.write("<br />");
+		document.write("Oparator2 = " + operator2);
+		document.write("<br />");
+		document.write("Oparator3 = " + operator3);
+		document.write("<br />");
+		document.write("Oparator4 = " + operator4);
+		document.write("<br />");
+		document.write("Oparator5 = " + operator5);
+		document.write("<br />");
+		document.write("Oparator6 = " + operator6);
+		document.write("<br />");
+
+		//3 Toán tử logic - Toán tử kết hợp
+		// Toán tử AND - &&
+		var a = 3;
+		var b = 5;
+		var logic1 = (a > b) && (b == 5); //FALSE
+		var logic2 = (a == 3) && (b != 3) ;//true
+
+		//Toán tử OR - ||
+		var logic3 = (a > b) || (a == b); //false
+		var logic4 = (a == 3) || (b < 0) ;//true
+
+		//Toán tử NOT - !
+		var logic5 = !(a == 3); //false
+
+		 // 4 - Toán tử gán
+		 var x = 5;
+		 var y = x; //5
+		 z = x;
+		 z += x; //z = z + x // 10
+		 z -= x; //z = z - x //5
+		 z *= x; //z = z * x //25
+		 z /= x; //z = z / x //5
+		 z %= x; //z = z % x //0
+
+		 // 5 - Toán tử điều kiện
+		 //viết tắt cho biểu thức if-else
+		 // ? :
+		 var x = 5;
+		 var result = x > 0 ? "x > 0" : "x <= 0";
+		 document.write(result);
+
+		 // Câu lênh điều kiện
+		 // 1 - If - chỉ có đúng 1 trường hợp
+		 var x = 5;
+		 if(x > 0) {
+		 	document.write("5 > 0");
+		 }
+
+		 //2 If - else - có 2 trường hợp xảy ra
+		 var y = 5;
+		 if (y % 2 == 0) {
+		 	document.write("y chia hết cho 2");
+		 }
+		 else {
+		 	document.write("y không chia hết cho 2");
+		 }
+
+		 // 3 - If elseif else - có >  2 trường hợp xảy ra
+		 var point = 1.5;
+		 if (point >= 8 && point <= 10) {
+		 	document.write("Điểm giỏi");
+		 }
+		 else if(point >= 6.5) {
+		 	document.write("Điểm khá");
+		 }
+		 else if(point > 5) {
+		 	document.write("Điểm trung bình");
+		 }
+		 else if (point > 3.5) {
+		 	document.write("Kém");
+		 }
+		 else {
+		 	document.write("Chịu");
+		 }
+		 //Biểu thức switch case
+		 // cũng dùng để so sánh, nhưng nó chỉ so sánh được
+		 // các kiểu dữ liệu nguyên thủy là number, string, boolean, và bắt buộc là so sánh bằng
+		 //có thể thay thế cho biểu thức if elseif 
+		 var day = 2;
+		 switch(day) {
+		 	case 2: 
+		 		document.write("Thứ hai");
+		 		break;
+		 	case 3:
+		 		document.write("Thứ 3");
+		 		break;
+		 	case 4:
+		 		document.write("Thứ 4");
+		 		break;
+		 	default:
+		 		document.write("Không phải các ngày ở trên");
+		 }
+		 //viết tắt của biểu thức if elseif else
+		 if (day == 2) {
+		 	document.write("Thứ hai");
+		 }
+		 else if (day == 3) {
+		 	document.write("Thứ 3");
+		 }
+		 else if (day == 4) {
+		 	document.write("Thứ 4");
+		 }
+		 else {
+		 	document.write("Không phải các ngày ở trên");
+		 }
+
+		 //3 - Vòng lặp
+		 //phải luôn xác định điểm dừng của vòng lặp
+		 //để tránh vòng lặp vô hạn
+		 // 1 - For
+		 //hay được dùng khi mà bạn biết trước số lần lặp
+		for(var i = 1; i <= 100; i++) {
+			document.write(i + '-');
+		} 
+
+		// 2 - While
+		//thường dùng khi bạn ko biết trước số lần lặp
+		var i = 10;
+		while(i < 20) {
+			document.write(i);
+			i += 2; 
+		}
+		//10 12 14 16 18 
+
+		// 3 - do while
+		var j = 3;
+		do {
+			document.write("Cố in ra giá trị này xem có được ko");
+		}
+		while (j < 0);
+
+		var x = 2;
+		do {
+			document.write(x);
+			x--;
+		}
+		while(x > 0);
+		document.write("<br />");
+		//21
+
+		// Từ khóa break-continue
+		// break
+		var i = 10;
+		for(i = 1; i <= 10; i++) {
+			if (i == 3) {
+				break;
+			}
+			document.write(i);
+		}
+		//12
+
+
+		// Từ khóa continue
+		document.write("<br />");
+		var j = 10;
+		for(j = 1; j <= 10; j++) {
+			document.write(j);
+			if (j == 3 || j == 4) {
+				continue;
+			}
+			document.write("span");
+		}
+		//1245678910
+		//ko bỏ
+
+		// var a = 5;
+		// var sum = a++ - 2 + ++a;
+		//10sum =  5  - 2 +   7
+var a = -8;
+var sum = (++a + 4) * (++a - 1 + a++);
+//  sum = (-7  + 4) * (-6  - 1 + -6) = 39
+//36 39
+var a = 6;
+var sum = 9;
+sum -= ++a + --a - 2 + (a++ * 2) + a--;
+// sum=9- (7  + 6   - 2 + (6   * 2) + 7    ) = -21
+// -21 -18 -20
+	</script>
+
+	<!-- Thực hành bài tập -->
+	<form action="" method="post" id="form-add">
+		Number1: 
+		<input type="text" id="number1" value=""
+		placeholder="Nhập số number 1" 
+		 />
+		<br />
+		Number2:
+		<input type="text" id="number2" value=""
+		placeholder="Nhập số number 2" 
+		 />
+		 <br />
+		 <input type="submit" id="btn-add" value="Cộng 2 số" />
+	</form>
+	<div id="error" style="color: red">
+		<!-- nơi chứa thông tin lỗi -->
+	</div>
+	<div id="result" style="color: green">
+		<!-- nơi chứa kết quả sau khi cộng 2 số -->
+	</div>
+	<script type="text/javascript">
+		//sử dụng hàm addEventListener để gắn sự kiện
+		var form_obj = document.getElementById('form-add');
+		// viết hàm tính tổng 2 số
+		function add() {
+			var error = '';
+			var result = '';
+			var number_obj_1 = document.getElementById('number1');
+			var number1 = number_obj_1.value;
+			var number_obj_2 = document.getElementById('number2');
+			var number2 = number_obj_2.value;
+			//xử lý validate dữ liệu
+			//nếu mà ko nhập thì báo lỗi
+			if (number1 == '' || number2 == '') {
+				error = "KHông được để trống dữ liệu";
+			}
+			//trường hợp có nhập nhưng lại nhập không phải số
+			else if (isNaN(number1) == true || isNaN(number2) == true) {
+				error = "Bắt buộc phải nhập số";
+			} 
+			else {
+
+				//ép kiểu dữ liệu về số nguyên
+				// ví mặc định js sẽ hiểu các giá trị từ form là 1 string
+				number1 = parseInt(number1);
+				number2 = parseInt(number2);
+				result = number1 + number2;
+			}
+
+			//set thông báo lỗi cho div có id là error
+			error_obj = document.getElementById('error');
+			error_obj.innerHTML = error; 
+			//set thông báo thành công cho div có id là result
+			result_obj = document.getElementById('result');
+			result_obj.innerHTML = result;
+		}
+
+		// gọi hàm dưới dạng call back
+		form_obj.addEventListener('submit', function(event) {
+			//gọi hàm sau để ngăn ngừa hành động mặc định của thẻ
+			event.preventDefault();
+			add();
+		});	
+	</script>
+</body>
+</html>
