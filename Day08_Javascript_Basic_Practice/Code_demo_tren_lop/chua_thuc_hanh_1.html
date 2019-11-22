@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Chữa thực hành 1 ngày 8</title>
+</head>
+<body>
+	<form onsubmit="return sendInfo()">
+		Name: <input type="text" id="name" />
+		<br />
+		Email: <input type="text" id="email" />
+		<br />
+		Country: 
+		<select id="country">
+			<option value="-1">Select-country</option>
+			<option value="1">Viet Nam</option>
+			<option value="2">Japan</option>
+			<option value="3">USA</option>
+		</select>
+		<br />
+		Gender
+		<input type="radio" name="gender" value="1"> Male
+		<input type="radio" name="gender" value="2"> Female
+		<br />
+		<input type="submit" value="Send info" />
+	</form>
+	<div id="error" style="color: red"></div>
+	<div id="result" style="color: green"></div>
+	<script type="text/javascript">
+		function sendInfo() {
+			var error = '';
+			var result = '';
+
+			//check diều kiện validate đầu tiên là name và email không được để trống
+			var obj_name = document.getElementById('name');
+			var name = obj_name.value;
+
+			var obj_email = document.getElementById('email');
+			var email = obj_email.value;
+
+			//lấy ra vị trí của ký tự @ xong email
+			//hàm này trả về vị trí xuất hiện đầu tiên của ký tự a@ trong chuỗi email của bạn
+			// nv@cmc.com.vn, lưu ý vị trí đầu tiên bắt đầu  từ 0
+			var a_position = email.indexOf('@'); //2
+			//lấy ra vị trí xuất hiện cuối cùng của ký tự .
+			// nvmanh.@cmc.com.vn -> lấy ra vị trí dấu . cuối cùng, trước chuỗi vn
+			var dot_position = email.lastIndexOf('.');
+
+			var obj_country = document.getElementById('country');
+			var country = obj_country.value;
+
+			if (name == '') {
+				error = "Không được để trống name";
+				//focus con trỏ chuột vào trường hiện tại
+				obj_name.focus();
+			}
+			else if (email == '') {
+				error = "Không được để trống email";
+				//focus con trỏ chuột vào trường hiện tại
+				obj_email.focus();
+			}
+
+			//kiểm tra nếu chưa chọn country thì báo lỗi
+			else if (country == -1) {
+				error = "Cần phải chọn Country";
+				obj_country.focus();
+			}
+
+			//kiêm tra xem email có hợp lệ hay ko
+			else if(a_position == 0 || dot_position - a_position < 2) {
+				error = "Email không đúng định dạng, email ko cho phép ký tự @ đứng đầu tiên, và ký tự 				. cuối cùng không thể đứng trước ký tự @";
+				obj_email.focus();
+			}
+			//không chọn radio nào thì báo lỗi, và focus vào radio
+			// else if()
+			else {
+				window.open("mailto:" + email);
+			}
+
+			//show kết quả lỗi và thành công ra màn hình
+			document.getElementById('error').innerHTML = error;
+			document.getElementById('result').innerHTML = result;
+
+			return false;
+		}
+	</script>
+</body>
+</html>

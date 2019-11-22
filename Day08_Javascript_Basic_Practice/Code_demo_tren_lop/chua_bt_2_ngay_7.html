@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Chữa BT 2 ngày 7</title>
+	<link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+<body>
+	<form class="container" onsubmit="return handleSubmit();">
+	  <div class="form-group">
+	    <label>Nhập vào số a:</label>
+	    <input type="number" class="form-control" id="number1" />
+	  </div>
+	  
+	  <input type="submit" class="btn btn-primary" value="Kiểm tra" />
+
+	  <div id="error" style="color: red"></div>
+	  <div id="result" style="color: green"></div>
+	</form>
+
+	<script type="text/javascript">
+		function handleSubmit() {
+			var result = '';
+			//lấy giá trị input
+			var obj_number1 = document.getElementById('number1');
+			var number1 = obj_number1.value;
+
+			if ((number1 >= 1 && number1 <= 10) || (number1 >= 50 && number1 <= 100)) {
+				result = "Số" + number1 + " nằm trong khoảng 1 - 10 hoặc 50 - 100";
+			}
+			else {
+				result = "Số" + number1 + " không nằm trong khoảng 1 - 10 hoặc 50 - 100";
+			}
+
+			document.getElementById('result').innerHTML = result;
+
+			//ngăn ngừa form submit
+			return false;
+		}
+	</script>
+
+
+	<form class="container" onsubmit="return checkPrimeNumber();">
+	  <div class="form-group">
+	    <label>Nhập vào số a:</label>
+	    <input type="number" class="form-control" id="prime" />
+	  </div>
+	  
+	  <input type="submit" class="btn btn-primary" value="Kiểm tra" />
+
+	  <div id="result_prime" style="color: green"></div>
+	</form>
+	<script type="text/javascript">
+		function checkPrimeNumber() {
+			var result = '';
+			//lấy ra giá trị input từ form
+			var obj_prime = document.getElementById('prime');
+			var prime = obj_prime.value;
+
+			//ko cần ép kiểu nếu như ko phải là phép toán cộng
+			//kiểm tra số nguyên tố
+			if (prime < 2) {
+				result = "Số " + prime + " không phải là số nguyên tố";
+			}
+
+			else {
+				var is_prime = true;
+				for(var i = 2; i <= Math.sqrt(prime); i++) {
+					if (prime % i == 0) {
+						is_prime = false;	
+						break;
+					}
+				}
+
+				if (is_prime) {
+					result = "Số " + prime + " là số nguyên tố";
+				}
+				else {
+					result = "Số " + prime + " không phải là số nguyên tố";
+				}
+			}
+
+			document.getElementById("result_prime").innerHTML = result;
+
+			return false;
+		}
+	</script>
+
+
+	<form class="container" onsubmit="return getFactorial();">
+	  <div class="form-group">
+	    <label>Nhập vào số a:</label>
+	    <input type="number" class="form-control" id="factorial" />
+	  </div>
+	  
+	  <input type="submit" class="btn btn-primary" value="Tính giai thừa" />
+
+	  <div id="result_fatorial" style="color: green"></div>
+	</form>
+
+	<script type="text/javascript">
+		function getFactorial() {
+			// 5! = 1 x 2 x 3 x 4 x 5;
+			var factorial = document.getElementById('factorial').value;
+			var result = factorial + "! = 1 x ";
+			//4! = 1 x 
+			var gt = 1;
+			for(var i = 2; i <= factorial; i++) {
+				gt *= i;
+				result += i ;
+				//nếu là lần lặp cuối cùng, thì cần bỏ qua không hiển thị ký tự x ở cuối chuỗi
+				if (i == factorial) {
+					continue;
+				}
+				result += " x ";
+			}
+
+			// 4! = 1 x 2 x 3 x 4
+			result += " = " + gt;
+
+			document.getElementById("result_fatorial").innerHTML = result;
+
+			return false;
+		}
+	</script>
+</body>
+</html>

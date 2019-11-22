@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTf-8" />
+	<title>Chữa bài tập 1 ngày 7 - Javascript</title>
+	<link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+<body>
+	<h2>Thực hành toán tử số học</h2>
+	<form class="container" onsubmit="return false;">
+	  <div class="form-group">
+	    <label>Nhập vào số a:</label>
+	    <input type="text" class="form-control" id="number1" />
+	  </div>
+	  <div class="form-group">
+	    <label>Nhập vào số b:</label>
+	    <input type="text" class="form-control" id="number2" />
+	  </div>
+	  <button type="submit" class="btn btn-primary" onclick="calculator('+')">a + b</button>
+	  <button type="submit" class="btn btn-success" onclick="calculator('-')">a - b</button>
+	  <button type="submit" class="btn btn-danger" onclick="calculator('*')">a * b</button>
+	  <button type="submit" class="btn btn-warning" onclick="calculator('/')">a / b</button>
+	  <button type="submit" class="btn btn-info" onclick="calculator('%')">a % b</button>
+	  <button type="submit" class="btn btn-success" onclick="calculator('a++')">a++</button>
+	  <button type="submit" class="btn btn-primary" onclick="calculator('++a')">++a</button>
+	  <button type="submit" class="btn btn-success" onclick="calculator('a--')">a--</button>
+	  <button type="submit" class="btn btn-warning" onclick="calculator('--a')">--a</button>
+	  <button type="reset" class="btn btn-warning">Reset dữ liệu</button>
+	  <div id="error" style="color: red"></div>
+	  <div id="result" style="color: green"></div>
+	</form>
+
+<script type="text/javascript">
+	function calculator(operator) {
+		var error = '';
+		var result = '';
+		//lấy ra giá trị của 2 số truyền vào
+		var obj_number1 = document.getElementById('number1');
+		var number1 = obj_number1.value; //var placeholder = obj_number.placeholder
+		var obj_number2 = document.getElementById('number2');
+		var number2 = obj_number2.value;
+
+		//check validate - check dữ liệu đầu vào từ người dùng
+		//nếu ko nhập 1 trong 2 input thì báo lỗi
+		if (number1 == '' || number2 == '') {
+			error = "Không được để trống";
+		}
+		else if(isNaN(number1) == true || isNaN(number2) == true) {
+			error = "Cần phải nhập số";
+		}
+		else {
+
+			//thực hiện tính toán khi pass qua hết validate theo yêu cầu đề bài
+			//ép kiểu dữ liệu sang kiểu số, vì mặc định dữ liệu từ form đang là string
+			number1 = parseInt(number1);
+			number2 = parseInt(number2);
+		 	switch(operator) {
+		 		case '+':
+			 		result = number1 + number2;
+			 		break;
+			 	case '-':
+			 		result = number1 - number2;
+			 		break;
+			 	case '*':
+			 		result = number1 * number2;
+			 		break;
+			 	case '/':
+			 		result = number1 / number2;
+			 		break;
+			 	case '%':
+			 		result = number1 % number2;
+			 		break;
+			 	case 'a++':
+			 		result = number1++;
+			 		break;
+			 	case '++a':
+			 		result = ++number1;
+			 		break;
+			 	case 'a--':
+			 		result = number1--;
+			 		break;
+			 	case '--a':
+			 		result = --number1;
+			 		break;
+		 	}
+
+		}
+
+		//hiển thị error và hiển thị reuslt sau khi thao tác xong
+		document.getElementById('error').innerHTML = error;
+		document.getElementById('result').innerHTML = result;
+
+
+	}
+</script>
+</body>
+</html>
