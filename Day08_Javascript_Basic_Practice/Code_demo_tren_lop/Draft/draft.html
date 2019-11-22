@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post" onsubmit="return checkValidate()">
+    Name: <input type="text" id="name" value=""/>
+    <br/>
+    Email: <input type="text" id="email" value=""/>
+    <br/>
+    Country
+    <select id="country">
+        <option value="-1">Select-Country</option>
+        <option value="1">Viet Nam</option>
+        <option value="2">Japan</option>
+        <option value="3">USA</option>
+    </select>
+    <br/>
+    <input type="submit" value="Send info"/>
+</form>
+<div id="error" style="color: red"></div>
+<div id="result" style="color: green"></div>
+<script type="text/javascript">
+    function checkValidate() {
+        var error = '';
+        var result = '';
+        var obj_name = document.getElementById('name');
+        var name = obj_name.value;
+        var obj_email = document.getElementById('email');
+        var email = obj_email.value;
+        var obj_country = document.getElementById('country');
+        var country = obj_country.value;
+        var at_post = email.indexOf('@');
+        var dot_post = email.lastIndexOf('.');
+        if (name == '') {
+            error = "Name không được để trống";
+            obj_name.focus();
+        }
+        else if (email == '') {
+            error = "Email không được để trống";
+            obj_email.focus();
+        } else if (country == -1) {
+            error = "Country cần được chọn";
+            obj_country.focus();
+        }
+        //nếu @ ở vị trí đầu tiên hoặc dấu . cuối cùng mà lại đứng trước @ là ko hợp lệ
+        else if (at_post < 1 || dot_post - at_post < 2) {
+            error = "Email không hợp lệ";
+            obj_email.focus();
+        }
+        else {
+            result += "Name: " + name + "<br />";
+            result += "Email: " + email + "<br />";
+            result += "Country: ";
+            country = parseInt(country);
+            switch (country) {
+                case 1:
+                    result += "Viet Nam";
+                    break;
+                case 2:
+                    result += "Japan";
+                    break;
+                case 3:
+                    result += "USA";
+            }
+
+            // window.open("mailto:" + email);
+        }
+
+
+        document.getElementById('error').innerHTML = error;
+        document.getElementById('result').innerHTML = result;
+
+        return false;
+    }
+</script>
+</body>
+</html>
