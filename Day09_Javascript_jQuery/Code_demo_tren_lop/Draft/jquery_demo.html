@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+    <script type="text/javascript"
+            src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<p id="paragraph">Thẻ p jquery</p>
+<script type="text/javascript">
+    //sử dụng tiền tố $ hoặc jQuery
+    $(document).ready(function () {
+        // document.write('Hello World, jQuery');
+        //jquery  selector
+        //js
+        // document.getElementById('paragraph').innerHTML;
+        var p = $('#paragraph').html();
+        console.log(p);
+
+        //jquery attribute
+        var href = $('.link').attr('href');
+        console.log(href);
+        $('.link').attr('href', '#abc');
+
+        //jquery DOM
+        $('#dom').replaceWith("Text mới");
+        $('#dom').remove();
+
+        //jquery Event
+        $('.link').click(function () {
+            // alert("Bạn vừa click");
+
+            //jquery effect
+            $(this).hide(3000);
+        });
+
+
+        function getCurrentDateTime() {
+            var currentdate = new Date();
+            var datetime = currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/"
+                + currentdate.getFullYear() + " "
+                + currentdate.getHours() + ":"
+                + currentdate.getMinutes();
+            // + currentdate.getSeconds();
+
+            return datetime;
+        }
+        // console.log(datetime)
+        document.write(getCurrentDateTime());
+    });
+</script>
+<a href="http://google.vn" class="link">Google</a>
+<div id="dom">DOM</div>
+</body>
+</html>

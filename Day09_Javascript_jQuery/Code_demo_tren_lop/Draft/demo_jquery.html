@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8" />
+	<title>Demo jQuery</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<!-- chương trình javascript đầu tiên -->
+	<!-- thì ký tự đặc trưng của jQuery là tiền tố $ hoặc jQuery -->
+
+	<!-- trường hợp bị lỗi do khai báo js trước html -->
+	<script type="text/javascript">
+		// dùng sự kiện onload của javascript để đảm bảo
+		// dù khai báo js ở trước hay sau html đều không bị lỗi
+		window.onload = function() {
+			var title_error = document.getElementById('p-test').title;
+		console.log("Title trường hợp bị lỗi: " + title_error);
+		}
+
+		// trong jQuery sử dụng hàm thay thế window.onload là 
+		// $(document).ready(function);
+
+
+		
+	</script>
+
+	<script type="text/javascript">
+		// Chương trình jquery đầu tiên
+		function displayHello() {
+			console.log('<h1>Hello, world</h1>');
+		}
+
+		// $(document).ready(displayHello);
+		// jquery và php có cơ chế hàm callback - có thể truyền tham số là cả 1 hàm, thay vì 1 biến thông thường
+		// luôn sử dụng document.ready để đảm bảo code js chạy chính xác, mà ko phụ thuộc vào ví trí trong file
+		$(document).ready(function() {
+			console.log('<h1>Hello, world sử dụng hàm callback</h1>');
+
+			// alert("abc");
+		})
+	</script>
+
+	<p id="p-test" title='title p test'>P test</p>
+
+	<script type="text/javascript">
+		// MODULE SELECTOR
+		$(document).ready(function () {
+			// với javascript thường sẽ phải đặt id cho từng thẻ
+			// sau đó gọi hàm document.getElementById(id)
+			// var titleA = document.getElementById('selector-a').title;
+			//với jquery thì selector giống hết với selector trong CSS
+			var titleA = $('#selector-a').attr('title');
+			var titlePClass = $('.class-p-paragraph').text();
+			console.log(titlePClass);
+		});
+	</script>
+
+	<p id="p-paragraph" class="class-p-paragraph">
+		HEllo
+	</p>
+
+	<a href="#" id="selector-a" title="Selector a">
+		Click để hiển thị title dưới dạng alert
+	</a>
+	<div id="result"></div>
+
+
+	<a href="#" class="class1 class2" id="attribute-id" title="attribute a title">
+		Thao tác với attribute
+		<span style="color: red">Text có màu đỏ</span>
+	</a>
+	<script type="text/javascript">
+		// MODULE JQUERY ATTRIBUTE
+		$(document).ready(function (){
+			var id = $('#attribute-id').attr('id');
+			console.log(id);
+			$('#attribute-id').attr('title', 'new title');
+
+			var hasClass1 = $('#attribute-id').hasClass('classn');
+			// console.log(hasClass1);
+
+			$('#attribute-id').removeClass('class1');
+
+			var html = $('#attribute-id').html();
+			console.log(html);
+			var text = $('#attribute-id').text();
+			console.log(text);
+
+			// $('#attribute-id').html('<h1>Đổi thành thẻ h1</h1>');
+			$('#attribute-id').text('<h1>Đổi thành thẻ h1</h1>');
+
+			//thao tác với input
+			// var valueInput = $('#input-username').attr('value');
+			var valueInput = $('#input-username').val();
+			console.log(valueInput);
+			$('#input-username').val(56789);
+		});
+	</script>
+	<form>
+		<input type="text" value="123" placeholder="Username" name="username" id="input-username" />
+	</form>
+
+	<a href="#" title="Google.vn" id="a-dom">
+		click để tới trang google.vn
+	</a>
+	<style type="text/css">
+		span {
+			color:  red;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// JQUERY DOM - Thao tác với cây html
+			// $('#a-dom').remove();
+			$('#a-dom').after("<span>Thêm thẻ span sau thẻ a,  ở vị trí ngang hàng với thẻ a</span>");
+			$('#a-dom').before("<span>Thêm thẻ span trước thẻ a, ở vị trí ngang hàng với thẻ a</span>");
+			$('#a-dom').append("<span>Thêm thẻ span là con của thẻ a, ở ví trị sau cùng trong nội dung thẻ</span>");
+			$('#a-dom').prepend("<span>Thêm thẻ span là con của thẻ a, ở ví trị đầu tiên trong nội dung thẻ</span>");
+
+			// $('span').attr("id", 123);
+		});
+	</script>
+
+	<a href="#" title="Click tới Google" id="event-a">
+		Click to Google
+	</a>
+	<script type="text/javascript">
+		// document.getElementById('event-a').addEventListener('click', function() {
+
+		// })
+		// jQuery EVENT
+		$(document).ready(function() {
+			$('#event-a').click(function(event) {
+				//ngăn ngừa sự kiện chuyển hướng trang của link
+				event.preventDefault();
+				alert("Click!");
+			});
+
+			$('#event-a').mouseenter(function() {
+				// $('#event-a').css('color', 'red');
+				$(this).css('color', 'red');
+			});
+
+			$('#event-a').mouseleave(function() {
+				// $('#event-a').css('color', 'inherit');
+				$(this).css('color', 'inherit');
+			});
+		});
+	</script>
+
+	<a href="#" id="a-effect">Click để xem hiệu ứng</a>
+	<p style="background: red" id="p-effect">
+		Thẻ p chịu ảnh hưởng của jquery effect
+	</p>
+	<script type="text/javascript">
+		// JQUERY EFFECT
+		$(document).ready(function() {
+			$('#a-effect').click(function() {
+				// $('#p-effect').hide(3000);
+				// $('#p-effect').show(3000);
+
+				// $('#p-effect').toggle(1000);
+				// var obj = {
+				// 	width: "50%",
+				// 	opacity: 0.5,
+				// 	marginLeft: "40px",
+				// 	fontSize: "40px",
+				// 	borderWidth: "10px"
+				// };
+				// $('#p-effect').animate(obj, 2000);
+				// $('#p-effect').fadeIn(2000);
+				$('#p-effect').fadeOut(2000);
+			});
+
+		});
+	</script>
+
+	<a id="a-ajax" href="#">
+		Click để load nội dung trong file import.html
+	</a>
+	<div id="result-ajax" style="color:red">
+		Nội dung sẽ được hiển thị ở đây
+	</div>
+	<script type="text/javascript">
+		// jQuery AJAX
+		$(document).ready(function() {
+			$('#a-ajax').click(function() {
+				$('#result-ajax').load('http://localhost/phpdevpro_43/Day09_Javascript_jQuery/Code_demo_tren_lop/import.html');
+				// $.ajax({
+				// 	url: 'http://localhost/phpdevpro_43/Day09_Javascript_jQuery/Code_demo_tren_lop/import.html',
+				// 	data: {},
+				// 	success: function(data) {
+				// 		$('#result-ajax').html(data);
+				// 	}
+				// })
+			});
+		});
+	</script>
+</body>
+</html>

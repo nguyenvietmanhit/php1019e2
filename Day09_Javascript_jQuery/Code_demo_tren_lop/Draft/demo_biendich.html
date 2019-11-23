@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*==Style cho menu===*/
+        #menu ul {
+            background: green;
+            list-style-type: none;
+            text-align: center
+        }
+
+        #menu li {
+            color: white;
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: -5px;
+            position: relative
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: white;
+            display: block
+        }
+
+        #menu a:hover {
+            color: orange
+        }
+
+        /*==Dropdown Menu==*/
+        /*.sub-menu li {*/
+        /*display: none*/
+        /*}*/
+
+        /*.sub-menu {*/
+        /*display: none;*/
+        /*position: absolute*/
+        /*}*/
+
+        /*!*#menu li:hover .sub-menu {display: block}*!*/
+        /*.sub-menu li {*/
+        /*margin-left: 0*/
+        /*}*/
+        #hover-menu {
+            /*display: none;*/
+            position: absolute;
+        }
+
+        #hover-menu li {
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a>
+            <ul id="hover-menu" onmouseover="Menu" onmouseleave="Out">
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Telecom</a></li>
+                <li><a href="#">Energy</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Consultancy</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<script language="javascript">
+    // document.getElementsByClassName('sub-menu').style.display='none';
+    var menu_hover = document.getElementById('hover-menu');
+    menu_hover.style.display = 'none';
+
+    function Menu() {
+        menu_hover.style.display = 'block';
+    }
+    console.log(Menu);
+    function Out() {
+        menu_hover.style.display = 'none';
+    }
+    console.log(Out);
+</script>
+</body>
+</html>

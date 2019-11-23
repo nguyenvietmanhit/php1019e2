@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+    <p id="paragraph" title="Title paragraph" class="classParagraph">
+        Test
+    </p>
+    <div id="show-result"></div>
+    <script type="text/javascript">
+    //sử dụng JS để get phần tử p có id = paragraph
+       window.onload = function () {
+         var pJS = document.getElementById('paragraph');
+           // console.log(pJS);
+       };
+
+        //su dung jquery
+        $(document).ready(function () {
+            var pJquery = $('#paragraph');
+            // console.log(pJquery);
+        });
+
+
+
+        $(document).ready(function () {
+            //get attribute
+            var title = $('#paragraph').attr('title');
+            $('#show-result').text(title);
+
+            //set attribute
+            $('#paragraph').attr('title', 'new title');
+
+            console.log($('#paragraph').hasClass('classParagraph'));
+            console.log($('#paragraph').removeClass('classParagraph'));
+
+            //event
+            // $('#paragraph').click(function () {
+            //     console.log("clicked");
+            // });
+            //cách khai báo thứ 2, ít gặp hơn
+            $('#paragraph').bind('click', function () {
+                console.log("clicked");
+            })
+
+            $("#test").click(function(){
+                $("#test-result").animate({
+                    width: "70%",
+                    opacity: 0.4,
+                    marginLeft: "0.6in",
+                    fontSize: "3em",
+                    borderWidth: "10px"
+                }, 1500 );
+            });
+        });
+    </script>
+
+    <div id="test">
+        Test nha
+    </div>
+    <div id="test-result">
+dsadsadsadsa
+    </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // $('#test').replaceWith('<p>ahii</p>')
+        // $('#test').remove()
+        // $('#test').prepend("<p>abc</p>")
+        //load
+        // $('#test').click(function () {
+        //     $(this).load('demo_biendich.html');
+        // });
+
+        //get json
+        $('#test').click(function () {
+            $.getJSON('result.json', function (object) {
+                $('#test-result').html("<p>Name: " + object.name + "</p>");
+                $('#test-result').append("<p>Age: " + object.age + "</p>");
+                $('#test-result').append("<p>Sex: " + object.sex + "</p>");
+            })
+        });
+    });
+</script>
+
+</body>
+</html>

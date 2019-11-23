@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo jQuery</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		// $(document).ready(
+		// 	function() {
+		// 	// document.write("Hello jQuery");
+		// }
+		// );
+
+		// var funcVar = function() {
+		// 	// alert("Đây là alert");
+		// }
+
+		// // cơ chế callback
+		// //code jquery nên để trong đoạn này
+		// $(document).ready(function() {
+		// 	//code js ở đây
+		// });
+
+
+		// window.onload = function() {
+		// 	//code js ở đây
+		// }
+
+		
+	</script>
+
+	<h1>Đây là thẻ h1</h1>
+	<p id="p-paragraph" class="span-class">Đây là thẻ p</p>
+	<span class="span-class">Đây là thẻ span</span>
+	<script type="text/javascript">
+		// Module Jquery Selector
+		// lấy ra đối tượng sử dụng cú pháp của css
+		$(document).ready(function() {
+			$('h1').attr("title", "h1 title");
+
+			//sử udngj javascript thuần để đổi nội dung text bên trong
+			document.getElementById('p-paragraph').innerHTML = "New text";
+			//sử dụng jquery
+			$('#p-paragraph').html("New text sử dụng jquery");
+
+			//
+			$('.span-class').css("color", "red");
+
+
+		})
+	</script>
+
+	<a id="a-attribute" href="http://google.vn" title="Link google" target="_blank">
+		Click để tới trang google trong 1 tab mới
+	</a>
+	<form action="" method="GET">
+		Username <input type="text" value="nvmanh" /> <br />
+
+		Number: <input type="number" value="123" /> <br />
+	</form>
+	<script type="text/javascript">
+		//JQUERY ATTRIBUTE
+		// giúp cho việc thao tác với các thuộc tính của selector trở nên đơn giản hơn
+		$(document).ready(function () {
+			//khi truyền 1 giá trị thì sẽ là get
+			// document.getElementById('a-attribute').title = "abcde";
+			var aAttrValue = $('#a-attribute').attr('title');
+			console.log(aAttrValue);
+			//khi truyền 2 giá trị thì sẽ là set
+			$('#a-attribute').attr('title', 'New value');
+
+			//thao tác lấy ra giá trị href của thẻ a với id nói trên
+			var hrefValue = $('#a-attribute').attr("href");
+			console.log(hrefValue);
+
+			// $('#a-attribute').removeAttr('target');
+			//get
+			var htmlValue = $('#a-attribute').html();
+
+			 // $('#a-attribute').text();
+			console.log(htmlValue);
+			//set
+			// $('#a-attribute').html('New text');
+			// var valValue = $('input[type=text]').attr('value');
+			var valValue = $('input[type=text]').val();
+			console.log(valValue);
+
+
+		});
+	</script>
+
+	<a href="http://google.vn" id="a-dom" target="_blank">
+		Click redirect Google
+	</a>
+	<script type="text/javascript">
+		// JQUERY DOM
+		// thao tác với cây html như xóa, thêm nội dung html/text vào trước/sau selector
+		$(document).ready(function() {
+			$('#a-dom').click(function(event) {
+				event.preventDefault();
+			});
+
+			// $('#a-dom').remove();
+
+			$('#a-dom').after("<h1>Nội dung thẻ h1 được thêm ngang hàng phía sau với thẻ a có id là a-dom</h1>");
+			$('#a-dom').before("<h1>Nội dung thẻ h1 được thêm ngang hàng phía trước với thẻ a có id là a-dom</h1>");
+
+			$('#a-dom').append("<h1>Thêm vào sau nhưng ở vị trí con của thẻ a với id là a-dom</h1>");
+		});
+	</script>
+
+
+	<a href="#" id="a-event">Link event</a>
+	<script type="text/javascript">
+		// JQUERY EVENT
+		// thao tác với các sự kiện
+		//thông thường tên sự kiện jquery sẽ bỏ đi từ on trong sự kiện của javascript
+		$(document).ready(function() {
+			$('#a-event').click(function(){
+				console.log("Click!");
+			})	
+
+			$('#a-event').hover(function() {
+				console.log("Hover!");
+			})
+		});
+	</script>
+
+	<a href="#" id="a-effect">Link effect jquery</a>
+	<script type="text/javascript">
+		// Module jQuery EFFECT
+		$(document).ready(function() {
+			$('#a-effect').click(function() {
+				// $('#a-effect').hide(3000);	
+				// $(this).hide(3000);
+				// $(this).show(5000);
+
+				// $(this).toggle();
+				// var obj = {
+				// 	width: "400px",
+				// 	opacity: 0.5,
+				// 	fontSize: "40px"
+				// };
+				// $(this).animate(obj, 4000);
+
+				$(this).fadeOut(3000);
+				// $(this).fadeIn(4000);
+			});
+		});
+
+		// jquery AJAX
+		$.ajax {
+			url: "http://localhost/abc.php",
+			method: "GET",
+			data: {
+				name: "Manh",
+				age: 15
+			},
+			success: function(data){
+				$('#result').html(data);
+			}
+		}
+	</script>
+</body>
+</html>
