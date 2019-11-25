@@ -19,8 +19,8 @@
 		</select>
 		<br />
 		Gender
-		<input type="radio" name="gender" value="1"> Male
-		<input type="radio" name="gender" value="2"> Female
+		<input type="radio" name="gender" id="gender_male"  value="1"> Male
+		<input type="radio" name="gender" id="gender_female" value="2"> Female
 		<br />
 		<input type="submit" value="Send info" />
 	</form>
@@ -49,6 +49,9 @@
 			var obj_country = document.getElementById('country');
 			var country = obj_country.value;
 
+			var obj_gender_male = document.getElementById('gender_male');
+			var obj_gender_female = document.getElementById('gender_female');
+
 			if (name == '') {
 				error = "Không được để trống name";
 				//focus con trỏ chuột vào trường hiện tại
@@ -72,9 +75,15 @@
 				obj_email.focus();
 			}
 			//không chọn radio nào thì báo lỗi, và focus vào radio
-			// else if()
+			else if(obj_gender_female.checked == false && obj_gender_male.checked == false) {
+				error = "Cần phải check gender";
+				obj_gender_male.focus();
+
+			}
 			else {
-				window.open("mailto:" + email);
+				// window.open("mailto:" + email);
+				//chuyển hướng người dùng tới trang google.vn
+				window.location = "http://google.vn";
 			}
 
 			//show kết quả lỗi và thành công ra màn hình

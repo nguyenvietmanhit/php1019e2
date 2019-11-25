@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo jQuery</title>
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<script src="jquery-3.4.1.min.js" type="text/javascript">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="dropdown">
+	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    Dropdown button
+	  </button>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	    <a class="dropdown-item" href="#">Action</a>
+	    <a class="dropdown-item" href="#">Another action</a>
+	    <a class="dropdown-item" href="#">Something else here</a>
+	  </div>
+	</div>
+
+	<h1>Chương trình jQuery đầu tiên</h1>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//code javascript của bạn
+			// document.write("Hello, jQuery");
+			//jQuery luôn bắt đầu với ký tự $ hoặc jQuery
+		});
+	</script>
+
+	<script type="text/javascript">
+		//với javascript, cần gọi sự kiện onload để có thể
+		// đặt mã JS ở bất cứ vị trí nào trên file
+		// window.onload = function() {
+		// //lấy ra đối tượng dựa theo id
+		// var obj_a = document.getElementById('test');
+		// var a = obj_a.innerHTML;
+		// console.log(a);
+		// }
+		
+
+		//sử dụng jQuery thay thế cho sự kiện onload trong Javascript
+		$(document).ready(function() {
+			var obj_a = document.getElementById('test');
+			var a = obj_a.innerHTML;
+			console.log(a);
+		});
+
+		// luôn phải bao code JS ở trong sự kiện window.onload với Javascript thuần
+		// hoặc document.ready trong jQuery
+	</script>
+
+	<!-- DOM -->
+	<!-- document Object Model -->
+	<h1>Demo quy trình biên dịch Javascript</h1>
+	<a id="test" href="#" >
+		Hiển thị nội dung bên trong thẻ a
+	</a>
+	<script type="text/javascript">
+		//lấy ra đối tượng dựa theo id
+		var obj_a = document.getElementById('test');
+		var a = obj_a.innerHTML;
+		console.log(a);
+	</script>
+
+	<p id="p-selector">
+		Nội dung bên trong thẻ p
+	</p>
+	<input type="text" value="123" name="number1" />
+	<input type="text" value="456" name="number2" />
+
+	<p class="p-class" title="P Class">
+		P Class Content
+	</p>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// Sử dụng jQuery lấy ra giá trị của thuộc tính title trong
+			// thẻ p đang có class là p-class
+			var title = $('.p-class').attr('title');
+			console.log("title = " + title);
+
+			//1 - Module SELECTOR
+			//cách lấy nội dung sử dụng javascript
+			// var p_value = document.getElementById('p-selector').innerHTML;
+			//sử dụng jQuery
+			var p_value = $('#p-selector').text();
+			console.log(p_value);
+
+			//lấy ra giá trị của value của input sử dụng jQUERY
+			var number1 = $('input[name=number1]').val();
+			var number2 = $('input[name=number2]').val();
+			console.log(number1, number2);
+
+			//set giá trị mặc định mới cho cả 2 input
+			$('input[type=text]').val('new value');
+
+			
+
+		});
+	</script>
+
+	<input id="email-id" type="email" value="" placeholder="Nhập email" title="Title email" />
+	<p id="p-check-class" class="red blue green">
+		<span style="color: red">
+		Thẻ p với 3 class red blue green
+		</span>
+	</p>
+
+	<input type="radio" name="radio" value="1"> Male 
+	<script type="text/javascript">
+		// 2 - jQUERY Attribute
+		$(document).ready(function() {
+			//riêng với các thẻ mà có thuộc tính value,
+			// thì có thể sử dụng hàm val() để get hoặc set giá trị
+			//get
+			var value = $('input[type=radio]').val();
+			//set
+			$('input[type=radio]').val("dsajdhsajkdhsaj");
+
+			//kiểm tra có class hay không
+			var is_class = $('#p-check-class').hasClass('red');
+			console.log(is_class);
+			//xóa 1 class bất kỳ
+			$('#p-check-class').removeClass('green');
+
+			//lấy ra nội dung của đối tượng, theo html và text
+			var content_html = $('#p-check-class').html();
+			var content_text = $('#p-check-class').text();
+			//set nội dung của đối tượng theo html và text
+			// $('#p-check-class').html("<a style='color: yellow'>Nội dung thẻ a trong thẻ p</a>");
+			$('#p-check-class').text("<a style='color: yellow'>Nội dung thẻ a trong thẻ p</a>");
+
+			console.log(content_html, content_text);
+			//get giá trị, gọi hàm truyền 1 tham số duy nhất là tên thuộc tính
+			var placeholder = $('#email-id').attr('placeholder');
+			console.log("Placeholder đang có giá trị là: " + placeholder);
+			//set giá trị, truyền 2 tham số, đầu tiên là tên thuộc tính
+			// , thứ 2 là giá trị thuộc tính muốn set
+			$('#email-id').attr('placeholder', 'New placeholder');
+
+			//lấy ra giá trị của thuộc tính title và set lại giá trị mới cho thuộc tính title của thẻ input với id là email-id như trên
+			// get
+			var title = $('#email-id').attr('title');
+			//set
+			$('#email-id').attr('title', 'New title');
+		});
+	</script>
+
+	<p id="p-dom">
+		Nội dung thẻ p áp dụng module jQUERY DOM
+	</p>
+	<!-- <p>Nội dung thẻ p thêm vào sau đối tượng hiện tại</p> -->
+	<script type="text/javascript">
+		// 3 - jquery DOM
+		$(document).ready(function() {
+			//xóa phần tử
+			// $('#p-dom').remove();
+			//thêm nội dung HTML vào trước hoặc sau phần tử muốn thao tác
+			$('#p-dom').after("<p>Nội dung thẻ p thêm vào sau đối tượng hiện tại, cùng cấp với đối tượng hiện tại</p>");
+			$('#p-dom').before("<p>Nội dung thẻ p thêm vào trước đối tượng hiện tại, cùng cấp với đối tượng hiện tại</p>");
+			$('#p-dom').append("<a>Nằm bên trong đối tượng hiện tại, ở vị trí sau cùng</a>");
+			$('#p-dom').prepend("<a>Nằm bên trong đối tượng hiện tại, ở vị trí đầu tiên</a>");
+		});
+	</script>
+
+	<a id="a-event" href="http://google.vn" target="_blank">
+		Click thẻ a để tới trang Google
+	</a>
+	<form id="form-event">
+		Name: <input type="text" value="" name="name" />
+		<br />
+		<input type="submit" name="submit" value="Submit Form" />
+	</form>
+	<script type="text/javascript">
+		// 4 - jQuery EVent
+		// change
+		// focus - blur
+		$(document).ready(function() {
+			$('#form-event').submit(function() {
+				alert("submit form!");
+				// ngăn ngừa form submit
+				return false;
+			})
+
+
+			$('#a-event').click(function(event) {
+				alert("clicked");
+
+				//ngăn ngừa chuyển hướng link
+				event.preventDefault();
+				// return false;
+			});
+
+			
+		});
+	</script>
+	<div id="div-effect" 
+	style="width: 200px; height: 200px; background: red">
+		
+	</div>
+	<a href="#" id="a-click-open">
+		Click để hiển thị div
+	</a>
+	<a href="#" id="a-click-close">
+		Click để ẩn thẻ div
+	</a>
+
+	<button id="button-effect">
+		Click để show/hide thẻ div
+	</button>
+	<script type="text/javascript">
+		// 5 - jquery Effect
+		$(document).ready(function() {
+			$('#a-click-close').click(function() {
+				// $('#div-effect').hide(3000); //đơn vị mili second
+				$('#div-effect').fadeOut(2000);
+			});
+			$('#a-click-open').click(function() {
+				// $('#div-effect').show(5000);
+				$('#div-effect').fadeIn(2000);
+			})
+
+			$('#button-effect').click(function() {
+				// $('#div-effect').toggle(2000);
+				var obj = {
+					width: "70%",
+					opacity: 0.5,
+					marginLeft: "150px",
+					fontSize: "40px",
+					borderWidth: "10px"
+				}
+				$('#div-effect').animate(obj, 3000);
+			});
+		});
+
+		// 6 - Module jquery Ajax
+
+		//jquery với bootstrap
+	</script>
+</body>
+</html>
