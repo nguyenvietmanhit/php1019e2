@@ -33,16 +33,18 @@
 
 			<!-- DYNAMIC CONTENT -->
 			<div class="container">
-				<table cellpadding="4">
-					<tr>
-						<td>
-							Name <span class="red">*</span>
-						</td>
-						<td>
-							<input type="text" id="name" value="" />
-						</td>
-					</tr>
-				</table>
+				<form onsubmit="return handleSubmit()">
+					<table cellpadding="4">
+						<tr>
+							<td>
+								Name <span class="red">*</span>
+							</td>
+							<td>
+								<input type="text" id="name" value="" />
+							</td>
+						</tr>
+					</table>
+				</form>
 			</div>
 			<!-- END DYNAMIC CONTENT -->
 		</div>
