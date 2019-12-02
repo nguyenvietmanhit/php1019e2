@@ -64,3 +64,15 @@ h3 {
 .title-link {
 	text-decoration: none;
 }
+
+.red {
+	color: red;
+}
+
+#error {
+	color: red;
+}
+
+#result {
+	color: green;
+}
