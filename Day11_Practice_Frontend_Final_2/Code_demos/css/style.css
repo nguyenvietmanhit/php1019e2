@@ -1,0 +1,66 @@
+.header, .footer {
+	background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+body {
+	margin: 0;
+}
+
+ul {
+	background: #ccc;
+}
+
+ul li {
+	display: inline-block;	
+	padding: 10px 15px;
+}
+
+.active {
+	background: #fff;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 60%;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+.float {
+	float: left;
+}
+
+.col-md-2 {
+	width: 20%;
+}
+
+.col-md-10 {
+	width: 80%;
+}
+
+.row {
+	display: flex;  /* table */
+}
+
+.content-right {
+	padding-left: 20px;
+}
+
+h3 {
+	margin: 0;
+}
+
+.title-link {
+	text-decoration: none;
+}
