@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- JSFormValidation.html -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Form Input Validation Using JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="header">
+    HEADER
+</div>
+<div class="main-content">
+    <ul class="menu">
+        <li>
+            <a href="home.html">Trang chủ</a>
+        </li>
+        <li>
+            <a href="register.html">Đăng ký</a>
+        </li>
+        <li class="active">
+            <a href="login.html">Đăng nhập</a>
+        </li>
+    </ul>
+    <div class="container">
+    <h2 class="">Đăng nhập</h2>
+    <form id="formTest" method="get" action="processData">
+        <table>
+
+            <tr>
+                <td><label for="txtEmail">Email<span class="required">*</span></label></td>
+                <td><input type="text" id="txtEmail" name="email"></td>
+                <td id="elmEmailError" class="errorMsg">&nbsp;</td></tr>
+            <tr>
+                <td><label for="txtPassword">Password<span class="required">*</span></label></td>
+                <td><input type="password" id="txtPassword" name="password"></td>
+                <td id="elmPasswordError" class="errorMsg">&nbsp;</td></tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="LOGIN" id="btnSubmit">&nbsp;
+                    <input type="reset" value="CLEAR" id="btnReset"></td>
+                <td>&nbsp;</td></tr>
+        </table>
+    </form>
+    </div>
+</div>
+
+<div class="footer">
+    FOOTER
+</div>
+</body>
+</html>
+
+
