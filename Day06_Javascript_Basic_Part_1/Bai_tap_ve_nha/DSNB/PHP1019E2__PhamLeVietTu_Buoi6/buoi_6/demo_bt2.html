@@ -1,0 +1,32 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bt1</title>
+</head>
+<body>
+<form action="" method="post" onsubmit="return handleSubmit();">
+	Họ tên
+	<input type="text" value="" id="name" placeholder="Họ tên của bạn" ><br>
+	Tuổi
+	<input type="number" value="" id="age" placeholder="Nhập tuổi của bạn" ><br>
+	<input type="submit" name="" value="Hiển thị thông tin">
+	<div id="result" style="color: green"></div>
+	<script type="text/javascript">
+		function handleSubmit() {
+		var obj_name = document.getElementById('name');
+		var name = obj_name.value;
+		var obj_age = document.getElementById('age');
+		var age = obj_age.value;
+		var obj_result = document.getElementById('result');
+		// var string = "Tên vừa Nhập: " + name +"<br>";
+		// 	string = string+ "Tuổi vừa nhập: " + age +"<br>";
+		// obj_result.innerHTML = string;
+		alert('tên tôi là '+name + '\n' +'tuổi của tôi' + age);
+		return false;
+	}
+	</script>
+</form>
+</body>
+</html>

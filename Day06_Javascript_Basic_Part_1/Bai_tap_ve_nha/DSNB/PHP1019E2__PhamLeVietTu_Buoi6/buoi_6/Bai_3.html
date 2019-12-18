@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài 3</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style type="text/css">
+		.container{
+			border: 1px solid #f1eeee;
+		}
+
+		.header{
+			border-bottom: 1px solid #e6e6e5;
+			margin-left: -15px;
+			margin-right: -15px;
+			background: #feffed;
+		}
+
+		.content{
+			background: #feffed;
+			text-align: center;
+			/*margin: 10px 5px 10px 5px;*/
+		}
+
+		label{
+			margin-left: 20px;
+		}
+
+		.form-control{
+			width: 90%;
+			margin: auto;
+		}
+
+		.btn{
+			margin: auto;
+			width: 90%;
+			margin-bottom: 40px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h4 class="content">Javascript Onsupmit Event Example</h4>
+		</div>
+		<div class="main">
+			<form action="" method="post" onsubmit="return handleSubmit();">
+				<div class="form-group">
+					<label for="exampleInputPassword1">
+						Name:
+					</label>
+					<input type="text" class="form-control" id="name" placeholder="Enter name" value="">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Email:
+					</label>
+					<input type="email" class="form-control" id="email" placeholder="Enter email" value="">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Contact No:
+					</label>
+					<input type="number" class="form-control" id="contactno"  placeholder="Enter Contact No" value="">
+				</div>
+		
+				<button type="submit" class="btn btn-warning">
+					Submit
+				</button>
+			</form>
+			<div id="result"></div>
+			<script type="text/javascript">
+				function handleSubmit() {
+					//lấy ra thông tin các đối tượng tên và email với id tương ứng
+					var obj_name = document.getElementById('name');
+					var name = obj_name.value;
+					var obj_email = document.getElementById('email');
+					var email = obj_email.value;
+					var obj_contactno = document.getElementById('contactno');
+					var contactno = obj_contactno.value;
+					//thực hiện hiển thị ra màn hình
+					var obj_result = document.getElementById('result');
+					//tạo biến kết quả 
+					var string = "Name: " + name + "<br />";
+						string = string + "Email: " + email + "<br>";
+						string = string + "Contact No: " + contactno;
+						//hiển thị vào div với id result đang chờ sẵn
+						obj_result.innerHTML = string;
+
+					//trả về giá trị false để ngăn ngừa form submit
+					return false;
+				}
+			</script>
+		</div>
+	</div>
+</body>
+</html>

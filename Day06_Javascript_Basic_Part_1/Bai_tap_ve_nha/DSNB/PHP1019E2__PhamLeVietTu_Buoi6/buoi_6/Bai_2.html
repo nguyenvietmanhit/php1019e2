@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài 2</title>
+	<style type="text/css">
+		#email{
+			margin-left: 6px;
+		}
+		.row{
+		 	margin-top: 6px;
+		 }
+	</style>
+</head>
+<body>
+	<h1>From Information</h1>
+	<form action="" method="post" onsubmit="return handleSubmit();">
+		<div class="row">
+			Họ tên 
+			<input id="name" type="text" placeholder="Nhập tên của bạn..." value="">
+			<br>
+		</div>
+		<div class="row">
+			Email
+			<input id="email" type="text" placeholder="Nhập email của bạn..." value="">
+			<br>
+		</div>
+		<div class="row">
+			<input type="submit" value="Show popup">
+		</div>
+		
+	</form>
+	<div id="result"></div>
+	<script type="text/javascript">
+		function handleSubmit(){
+			//lấy ra thông tin các đối tượng tên và tuổi với id tương ứng
+			var obj_name = document.getElementById('name');
+			var name = obj_name.value;
+			var obj_email = document.getElementById('email');
+			var email = obj_email.value;
+			//thực hiện hiển thị ra màn hình
+			var obj_result = document.getElementById('result');
+			alert('Tên vừa nhập: ' + name + '\n' +'Email vừa nhập: ' + email);
+	
+			//trả về giá trị false để ngăn ngừa form submit
+			return false;
+		}
+	</script>
+</html>

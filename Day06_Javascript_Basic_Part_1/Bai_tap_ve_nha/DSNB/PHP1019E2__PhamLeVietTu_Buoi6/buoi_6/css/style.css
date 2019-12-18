@@ -1,0 +1,102 @@
+/*CSS BT1*/
+@media(max-width: 767px){
+	.bt1 .container{
+
+		padding: 0;
+	}
+}
+
+.bt1 #exampleFormControlFile1{
+	border: 1px solid #000;
+	padding-left: 20px;
+	border-radius: .25rem;
+	border: 1px solid #ced4da;
+	padding-top: 5px;
+}
+
+sup{
+	color: red;
+}
+
+/*CSS BT2*/
+@media(max-width: 767px){
+	.bt2 .container{
+		padding: 0;
+	}
+}
+
+.bt2 .badge{
+	font-size: 100%;
+	font-weight: normal;
+	padding: 10px 20px 10px 20px;
+}
+
+.bt2 .col1{
+	margin-right: 5px;
+}
+
+.bt2 .badge-white{
+	border: 1px solid #28a745;
+	color: #28a745;
+}
+
+.bt2 h1{
+	margin-left: -15px;
+}
+
+/*CSS BT3*/
+.bt3 select{
+	border-right: none;
+	border-left: none;
+	border-top: none;
+}
+
+.bt3 .main-content{
+	margin: auto;
+	margin-left: -30px;
+}
+
+.bt3 .header-content{
+	color: #838383;
+}
+
+.bt3 .header{
+	text-align: center;
+}
+
+.bt3 .footer-content{
+	margin: auto;
+}
+
+.bt3 .footer-content{
+	margin: auto;
+}
+
+.bt3 .main .row{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.bt3 select{
+	margin-left: 30px;
+}
+
+.bt3 .col-md-6{
+	margin-left: 400px;
+}
+
+.bt3 .footer .row{
+	margin-top: 20px;
+}
+
+.bt3 .col-md-6{
+	margin-left: 602px;
+}
+
+.bt3 .fa-trash{
+	margin-top: -17px;
+	margin-right: 20px;
+	float: right;
+	width: 590px;
+	color: #159aff;
+}
