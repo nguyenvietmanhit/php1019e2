@@ -1,4 +1,4 @@
-<?php
+ <?php
 function xuat($n = 50)
 {
 
