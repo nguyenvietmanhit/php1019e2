@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/Day13_BuiAnhVu/Day13/bai10.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/Day13_BuiAnhVu/Day13/bai10.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai4.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai4.php" afterDir="false" />
-    </list>
+    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +25,7 @@
         <counts>
           <entry key="css" value="5" />
           <entry key="html" value="52" />
-          <entry key="php" value="53" />
+          <entry key="php" value="55" />
           <entry key="png" value="1" />
         </counts>
       </usages-collector>
@@ -37,7 +34,7 @@
           <entry key="CSS" value="5" />
           <entry key="HTML" value="52" />
           <entry key="Image" value="1" />
-          <entry key="PHP" value="53" />
+          <entry key="PHP" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -58,24 +55,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2__Pham_Le_Viet_Tu_BTVNDay13/Buoi_13/Bai_11_demo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai2.php">
           <provider selected="true" editor-type-id="text-editor" />
@@ -119,7 +98,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai9.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -127,6 +106,34 @@
                 <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai10.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai11.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="100" lean-forward="true" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -443,12 +450,12 @@
       <workItem from="1576059605663" duration="1779000" />
       <workItem from="1576113942047" duration="179000" />
       <workItem from="1576495615075" duration="10970000" />
-      <workItem from="1576722130641" duration="4073000" />
+      <workItem from="1576722130641" duration="4404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70334000" />
+    <option name="totallyTimeSpent" value="70665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -482,8 +489,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day14_PHP_Array_Function_Array_String_Number/Code_demo_tren_lop/chua_bai_tap_ngay_13.php" />
-    <entry file="file://$PROJECT_DIR$/Day14_PHP_Array_Function_Array_String_Number/Code_demo_tren_lop/demo_array.php" />
     <entry file="file://$PROJECT_DIR$/Day11_Practice_Frontend_Final_2/Code_demos/Draft/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -755,6 +760,30 @@
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai10.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai11.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="100" lean-forward="true" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
