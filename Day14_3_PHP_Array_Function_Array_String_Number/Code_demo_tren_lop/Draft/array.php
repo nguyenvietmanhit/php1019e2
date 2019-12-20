@@ -1,4 +1,15 @@
+
 <?php
+//session_start();
+//if(time() - $_SESSION['timestamp'] > 5) { //subtract new timestamp from the old one
+////  echo"<script>alert('15 Minutes over!');</script>";
+//  unset($_SESSION['username'], $_SESSION['password'], $_SESSION['timestamp']);
+//  $_SESSION['logged_in'] = false;
+//  header("Location: index.php" ); //redirect to index.php
+//  exit;
+//} else {
+//  $_SESSION['timestamp'] = time(); //set new timestamp
+//}
 $arrs = array("Italy" => "Rome", "Luxembourg" => "Luxembourg", "Belgium" => "Brussels", "Denmark" => "Copenhagen", "Finland" => "Helsinki", "France" => "Paris", "Slovakia" => "Bratislava", "Slovenia" => "Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland" => "Dublin", "Netherlands" => "Amsterdam", "Portugal" => "Lisbon", "Spain" => "Madrid", "Sweden" => "Stockholm", "United Kingdom" => "London", "Cyprus" => "Nicosia", "Lithuania" => "Vilnius", "Czech Republic" => "Prague", "Estonia" => "Tallin", "Hungary" => "Budapest", "Latvia" => "Riga", "Malta" => "Valetta", "Austria" => "Vienna", "Poland" => "Warsaw");
 foreach ($arrs as $country => $city) {
   echo "<i>Thủ đô của $country là $city</i>";
