@@ -1,161 +1,123 @@
 <?php
-//khai báo 1 mảng có 5 phần tử
-//lần lượt có kiểu dữ liệu là string, number, boolean
-//null, array
-$arr = [
-    0 => 'abc',
-    1 => 123,
-    2 => TRUE,
-    3 => null,
-    4 => [1, 2, "abc", []]
-];
-echo '<pre>';
-var_dump($arr);
-
-print_r($arr);
-
-$arrFor = [
-    1, 2, 3, 4, 5, '6'
-//  0  1  2  3  4   5
-];
-//sử dụng for để lặp mảng
-echo '<br />Sử dụng for để lặp mảng <br />';
-for ($key = 0; $key < count($arrFor); $key++) {
-    echo $arrFor[$key];
-    echo '<br />';
-}
-echo '<br />Sử dụng foreach để lặp mảng <br />';
-//sử dụng foreach để lặp mảng
-
-foreach ($arrFor as $key => $value) {
-    echo "Phần tử ở vị trí $key có giá trị là: " . $value;
-    echo '<br />';
+$arrs = array("Italy" => "Rome", "Luxembourg" => "Luxembourg", "Belgium" => "Brussels", "Denmark" => "Copenhagen", "Finland" => "Helsinki", "France" => "Paris", "Slovakia" => "Bratislava", "Slovenia" => "Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland" => "Dublin", "Netherlands" => "Amsterdam", "Portugal" => "Lisbon", "Spain" => "Madrid", "Sweden" => "Stockholm", "United Kingdom" => "London", "Cyprus" => "Nicosia", "Lithuania" => "Vilnius", "Czech Republic" => "Prague", "Estonia" => "Tallin", "Hungary" => "Budapest", "Latvia" => "Riga", "Malta" => "Valetta", "Austria" => "Vienna", "Poland" => "Warsaw");
+foreach ($arrs as $country => $city) {
+  echo "<i>Thủ đô của $country là $city</i>";
+  echo "<br />";
 }
 
-
-//Array Type
-//1 - Mảng số nguyên: key chỉ có thể ở dạng số nguyên
-//có tên gọi khác là mảng tuần tự
-$arrKeyNum1 = [1, 'abc', 'null', TRUE];
-$arrKeyNum2 = [
-    2 => 'abc',
-    5 => 123,
-    10 => FALSE
-];
-echo 'Lặp mảng số nguyên sử dụng foreach';
-foreach ($arrKeyNum2 as $key => $value) {
-    echo '<br />';
-    echo "Phần tử có vị trí $key có giá trị là: $value";
-    echo '<br />';
-}
-
-
-//2 - Mảng kết hợp: key có thể là string hoặc kết hợp cả
-//số và string
-$arrAssociation = [
-    'a' => 123,
-    2 => 'abc',
-    'c' => false
-];
-echo 'Lặp mảng kết hợp sử dụng foreach';
-foreach ($arrAssociation as $k => $v) {
-    echo '<br />';
-    echo "Phần tử có vị trí $k có giá trị là: $v";
-    echo '<br />';
-}
-
-//3 - Mảng đa chiều: là mảng có thể chứa 1 hoặc nhiều mảng
-//khác trong nó
-$arrMultiDimension = [
-    2 => [
-        1, 2, 3, 4
-    ],
-    'a' => 'abc',
-    'b' => [
-        'c' => 'value c',
-        'd' => 'value d',
+$a = [
+  'a' => [
+    'b' => 0,
+    'c' => 1
+  ],
+  'b' => [
+    'e' => 2,
+    'o' => [
+      'b' => 3
     ]
+  ]
 ];
+//Hãy lấy giá trị = 3 mà có key là b từ mảng trên
+echo $a['b']['o']['b'];
+echo "<br />";
+//Hãy lấy giá trị = 1 mà có key là c từ mảng trên
+echo $a['a']['c'];
+//Hãy lấy thông tin của phần tử có key là a
+print_r($a['a']);
 
-foreach ($arrMultiDimension as $key => $value) {
-    echo '<br />';
-    echo "Phần tử có vị trí $key có giá trị là: " . var_dump($value);
-    echo '<br />';
+$keys = array(
+  "field1" => "first",
+  "field2" => "second",
+  "field3" => "third"
+);
+$values = array(
+  "field1value" => "dinosaur",
+  "field2value" => "pig",
+  "field3value" => "platypus",
+  "field3value" => "dsadsa",
+);
+
+$arr = array_combine($keys, $values);
+
+$array = [12, 5, 200, 10, 125, 60, 90, 345, -123, 100, -125, 0];
+foreach ($array as $value) {
+  if ($value >= 100 && $value <= 200 && $value % 5 == 0) {
+    echo $value . " ";
+  }
 }
 
-$arrMultiDimension2 = [
-    2 => [
-        1, 2, 3, 4
-    ],
-    'a' => 'abc',
-    'b' => [
-        'c' => 'value c',
-        'd' => 'value d',
-    ]
+$numbers = [
+  'key1' => 12,
+  'key2' => 30,
+  'key3' => 4,
+  'key4' => -123,
+  'key5' => 1234,
+  'key6' => -12565,
 ];
-//lấy ra giá trị của phần tử có key = b
-$var1 = $arrMultiDimension2['b'];
-echo '<pre>';
-print_r($var1);
-//lấy ra giá trị 'value c'
-$var2 = $arrMultiDimension2['b']['c'];
-print_r($var2);
-?>
-<!--Cho biết đây là mảng loại nào và tính tổng và -->
-<!--tích của các phần tử trong mảng sau:-->
-<!--$arrs = [12, 50, 60, 90, 12, 25, 60];-->
-<?php
-$arr = [12, 50, 60, 90, 12, 25, 60];
-$sum = 0;
-$multi = 1;
-?>
-<table>
-    <tr>
-        <?php foreach ($arr as $key => $value): ?>
-            <?php
-            $sum += $value;
-            $multi *= $value;
-            ?>
-        <?php endforeach; ?>
-        <td>
-            <p style="color: red">
-                Tổng = <?= $sum;?>,
-                Tích = <?php echo $multi;?>
-            </p>
-        </td>
-    </tr>
-</table>
+//•      Lấy ra phần tử đầu tiên, phần tử cuối cùng trong mảng trên
+echo "Phần tử đầu tiên của mảng: " . reset($numbers);
+echo "<br />";
+echo "Phần tử cuối cùng của mảng: " . end($numbers);
+echo "<br />";
+//•      Tìm số lớn nhất, số nhỏ nhất, tổng các giá trị từ mảng trên
+echo "Số lớn nhất trong mảng: " . max($numbers);
+echo "<br />";
+echo "Số nhỏ nhất trong mảng: " . min($numbers);
+echo "<br />";
+echo "Tổng giá trị mảng trên: " . array_sum($numbers);
+echo "<br />";
+//•      Sắp xếp mảng theo chiều tăng, giảm các giá trị
+echo "Sắp xếp theo chiều tăng giá trị: ";
+sort($numbers);
+echo "<br />";
+echo "Sắp xếp theo chiều giảm giá trị: ";
+rsort($numbers);
+//•      Sắp xếp mảng theo chiều tăng, giảm các key
+echo "<br />";
+echo "Sắp xếp theo chiều tăng của key: ";
+ksort($numbers);
+echo "Sắp xếp theo chiều giảm của key: ";
+krsort($numbers);
 
-<?php
-//các thư viện thao tác với mảng
-$arr = [12, 50, 60, 90, 12, 25, 60];
-$sum = array_sum($arr);
-echo "<p>Tổng của mảng arr = $sum</p>";
+$numbers = [78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73];
+$average = array_sum($numbers) / count($numbers);
+echo $average;
+echo "<br />";
+$stringLargeAverage = "Các số lớn hơn giá trị trung bình $average là: ";
+$stringSmallAverage = "Các số nhỏ hơn hoặc bằng giá trị trung bình $average là: ";
+$numbers = array_unique($numbers);
+foreach ($numbers as $number) {
+  if ($number > $average) {
+    $stringLargeAverage .= " $number ";
+  } else {
+    $stringSmallAverage .= " $number ";
+  }
 
-$arr2 = [
-    'a' => 3,
-    1 => 3,
-    -1 => 0
+}
+echo $stringLargeAverage;
+echo "<br />";
+echo $stringSmallAverage;
+
+$array1 = [
+  [77, 87],
+  [23, 45]
 ];
-$isKeyExists = array_key_exists('a', $arr2);
-var_dump($isKeyExists);
-echo '<pre>';
-$arr3 = [1, 2, 3, 5, 1, 1];
-echo 'Mảng trước khi lọc giá trị trùng:';
-print_r($arr3);
-$arrUnique = array_unique($arr3);
-echo 'Mảng sau khi lọc giá trị trùng:';
-print_r($arrUnique);
-$arr3 = [1, 2, 3, 'a'];
-$valuePop = array_pop($arr3);
-var_dump($valuePop);
-print_r($arr3);
-//cách sử dụng hàm có sẵn
-//1 - Viết tên hàm trước, sau đó sử dụng phím tắt Ctrl + Q
-//để show ra hướng sử dụng hàm
-//2- Nhìn vào hướng dẫn sử dụng hàm, sẽ biết được tham số truyền vào
-//hàm và hàm return về kiểu dữ liệu nào để xử lý thích hợp
-$var = 'abc';
-$var = array('abc');
-var_dump(is_array($var));
-?>s
+$array2 = [
+  'giá trị 1', 'giá trị 2'
+];
+
+
+[
+  0 => [
+    'giá trị 1',
+    77,
+    87
+  ],
+  1 => [
+    'giá trị 2',
+    23,
+    45,
+  ]
+]
+
+?>
