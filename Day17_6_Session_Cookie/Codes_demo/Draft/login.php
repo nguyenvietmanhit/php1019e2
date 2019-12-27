@@ -1,51 +1,60 @@
 <?php
+session_start();
 echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
-print_r($_POST);
+print_r($_SESSION);
 echo "</pre>";
 //die;
+//nếu đã check vào Ghi nhwos đăng nhập, thì tạo session admin và chuyển hướng về màn hình logic_success.php
+if (isset($_COOKIE['username']) && isset($_COOKIE['password'])) {
+  $_SESSION['admin'] = $_COOKIE['username'];
+  header("Location: login_success.php");
+  exit();
+}
+
 $error = '';
 $result = '';
 if (isset($_POST['submit'])) {
+  echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
+  print_r($_POST);
+  echo "</pre>";
+//  die;
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  //do chưa dùng cơ chế CSDL, nên tạm thời sẽ lưu password dưới dạng plain text
-  if ($username == 'admin' && $password == '123456') {
-    $result = "Đăng nhập thành công";
-    $_SESSION['username'] = $username;
-    //trong trường hợp user check vào nút Remember me thì sẽ tiến hành lưu cookie
+  if (empty($username) || empty($password)) {
+    $error = "Username hoặc password không được để trống";
+  } else if ($username != 'nvmanh' && $password != 123456) {
+    $error = "Sai username hoặc password";
+  } else {
+    $_SESSION['admin'] = $username;
+
+    //chỉ xử lý lưu cookie khi user nhập đúng
     if (isset($_POST['remember_me'])) {
-      //luu session username va password  vao cookie
-      setcookie("username", $username, time() + 2600);
-      setcookie("password", $password, time() + 2600);
-    }
-    //ngược lại sẽ remove cookie
-    else {
-      setcookie("username", null, time() - 1);
-      setcookie("password", null, time() - 1);
+      $remember_me = $_POST['remember_me'];
+      setcookie('username', $username, time() + 600);
+      setcookie('password', $password, time() + 600);
     }
 
-    //chuyển hướng người dùng về trang đăng nhập thành công
-    header("Location: success.php");
-  }
-  else {
-    $error = 'Sai tài khoản hoặc mật khẩu';
+    header("Location: login_success.php");
+    exit();
   }
 }
 ?>
-
+<h3 style="color: red">
+  <?php echo $error ?>
+</h3>
+<h3 style="color: green">
+  <?php echo $result ?>
+</h3>
 <form method="post" action="">
-  <div style="color: red">
-    <?php echo $error?>
-  </div>
-  Username <input type="text" name="username" value="" />
-  <br />
-  <br />
-  Password <input type="password" name="password" value="" />
-  <br />
-  <br />
-  <input type="checkbox" value="1" name="remember_me" /> Remember me
-  <br />
-  <br />
-  <input type="submit" name="submit" value="Login" />
+    Username:
+    <input type="text" name="username" value=""/>
+    <br/>
+    Password:
+    <input type="text" name="password" value=""/>
+    <br/>
+    <input type="checkbox" name="remember_me"/> Ghi nhớ đăng nhập
+    <br/>
+    <input type="submit" value="Đăng nhập" name="submit"/>
 </form>
+

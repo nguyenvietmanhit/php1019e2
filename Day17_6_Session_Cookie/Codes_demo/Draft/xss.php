@@ -4,7 +4,7 @@
 </form>
 <?php
 if (isset($_GET['submit'])) {
-    $name = htmlspecialchars($_GET['name']);
+    $name = ($_GET['name']);
     echo "Tên của bạn là: " . $name;
     //cách phòng chống
 }
