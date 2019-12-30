@@ -1,0 +1,120 @@
+#Tạo CSDL nếu ko tồn tại
+#CREATE DATABASE IF NOT EXISTS demo_db;
+#Tạo CSDL mới có set các tham số để lưu và hiển thị ký tự có dấu
+#CREATE DATABASE IF NOT EXISTS nhanvien CHARACTER SET utf8 COLLATE utf8_general_ci;
+#Xóa CSDL
+DROP DATABASE demo_db;
+
+#Chọn CSDL
+USE nhanvien;
+#Tạo bảng - table tên students có id, name, address, birthday, class, created_at, updated_at
+CREATE TABLE students(
+id INT(11) PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+address VARCHAR(255) DEFAULT NULL,
+birthday DATETIME DEFAULT NULL,
+class VARCHAR(255) NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+updated_at DATETIME DEFAULT NULL
+);
+
+USE nhanvien;
+#taọ bảng categories
+CREATE TABLE categories(
+id INT(11) PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+status TINYINT(2) DEFAULT 0,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+#xóa bảng
+DROP TABLE categories;
+
+#Thêm dữ liệu vào bảng categories vừa tạo
+#lưu ý bao các trường bởi cặp ký tự `` để tránh lỗi trùng
+#từ khóa trong MYSQL
+INSERT INTO categories(`name`, `status`)
+VALUES ('Manh', 1);
+INSERT INTO categories(`name`, `status`)
+VALUES ('ABC', 3);
+INSERT INTO categories(`name`, `status`)
+VALUES ('DEF', -1);
+
+USE nhanvien;
+#Lấy tất cả danh sách category đang có trên hệ thống
+#ký tự * đại diện cho lấy tất cả các trường
+SELECT * FROM categories;
+
+#lấy 1 số trường cụ thể
+SELECT id, name FROM categories;
+
+#lấy theo điều kiện
+#lấy danh mục mà có id <0
+SELECT * FROM categories WHERE id < 0;
+#lấy danh mục mà có tên = Manh
+SELECT * FROM categories WHERE name = 'Manh';
+#chỉ lấy 2 danh mục đầu tiên
+SELECT * FROM categories LIMIT 2;
+#chỉ lấy 2 bản ghi đầu tiên, trong 2 bản ghi này chỉ lấy bản ghi từ vị trí thứ 2 trở đi
+SELECT * FROM categories LIMIT 2 OFFSET 2;
+#lấy ra tất cả danh mục mà có id lớn hơn 1
+SELECT * FROM categories WHERE id > 1;
+#lấy ra tất cả danh mục mà có id > 0 và status >= 0
+SELECT * FROM categories WHERE id > 0 AND status >= 0;
+
+#Update
+#luôn phải chỉ điều kiện là update cho bản ghi cụ thể nào,
+#nên câu lệnh update luôn phải đi kèm WHERE
+UPDATE categories SET name = 'New name', status = 5
+WHERE id = 1;
+
+SELECT * FROM categories;
+
+#Update
+#luôn phải chỉ điều kiện là update cho bản ghi cụ thể nào,
+#nên câu lệnh update luôn phải đi kèm WHERE
+UPDATE categories SET name = 'New name', status = 5
+WHERE id = 1;
+
+SELECT * FROM categories;
+
+#Delete - Xóa bản ghi khỏi bảng
+#luôn phải chỉ định điều kiện cụ thể muốn xóa bản ghi nào,
+#nên bắt buộc ph ải dùng WHERE
+DELETE FROM categories WHERE id = 15;
+
+use nhanvien;
+# DESC - descending
+#SELECT * FROM categories ORDER BY id DESC;
+#ASC - ascending
+SELECT * FROM categories ORDER BY status ASC;
+
+#lấy ra tất cả danh mục có id > 1 sắp xếp theo chiều giảm dần của
+# ngày tạo
+SELECT * FROM categories WHERE id > 1 ORDER BY created_at DESC;
+
+# Từ khóa LIKE
+#lấy ra tất cả các danh mục mà có tên chứa ký tự a
+# bac, a, ade, da ...v.v
+#ký tự % đại diện cho 1 ký tự bất kỳ
+SELECT * FROM categories WHERE name LIKE '%a%';
+
+#Join bảng
+
+
+#Tạo 1 bảng tên là products với các trường id, category_id, name, price
+CREATE TABLE products(
+id INT(11) PRIMARY KEY AUTO_INCREMENT,
+category_id INT(11) NOT NULL,
+name VARCHAR(255) NOT NULL,
+price INT(11) DEFAULT NULL
+);
+#JOIN 2 bảng
+#bắt buộc 2 bảng phải có mối quan hệ với nhau
+#nếu giữa các bảng mà có trường trùng nhau, thì cần phải gọi tường minh, luôn luôn phải sử dụng tên-bảng.tên-trường khi thao tác với trường đó
+#nên sử dụng inner join để đảm bảo chặt chẽ nhất về mặt dữ liệu
+# ngoài ra còn có left join, right join
+SELECT
+products.*,
+categories.name AS category_name
+FROM products INNER JOIN categories ON products.category_id = categories.id

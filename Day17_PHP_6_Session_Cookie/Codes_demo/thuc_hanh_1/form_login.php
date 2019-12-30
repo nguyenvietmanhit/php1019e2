@@ -1,5 +1,6 @@
 <!--DEMO THỰC HÀNH 1-->
 <!--Xử lý form login-->
+<meta name="viewport" content="width=" />
 <?php
 session_start();
 
