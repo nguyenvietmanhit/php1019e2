@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/Nhan_xet_bai_tap_ngay_15.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/Nhan_xet_bai_tap_ngay_15.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php" afterDir="false" />
-    </list>
+    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +29,7 @@
         <counts>
           <entry key="css" value="6" />
           <entry key="html" value="54" />
-          <entry key="php" value="102" />
+          <entry key="php" value="103" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
@@ -44,7 +40,7 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="54" />
           <entry key="Image" value="1" />
-          <entry key="PHP" value="102" />
+          <entry key="PHP" value="103" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -76,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-34">
@@ -85,24 +81,6 @@
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai3.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -263,30 +241,6 @@
               <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
               <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
-              <item name="BTVN_PHP_Day16" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
-              <item name="BTVN_PHP_Day16" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -360,16 +314,15 @@
       <workItem from="1577703980140" duration="7835000" />
       <workItem from="1577861878245" duration="3321000" />
       <workItem from="1577891174463" duration="2515000" />
-      <workItem from="1577895642012" duration="546000" />
+      <workItem from="1577895642012" duration="813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131244000" />
+    <option name="totallyTimeSpent" value="131511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -399,7 +352,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai7.php" />
     <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai8.php" />
     <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai9.php" />
     <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai10.php" />
@@ -583,6 +535,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai4.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1326">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
@@ -591,20 +560,6 @@
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
     </entry>

@@ -1,26 +1,42 @@
 <?php
 $result = "";
 $error = "";
-echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
-print_r($_POST);
-echo "</pre>";
-//die;
+$errorLastname = "";
+$errorPassword = "";
+$errorConfirmPassword = "";
 if(isset($_POST['save'])){
-
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $confirm = $_POST['confirm'];
+    if(empty($lastname)){
+        $errorLastname = "Please enter your lastname";
+    }
+    if(empty($password)){
+        $errorPassword = "Please provide a password";
+    }
+    if(empty($confirm)){
+        $errorConfirmPassword = "Please provide a confirm password";
+    }
+    if($confirm != $password){
+        $errorConfirmPassword = "Confirm password must be the same a Password";
+    }
     if($firstname == ""){
         $error = "Please enter your firstname";
+    } else if($lastname == ""){
+        $error = "";
     } else if($username == ""){
         $error = "Please enter username";
     } else if($email == ""){
         $error = "Please provide a email address";
     } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = "Email is not a valid";
+    } else if($password == ""){
+        $error = "";
+    } else if(($confirm == "") || ($confirm != $password)){
+        $error = "";
     } else {
         $result = "<p style='color: #4e95ea'>Đăng ký thành công!</p>";
         $result .= "<p style='color: #4e95ea'>Thông tin của bạn:</p>";
@@ -88,10 +104,14 @@ if(isset($_POST['save'])){
             transition: 0.4s;
         }
         input.btn:focus{outline: none;}
+        .error{
+            border: 1px solid red;
+        }
         #errorLastname, #errorPassword, #errorConfirmPassword{
             font-style: italic;
             color: red;
             font-weight: 600;
+            padding-left: 6px;
         }
     </style>
 </head>
@@ -116,8 +136,20 @@ if(isset($_POST['save'])){
                 <td>Lastname:</td>
                 <td>
                     <div class="form-control">
-                        <input type="text" id="lastname" placeholder="Lastname" name="lastname" value="<?php echo isset($_POST['lastname']) ? $_POST['lastname'] : ''?>"/>
-                        <div id="errorLastname"></div>
+                        <?php
+                        $errorClass = '';
+                        if(isset($_POST['save'])){
+                            if($lastname == ""){
+                                $errorClass = 'class="error"';
+                            } else {
+                                $errorClass = '';
+                            }
+                        }
+                        ?>
+                        <input type="text" id="lastname" <?php echo $errorClass;?> placeholder="Lastname" name="lastname" value="<?php echo isset($lastname) ? $lastname : null?>"/>
+                        <div id="errorLastname">
+                            <?php echo $errorLastname;?>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -141,8 +173,20 @@ if(isset($_POST['save'])){
                 <td>Password:</td>
                 <td>
                     <div class="form-control">
-                        <input type="password" id="password" name="password" placeholder="Password" value="<?php echo isset($_POST['password']) ? $_POST['password'] : ''?>"/>
-                        <div id="errorPassword"></div>
+                        <?php
+                        $errorClass = '';
+                        if(isset($_POST['save'])){
+                            if($password == ""){
+                                $errorClass = 'class="error"';
+                            } else {
+                                $errorClass = '';
+                            }
+                        }
+                        ?>
+                        <input type="password" id="password" <?php echo $errorClass;?> name="password" placeholder="Password" value="<?php echo isset($_POST['password']) ? $_POST['password'] : ''?>"/>
+                        <div id="errorPassword">
+                            <?php echo $errorPassword;?>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -150,8 +194,20 @@ if(isset($_POST['save'])){
                 <td>Confirm Password:</td>
                 <td>
                     <div class="form-control">
-                        <input type="password" id="confirm" name="confirm" placeholder="Confirm Password" value="<?php echo isset($_POST['confirm']) ? $_POST['confirm'] : ''?>"/>
-                        <div id="errorConfirmPassword"></div>
+                        <?php
+                        $errorClass = '';
+                        if(isset($_POST['save'])){
+                            if(($confirm == "") || ($confirm != $password)){
+                                $errorClass = 'class="error"';
+                            } else {
+                                $errorClass = '';
+                            }
+                        }
+                        ?>
+                        <input type="password" id="confirm" <?php echo $errorClass;?> name="confirm" placeholder="Confirm Password" value="<?php echo isset($_POST['confirm']) ? $_POST['confirm'] : ''?>"/>
+                        <div id="errorConfirmPassword">
+                            <?php echo $errorConfirmPassword;?>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -161,56 +217,6 @@ if(isset($_POST['save'])){
     <h4>
         <?php echo $result;?>
     </h4>
-    <script rel="stylesheet">
-        function submitForm() {
-            var lastname = document.getElementById('lastname');
-            var password = document.getElementById('password');
-            var confirm = document.getElementById('confirm');
-            var obj_lastname = lastname.value;
-            var obj_password = password.value;
-            var obj_confirm = confirm.value;
-            var errorLastname = "";
-            var errorPassword = "";
-            var errorConfirmPassword = "";
-            if(obj_lastname == ""){
-                errorLastname = "Please enter your lastname";
-                lastname.setAttribute("style", "border: 1px solid red;");
-            }
-            if(obj_password == ""){
-                errorPassword = "Please provide a password";
-                password.setAttribute("style", "border: 1px solid red");
-            }
-            if(obj_confirm == ""){
-                errorConfirmPassword = "Please provide a password";
-                confirm.setAttribute("style", "border: 1px solid red;");
-            }
-            if(obj_confirm != obj_password){
-                errorConfirmPassword = "Confirm Password must be the same as Password"
-                confirm.setAttribute("style", "border: 1px solid red;");
-            }
-
-            // else {
-            //     return true;
-            // }
-            //xử lý bỏ style tương ứng với trường đã hết lỗi
-            if(obj_lastname != '') {
-                lastname.removeAttribute("style");
-            }
-            if(obj_password != '') {
-                password.removeAttribute("style");
-            }
-            if(obj_confirm != '') {
-                confirm.removeAttribute("style");
-            }
-            if(obj_confirm == obj_password) {
-                confirm.removeAttribute("style");
-            }
-            document.getElementById('errorLastname').innerHTML = errorLastname;
-            document.getElementById('errorPassword').innerHTML = errorPassword;
-            document.getElementById('errorConfirmPassword').innerHTML = errorConfirmPassword;
-            return false;
-        }
-    </script>
 </div>
 </body>
 </html>
