@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/Nhan_xet_bai_tap_ngay_15.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/Nhan_xet_bai_tap_ngay_15.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,22 +16,24 @@
     <session id="1126690923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="12" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="6" />
           <entry key="html" value="54" />
-          <entry key="php" value="98" />
+          <entry key="php" value="102" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
@@ -40,7 +44,7 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="54" />
           <entry key="Image" value="1" />
-          <entry key="PHP" value="98" />
+          <entry key="PHP" value="102" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -49,14 +53,14 @@
         <counts>
           <entry key="css" value="373" />
           <entry key="html" value="1198" />
-          <entry key="php" value="36512" />
+          <entry key="php" value="36720" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="373" />
           <entry key="HTML" value="1203" />
-          <entry key="PHP" value="36507" />
+          <entry key="PHP" value="36715" />
         </counts>
       </usages-collector>
     </session>
@@ -67,30 +71,38 @@
         <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/thuc_hanh_1/login_success.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/css/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/Bai1.php">
+        <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="-357">
+              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/Bai2.php">
+        <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="51">
+              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -118,6 +130,7 @@
     <findStrings>
       <find>box2</find>
       <find>devi</find>
+      <find>errorPassword</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,6 +181,7 @@
         <option value="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai5.php" />
         <option value="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai7.php" />
         <option value="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/Bai2.php" />
+        <option value="$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php" />
       </list>
     </option>
   </component>
@@ -191,7 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +215,22 @@
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day07_Javascript_Basic_Part_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day07_Javascript_Basic_Part_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day15_4_PHP_Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -214,21 +243,55 @@
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day15_4_PHP_Form" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha_Form" type="462c0819:PsiDirectoryNode" />
-              <item name="PhiLongBTVNDay15" type="462c0819:PsiDirectoryNode" />
+              <item name="Code_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day15_4_PHP_Form" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha_Form" type="462c0819:PsiDirectoryNode" />
-              <item name="PhiLongBTVNDay15" type="462c0819:PsiDirectoryNode" />
-              <item name="BTVNDay15" type="462c0819:PsiDirectoryNode" />
+              <item name="Code_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Draft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="BTVN_PHP_Day16" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day16_5_Frorm_Pratice_Form_Upload" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
+              <item name="BTVN_PHP_Day16" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,18 +303,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php1019e2\Day16_5_Frorm_Pratice_Form_Upload\Bai_tap_ve_nha\DSNB" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day15_4_PHP_Form\Bai_tap_ve_nha_Form" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day14_3_PHP_Array_Function_Array_String_Number\Bai_tap_ve_nha_PHP_Array" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day13_2_PHP_Operator_Condition_Loop\Bai_tap_ve_nha" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day12_PHP_Setup_Enviroment_And_Basic\Bai_tap_ve_nha\DSNB" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php1019e2\Day17_PHP_6_Session_Cookie\Codes_demo\thuc_hanh_1" />
       <recent name="C:\xampp\htdocs\php1019e2\Day11_Practice\Slides" />
       <recent name="C:\xampp\htdocs\php1019e2\Day04_Bootstrap\Bai_tap_ve_nha\DSNB" />
       <recent name="C:\xampp\htdocs\php1019e2\Day03_Cut_HTML_CSS_From_PSD_File\Bai_tap_ve_nha" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php1019e2\Day15_4_PHP_Form\Bai_tap_ve_nha_Form" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day14_3_PHP_Array_Function_Array_String_Number\Bai_tap_ve_nha_PHP_Array" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day13_2_PHP_Operator_Condition_Loop\Bai_tap_ve_nha" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day12_PHP_Setup_Enviroment_And_Basic\Bai_tap_ve_nha\DSNB" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day12_PHP_Setup_Enviroment_And_Basic\Code_demo_tren_lop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -295,18 +358,20 @@
       <workItem from="1577101679480" duration="9128000" />
       <workItem from="1577445417754" duration="11865000" />
       <workItem from="1577703980140" duration="7835000" />
-      <workItem from="1577861878245" duration="2795000" />
+      <workItem from="1577861878245" duration="3321000" />
+      <workItem from="1577891174463" duration="2515000" />
+      <workItem from="1577895642012" duration="546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127657000" />
+    <option name="totallyTimeSpent" value="131244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20953101" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -334,11 +399,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai2.php" />
-    <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai3.php" />
-    <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai4.php" />
-    <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai5.php" />
-    <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai6.php" />
     <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai7.php" />
     <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai8.php" />
     <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/PHP1019E2_NguyenHuuHung_Ngay14/PHP1019E2_NguyenHuuHung_Ngay14/bai9.php" />
@@ -478,6 +538,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/.idea/php.xml" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai1.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai2.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai3.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai4.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai5.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai6.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai7.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/css/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/Bai1.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/Bai2.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/thuc_hanh_1/login_success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/thuc_hanh_1/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -485,79 +563,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/.idea/php.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai1.php">
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/BTVN_PHP_Day15/bai4.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2445">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2397" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="57" column="34" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="34" />
+        <state relative-caret-position="-2754">
           <folding>
-            <element signature="n#style#0;n#small#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai6.php">
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/BTVN_PHP_Day15/bai5.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PHP1019E3_NguyenHuuHung_Ngay15/PHP1019E3_NguyenHuuHung_Ngay15/bai7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+        <state relative-caret-position="-2754">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/thuc_hanh_1/login_success.php">
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/Draft/demo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="-34">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/Bai1.php">
+    <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="-357">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/PhiLongBTVNDay15/BTVNDay15/Bai2.php">
+    <entry file="file://$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Bai_tap_ve_nha/DSNB/BTVN_PHP_Day16/bai3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="51">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
     </entry>
