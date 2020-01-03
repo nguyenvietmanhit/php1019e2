@@ -1,83 +1,93 @@
 <?php
-//các bước để kết nối tới CSDL Mysql từ php thông qua extension mysqli
-//1 - Khởi tạo kết nối
-const DB_HOST = 'localhost';
+//địa chỉ tới DB
+const DB_HOST = 'localhost'; //127.0.0.1
+//username kết nối vào DB,
+//đây là tài khoản mặc định mà khi cài XAMPP đã tạo sẵn
 const DB_USERNAME = 'root';
+//mật khẩu kết nói vào DB,
+// đây là password mặc định mà khi cài XAMPP đã tạo sẵn
 const DB_PASSWORD = '';
-const DB_NAME = 'demo_db';
+//tên DB muốn kết nối
+const DB_NAME = 'db_19';
+//cổng kết nối vào DB
 const DB_PORT = 3306;
+
+//Thực hiện kết nối tới CSDL Mysql sử dụng PHP
 $connection = mysqli_connect(DB_HOST, DB_USERNAME,
     DB_PASSWORD, DB_NAME, DB_PORT);
+
+//nếu kết nối không thành công thì hiển thị thông báo lỗi
 if (!$connection) {
-    die("Kết nối thất bại, lỗi như sau: " . mysqli_connect_error());
+    die("Kết nối thất bại. Chi tiết lỗi: " . mysqli_connect_error());
 }
-echo "Kết nối CSDL có tên là " . DB_NAME . " thành công";
-//tạo bảng categories gồm có 2 trường id (khóa chính) và name
-//CREATE TABLE categories(
-//    id INT(11) NOT NULL AUTO_INCREMENT,
-//    name VARCHAR(255) DEFAULT NULL,
-//    PRIMARY KEY (id)
-//
-//)
-//thêm 1 vài dữ liệu mẫu
-//INSERT INTO categories (name) VALUES ('The thao'),
-//('Suc khoe'), ('Tin nhanh')
 
-//CRUD  Create - Read (select) - Update - Delete
-//1 - Chức năng Create (Insert)
+echo "Kết nối tới CSDL" . DB_NAME . " thành công";
 
-$sqlInsert = "INSERT INTO categories(name) VALUES ('The gioi')";
-//với các truy vấn làm thay đổi dữ liệu như insert, update, delete
-//thì hàm mysqli_query sẽ trả về true/false
-//còn với trúy vấn mà ko làm thay đổi dữ liệu như select thì hàm
-//mysqli_query sẽ trả 1 object
-$isInsert = mysqli_query($connection, $sqlInsert);
-if ($isInsert) {
-    echo 'Insert dữ liệu thành công';
+//với trương hợp lưu bị lỗi font, sử dụng hàm sau
+mysqli_query($connection, "SET NAMES 'utf8'");
+//Dùng PHP để thêm dữ liệu vào bảng students
+//sử dụng dấu huyền để bao các trường, để tránh trường hợp tên trường
+//trùng với từ khóa trong SQL - vd: name
+$sql_insert = "INSERT INTO students(`name`, `age`) 
+                VALUES('Manh', 29), ('ABC', 23)";
+
+//thực thi câu truy vấn vừa tạo
+//với truy vấn insert, update, delete thì hàm mysqli_query sẽ trả về
+//giá trị boolean
+//với truy vấn select -> hàm sẽ trả về 1 đối tượng, ko phải kiểu boolean
+$is_insert = mysqli_query($connection, $sql_insert);
+echo "<br />";
+if ($is_insert) {
+    echo "Insert thành công";
+} else {
+    echo "Insert thất bại";
 }
-else {
-    echo 'Insert dữ liệu thất bại';
+
+//Chức năng Update
+//update tên = New Name cho các bản ghi mà có id < 5
+$sql_update = "UPDATE students SET `name` = 'New Name' WHERE id < 5";
+$is_update = mysqli_query($connection, $sql_update);
+if ($is_update) {
+    echo "Update thành công";
+} else {
+    //trong trường hợp update thất bại, thường sẽ ko báo lỗi cụ thể là
+//    gì, thì nên copy câu truy vấn chạy trực tiếp trong tab SQL của
+//    PHPMyadmin để xem có bị lỗi ko
+    echo "Update thất bại";
 }
-//2 - Select
-$querySelect = "SELECT * FROM categories";
-$results = mysqli_query($connection, $querySelect);
-//check xem có bản ghi nào trả về hay ko
+
+//Chức năng Xóa
+//xóa các bản ghi mà có id > 8
+$sql_delete = "DELETE FROM students WHERE id > 8";
+$is_delete = mysqli_query($connection, $sql_delete);
+if ($is_delete) {
+    echo "Xóa các bản ghi có id > 8 thành công";
+} else {
+    echo "Xóa các bản ghi có id > 8 thất bại";
+}
+//Chức năng liệt kê
+//láy ra thông tin tất cả dữ liệu trong bảng students
+$sql_select = "SELECT * FROM students";
+$results = mysqli_query($connection, $sql_select);
+//kiểm tra xem có bản ghi nào trả về từ câu truy vấn select hay ko
 if (mysqli_num_rows($results) > 0) {
-    //chuyển đổi biến results thành mảng chứa kết quả cuối cùng
-//    với tham số MYSQLI_ASSOC
-    $categories = mysqli_fetch_all($results, MYSQLI_ASSOC);
-    foreach($categories AS $category) {
-        echo "ID: {$category['id']}, ";
-        echo "ID: {$category['name']}";
+    //lấy ra được dữ liệu mong muốn,
+//    cần chú ý phải truyền hằng MYSQLI_ASSOS để có thể trả về 1 mảng
+//    kết hợp
+    $students = mysqli_fetch_all($results, MYSQLI_ASSOC);
+    //lặp và hiển thị ra các thông tin
+    foreach ($students as $student) {
+        //hiển thị giá trị 1 mảng trong dấu nháy kép
+        // sử dụng cặp ngoặc {}
+        echo "Tên: {$student['name']}";
+        echo "<br />";
+        echo "Tuổi: {$student['age']}";
+        echo "<br />";
+//        $created_at = $student['created_at'];
+$created_at = date('d-m-Y H:i:s', strtotime($student['created_at']));
+        echo "NGày tạo: $created_at";
         echo "<br />";
     }
+//    crud
 }
-else {
-    echo "Không có bản ghi nào trong bảng categories";
-}
-
-//3 - UPDATE
-$sqlUpdate = "UPDATE categories SET name = 'The gioi id 9' WHERE id = 9";
-$isUpdate = mysqli_query($connection, $sqlUpdate);
-if ($isUpdate) {
-    echo 'Update name cho bản ghi có id = 9  thành công';
-}
-else {
-    echo 'Update thất bại';
-}
-
-// 4 - Delete
-$sqlDelete = "DELETE FROM categories WHERE id = 1";
-$isDelete = mysqli_query($connection, $sqlDelete);
-if ($isDelete) {
-    echo 'Xóa bản ghi với id = 1 thành công';
-}
-else {
-    echo 'Xóa thất bại';
-}
-//
-
-//sau khi thao tacs thành công cần đóng kết nối lại
-mysqli_close($connection);
 ?>
-

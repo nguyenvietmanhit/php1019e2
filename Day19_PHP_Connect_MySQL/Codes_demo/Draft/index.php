@@ -7,7 +7,18 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<a href="#" id="show-ajax">Click để show dữ liệu từ MySQL</a>
-<div id="result-ajax"></div>
+<!--<a href="#" id="show-ajax">Click để show dữ liệu từ MySQL</a>-->
+<!--<div id="result-ajax"></div>-->
+<form onsubmit="return check()">
+    <input type="text" id="name" />
+    <input type="submit" />
+</form>
+<script>
+    function check() {
+        var obj_name = document.getElementById("dsadasdsa");
+        var name = obj_name.value;
+        return false;
+    }
+</script>
 </body>
 </html>
