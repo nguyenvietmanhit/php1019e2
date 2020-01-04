@@ -74,16 +74,19 @@
 				error = "Email không đúng định dạng, email ko cho phép ký tự @ đứng đầu tiên, và ký tự 				. cuối cùng không thể đứng trước ký tự @";
 				obj_email.focus();
 			}
-			//không chọn radio nào thì báo lỗi, và focus vào radio
-			else if(obj_gender_female.checked == false && obj_gender_male.checked == false) {
-				error = "Cần phải check gender";
-				obj_gender_male.focus();
-
+			else if(document.getElementById('gender_female').checked == true) {
+				result += "Giới tính đã chọn: Female"
 			}
+            else if(document.getElementById('gender_male').checked == true) {
+                result += "Giới tính đã chọn: Male"
+            }
 			else {
+			    console.log(country)
+			    console.log(obj_gender_male.value)
+			    console.log(obj_gender_female.value)
 				// window.open("mailto:" + email);
 				//chuyển hướng người dùng tới trang google.vn
-				window.location = "http://google.vn";
+				// window.location = "http://google.vn";
 			}
 
 			//show kết quả lỗi và thành công ra màn hình
