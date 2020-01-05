@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Day07_Javascript_Basic_Part_2/Code_demo_tren_lop/demo_js.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day07_Javascript_Basic_Part_2/Code_demo_tren_lop/demo_js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day08_Javascript_Basic_Practice/Code_demo_tren_lop/chua_thuc_hanh_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day08_Javascript_Basic_Practice/Code_demo_tren_lop/chua_thuc_hanh_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/Nhan_xet_bai_tap_ngay_15.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/Nhan_xet_bai_tap_ngay_15.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +17,7 @@
     <session id="1126690923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.0" value="12" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
@@ -29,14 +27,15 @@
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="6" />
           <entry key="html" value="54" />
-          <entry key="php" value="115" />
+          <entry key="php" value="116" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
@@ -47,7 +46,7 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="54" />
           <entry key="Image" value="1" />
-          <entry key="PHP" value="115" />
+          <entry key="PHP" value="116" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -70,53 +69,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1309">
-              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_3.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1428" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_4.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_5.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -212,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,6 +175,16 @@
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day00_Setup_Tool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day12_1_PHP_Setup_Enviroment_And_Basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day15_4_PHP_Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -230,13 +192,6 @@
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day15_4_PHP_Form" type="462c0819:PsiDirectoryNode" />
               <item name="Bai_tap_ve_nha_Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day15_4_PHP_Form" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha_Form" type="462c0819:PsiDirectoryNode" />
-              <item name="bitpvnhngy15" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
@@ -283,6 +238,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,18 +310,18 @@
       <workItem from="1577895642012" duration="1061000" />
       <workItem from="1577977806619" duration="608000" />
       <workItem from="1578049584790" duration="12797000" />
-      <workItem from="1578154440062" duration="1339000" />
+      <workItem from="1578154440062" duration="1651000" />
+      <workItem from="1578200854043" duration="583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146503000" />
+    <option name="totallyTimeSpent" value="147398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.295764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30030257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -393,7 +349,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day14_3_PHP_Array_Function_Array_String_Number/Bai_tap_ve_nha_PHP_Array/BTVNNgay14/Bai1.php" />
     <entry file="file://$PROJECT_DIR$/Day11_Practice_Frontend_Final_2/Code_demos/Draft/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2173">
@@ -581,40 +536,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1309">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1428" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_1.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_2.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_3.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_4.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_5.php" />
+    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_6.php" />
   </component>
 </project>
