@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Day19_PHP_Connect_MySQL/Codes_demo/demo_connect_mysql.php" line="72" mnemonic="4" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -25,17 +22,18 @@
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.3" value="5" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="6" />
-          <entry key="html" value="54" />
-          <entry key="php" value="116" />
+          <entry key="html" value="55" />
+          <entry key="js" value="2" />
+          <entry key="php" value="125" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
@@ -44,9 +42,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="HTML" value="54" />
+          <entry key="HTML" value="55" />
           <entry key="Image" value="1" />
-          <entry key="PHP" value="116" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PHP" value="125" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -54,27 +53,122 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="373" />
-          <entry key="html" value="1198" />
-          <entry key="php" value="45224" />
+          <entry key="html" value="1621" />
+          <entry key="js" value="836" />
+          <entry key="php" value="49510" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="373" />
-          <entry key="HTML" value="1203" />
-          <entry key="PHP" value="45196" />
-          <entry key="SQL" value="23" />
+          <entry key="HTML" value="1626" />
+          <entry key="JavaScript" value="836" />
+          <entry key="PHP" value="49481" />
+          <entry key="SQL" value="24" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="689">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2320" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/delete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="689">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/detail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-795">
+              <caret line="6" column="23" selection-start-line="5" selection-start-column="7" selection-end-line="6" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/get_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="62" selection-end-line="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_sql_injection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="689">
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -92,12 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PhiLong/BT2.html" />
-        <option value="$PROJECT_DIR$/Day02_CSS/Bai_tap_ve_nha/DSNB/PHP1019E2_DoanQuangLinh_ngày02/PHP1019E2_DoanQuangLinh_ngày02/bai6.html" />
-        <option value="$PROJECT_DIR$/Day04_Bootstrap/Bai_tap_ve_nha/DSNB/PHP1019E2_VuThiHoaiLinh_Buoi4/bai2-buoi4/bai2.html" />
-        <option value="$PROJECT_DIR$/Day11_Practice/Code_demos/Draft/test.html" />
-        <option value="$PROJECT_DIR$/Day11_Practice/Code_demos/Draft/home.html" />
-        <option value="$PROJECT_DIR$/Day11_Practice/Code_demos/Draft/login.html" />
         <option value="$PROJECT_DIR$/Day11_Practice/Code_demos/Draft/register.html" />
         <option value="$PROJECT_DIR$/Day11_Practice/Code_demos/Draft/css/style.css" />
         <option value="$PROJECT_DIR$/Day11_Practice_Frontend_Final_2/Code_demos/Draft/css/style.css" />
@@ -142,6 +230,13 @@
         <option value="$PROJECT_DIR$/Day19_PHP_Connect_MySQL/Codes_demo/crud/index.php" />
         <option value="$PROJECT_DIR$/Day19_PHP_Connect_MySQL/Codes_demo/crud/delete.php" />
         <option value="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_2.php" />
+        <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/detail.php" />
+        <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/update.php" />
+        <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/index.php" />
+        <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/js/main.js" />
+        <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/get_list.php" />
+        <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/index.html" />
+        <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_sql_injection.php" />
       </list>
     </option>
   </component>
@@ -207,32 +302,18 @@
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day19_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
+              <item name="Day19_8_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day19_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+              <item name="Day20_9_PHP_MySQL_Ajax_SQL_Injection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day19_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
+              <item name="Day20_9_PHP_MySQL_Ajax_SQL_Injection" type="462c0819:PsiDirectoryNode" />
               <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day19_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
-              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="crud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day19_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
-              <item name="Slides" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,18 +331,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php1019e2\Day20_9_PHP_MySQL_Ajax_SQL_Injection\Codes_demo\demo_ajax\js" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day20_9_PHP_MySQL_Ajax_SQL_Injection\Codes_demo\crud" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day15_4_PHP_Form\Bai_tap_ve_nha_Form" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day16_5_Frorm_Pratice_Form_Upload\Bai_tap_ve_nha\DSNB" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day14_3_PHP_Array_Function_Array_String_Number\Bai_tap_ve_nha_PHP_Array" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php1019e2\Day17_PHP_6_Session_Cookie\Codes_demo\thuc_hanh_1" />
       <recent name="C:\xampp\htdocs\php1019e2\Day11_Practice\Slides" />
       <recent name="C:\xampp\htdocs\php1019e2\Day04_Bootstrap\Bai_tap_ve_nha\DSNB" />
       <recent name="C:\xampp\htdocs\php1019e2\Day03_Cut_HTML_CSS_From_PSD_File\Bai_tap_ve_nha" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php1019e2\Day15_4_PHP_Form\Bai_tap_ve_nha_Form" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day16_5_Frorm_Pratice_Form_Upload\Bai_tap_ve_nha\DSNB" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day14_3_PHP_Array_Function_Array_String_Number\Bai_tap_ve_nha_PHP_Array" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day13_2_PHP_Operator_Condition_Loop\Bai_tap_ve_nha" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day12_PHP_Setup_Enviroment_And_Basic\Bai_tap_ve_nha\DSNB" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -275,6 +356,16 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="detail.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php1019e2/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/detail.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.detail.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -312,21 +403,23 @@
       <workItem from="1578049584790" duration="12797000" />
       <workItem from="1578154440062" duration="1651000" />
       <workItem from="1578200854043" duration="1343000" />
+      <workItem from="1578309543791" duration="11384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148158000" />
+    <option name="totallyTimeSpent" value="159542000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30030257" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -348,81 +441,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_sql_injection.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day11_Practice_Frontend_Final_2/Code_demos/Draft/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2173">
-          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day11_Practice_Frontend_Final_2/Code_demos/Draft/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3975">
-          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day04_Bootstrap/Code_demo_tren_lop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2438">
-          <caret line="46" column="6" selection-end-line="46" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/chua_bai_tap_ngay_14.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7526">
-          <caret line="142" column="4" selection-start-line="142" selection-start-column="4" selection-end-line="142" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/demo_function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2544">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/demo_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2491">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day03_Cut_HTML_CSS_From_PSD_File/Bai_tap_ve_nha/DSNB/BuiAnhVu_Ngay3/bt1/css/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/demo_form_input.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/chua_bua_tap_ngay_16.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/demo_session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/test_session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/thua_hanh_1.php" />
     <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/demo_cookie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -542,5 +572,90 @@
     <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_4.php" />
     <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_5.php" />
     <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_6.php" />
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="9" column="11" selection-start-line="9" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-795">
+          <caret line="6" column="23" selection-start-line="5" selection-start-column="7" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/js/jquery-3.2.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/get_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_sql_injection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
