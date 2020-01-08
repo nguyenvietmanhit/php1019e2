@@ -1,0 +1,82 @@
+/*CSS FOT BT 1 SLIDE*/
+.dropdown-menu {
+	display: block;
+}
+
+
+/*CSS FOR BT 2 SLIDe*/
+.bt2 .container {
+	max-width: 500px;
+}
+
+.bt2 .header {
+	text-align: center;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.bt2 h1.login-text:after {
+	content: '';
+    width: 40px;
+    display: block;
+    margin: 10px auto;
+    border-top: 2px solid #fff;
+}
+
+.bt2 .signup-link {
+	color: #fff;
+    text-decoration: underline;
+}
+
+.bt2 .main, .bt2 .footer {
+	padding: 30px;
+    background: #fafaff;
+}
+
+.bt2 .footer {
+	padding-top: 0;
+}
+
+/*CSS FOR MOBILE*/
+@media(max-width: 767px) {
+	.bt2 .container {
+		padding: 0;
+	}
+
+	.bt2 .main, .bt2 .footer {
+		padding: 15px;
+	}
+}
+
+
+/*CSS FOR BTVN5*/
+.bt5 .content {
+	border: 1px solid #000;
+    padding: 0 15px 30px 15px;
+}
+
+.bt5 .link-here {
+	display: inline-block;
+    text-decoration: underline;
+    font-weight: bold;
+    background: #ccc;
+    padding: 0 10px 15px 0;
+    margin-bottom: 10px;
+}
+
+.bt5 .img {
+	display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 767px) {
+	.bt5 .container {
+		padding: 0;
+	}
+
+	.bt5 .content {
+		margin-bottom: 30px;
+	}
+}
