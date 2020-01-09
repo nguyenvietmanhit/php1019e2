@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chữa bài tập 4 ngày 9 - jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Số nguyên tố</h2>
+    <form>
+        <div class="form-group">
+            <label>Nhập vào số a:</label>
+            <input type="text" class="form-control" id="number"/>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kết quả</button>
+    </form>
+    <h3 id="error" style="color: red"></h3>
+    <h3 id="result" style="color: green"></h3>
+</div>
+<script type="text/javascript">
+    /**
+     * Hàm kiểm tra số nguyên tố
+     * @param number
+     * @returns {boolean}
+     */
+    function isPrime(number) {
+        //nếu số truyền vào < 2 thì ko phải là số nguyên tố
+        if (number < 2) {
+            return false;
+        }
+        var is_prime = true;
+        //sử dụng vòng lặp để kiểm tra, nếu tại 1 lần lặp nào đó mà số number chia hết cho i, thì chắc
+        // chắn số đó ko phải là số nguyên tố
+        for (var i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                is_prime = false;
+                break;
+            }
+        }
+
+        return is_prime;
+    }
+
+    //chờ trang tải xong thì mới chạy code javascript
+    $(document).ready(function () {
+        //sự kiện submit form sử dụng jQuery để thao tác
+        $('form').submit(function () {
+            var error = '';
+            var result = '';
+            //lấy ra giá trị của input của number sử dụng hàm val() trong jQuery
+            var number = $('#number').val();
+            //check 2 trường hợp validate
+            if (number == '') {
+                error = 'Không được để trống trường number';
+                result = '';
+            } else if (isNaN(number)) {
+                error = 'Phải nhập trường number là số';
+                result = '';
+            } else {
+                result += 'Các số nguyên tố từ 1 đến ' + number + ' là: ';
+                //sử dụng vòng lặp để lặp các số từ 1 -> number
+                for (var i = 1; i <= number; i++) {
+                    //tại từng lần lặp, gọi hàm isPrime để kiểm tra số nguyên tố
+                    //nếu hàm trả về true, thì nối biến lặp hiện tại cho biến result
+                    if (isPrime(i)) {
+                        result += i + ',';
+                    }
+                }
+                //khi ra khỏi vòng lặp, sử dụng hàm substring để cắt bỏ ký tự , thừa ở cuối chuỗi
+                result = result.substring(0, result.length - 1);
+                error = '';
+            }
+
+            //hiển thị 2 biến lỗi và kết quả vào các phần tử với id tương ứng là error và result
+            $('#error').html(error);
+            $('#result').html(result);
+
+            //ngăn ngừa form tải lại trang
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
