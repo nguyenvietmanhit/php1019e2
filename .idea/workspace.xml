@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/Nhan_xet_bai_tap_ngay_17.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/Nhan_xet_bai_tap_ngay_17.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Slides/PHP_Basic_Practice.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Slides/PHP_Basic_Practice.ppt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +14,7 @@
     <session id="1126690923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="13" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
@@ -23,9 +23,9 @@
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="5" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,7 +33,7 @@
           <entry key="css" value="8" />
           <entry key="html" value="55" />
           <entry key="js" value="2" />
-          <entry key="php" value="151" />
+          <entry key="php" value="155" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
@@ -45,7 +45,7 @@
           <entry key="HTML" value="55" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="151" />
+          <entry key="PHP" value="155" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -55,7 +55,7 @@
           <entry key="css" value="373" />
           <entry key="html" value="1621" />
           <entry key="js" value="836" />
-          <entry key="php" value="49683" />
+          <entry key="php" value="54365" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -63,7 +63,7 @@
           <entry key="CSS" value="373" />
           <entry key="HTML" value="1626" />
           <entry key="JavaScript" value="836" />
-          <entry key="PHP" value="49654" />
+          <entry key="PHP" value="54336" />
           <entry key="SQL" value="24" />
         </counts>
       </usages-collector>
@@ -74,79 +74,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_sql_injection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="673">
+              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout.php">
+        <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh1/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="556">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#h3#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_1.php">
+        <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh2/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="344">
+              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_2.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success_3.php">
+        <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/form_contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="46" />
+            <state relative-caret-position="330">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_3.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout_3.php">
+        <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="212">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout_2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success_2.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -173,10 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day12_PHP_Setup_Enviroment_And_Basic/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay12/bai5.php" />
-        <option value="$PROJECT_DIR$/Day13_PHP_Operator_Condition_Loop/Code_demo_tren_lop/chua_bai_tap_ngay_12.php" />
-        <option value="$PROJECT_DIR$/Day13_PHP_Operator_Condition_Loop/Code_demo_tren_lop/demo_php_part_2.php" />
-        <option value="$PROJECT_DIR$/Day14_PHP_Array_Function_Array_String_Number/Code_demo_tren_lop/chua_bai_tap_ngay_13.php" />
         <option value="$PROJECT_DIR$/Day14_PHP_Array_Function_Array_String_Number/Code_demo_tren_lop/demo_array.php" />
         <option value="$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/Day13_BuiAnhVu/Day13/bai10.php" />
         <option value="$PROJECT_DIR$/Day13_2_PHP_Operator_Condition_Loop/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenHuuHung_Ngay13/PHP1019E2_NguyenHuuHung_Ngay13/bai4.php" />
@@ -224,6 +197,10 @@
         <option value="$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/config.php" />
         <option value="$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/create.php" />
         <option value="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success_3.php" />
+        <option value="$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh1/index.php" />
+        <option value="$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh2/index.php" />
+        <option value="$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/index.php" />
+        <option value="$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/form_contact.php" />
       </list>
     </option>
   </component>
@@ -247,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,13 +266,6 @@
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day17_PHP_6_Session_Cookie" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="bitpvnhngy17" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day18_7_MySQL_Database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -333,10 +302,35 @@
               <item name="Day20_9_PHP_MySQL_Ajax_SQL_Injection" type="462c0819:PsiDirectoryNode" />
               <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day21_10_PHP_Basic_Pratice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day21_10_PHP_Basic_Pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="Code_Demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day21_10_PHP_Basic_Pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="Code_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="thuchanh3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day21_10_PHP_Basic_Pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="Slides" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,17 +416,17 @@
       <workItem from="1578200854043" duration="1343000" />
       <workItem from="1578309543791" duration="11384000" />
       <workItem from="1578629578518" duration="10668000" />
+      <workItem from="1578654507773" duration="10235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170210000" />
+    <option name="totallyTimeSpent" value="180445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3336887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.021855012" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -460,16 +454,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day19_PHP_Connect_MySQL/Codes_demo/crud/config.php" />
-    <entry file="file://$PROJECT_DIR$/Day19_PHP_Connect_MySQL/Codes_demo/crud/create.php" />
-    <entry file="file://$PROJECT_DIR$/Day19_PHP_Connect_MySQL/Codes_demo/crud/index.php" />
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/thuc_hanh_1/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day19_PHP_Connect_MySQL/Codes_demo/crud/delete.php" />
     <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_1.php" />
     <entry file="file://$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_2.php" />
@@ -526,9 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,186 +534,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/BTVNDay19/config.php">
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/BTVNDay19/config.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/css/all.css" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/confix.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/create.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/update.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/detail.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/delete.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/list.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai1/login_form.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai1/login_success.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai1/logout.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai2/login_success.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai2/index.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai2/logout.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai3/index.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/css/all.css" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/config.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/index.php" />
+    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/create.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_1.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success_2.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_2.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout_2.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout_3.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_3.php" />
+    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success_3.php" />
+    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_sql_injection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="673">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/css/all.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/confix.php">
+    <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh1/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/update.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/delete.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="556">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#h3#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai1/login_form.php">
+    <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh2/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai1/login_success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai1/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai2/login_success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai2/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai2/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai3/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="120" column="33" lean-forward="true" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/css/all.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="344">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/index.php">
+    <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="76" lean-forward="true" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
+        <state relative-caret-position="212">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/create.php">
+    <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/form_contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_sql_injection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success_2.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_2.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/logout_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/bai_tap_ve_nha_day_17_3.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="330">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
