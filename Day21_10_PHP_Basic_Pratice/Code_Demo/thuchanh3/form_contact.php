@@ -13,20 +13,21 @@ if (isset($_POST['submit'])) {
     //biểu thức quy tắc sẽ dựa vào các mẫu (pattern) mà do bạn quy
 //    định trước, sau đó so sánh biến cần kiểm tra với mẫu này
 //    ab de -> hợp lệ abcde ef
-    $pattern = "/\s{0,}^[a-zA-Z]{2,}|[a-zA-Z]{2,}+\s{1,}[a-zA-Z]{2,}$/";
+//    $pattern = "/\s{0,}^[a-zA-Z]{2,}|[a-zA-Z]{2,}+\s{1,}[a-zA-Z]{2,}$/";
+  $pattern = "/^[a-zA-Z]{2,}( [a-zA-Z]{2,})*$/";
     //xử lý validate
     //trường hợp để trống tất cả các trường
-    if (empty($fullname)
-        || $country == -1
-        || !isset($_POST['gender'])
-        || !isset($_POST['jobs'])
-    ) {
-        $error = 'Không được để trống tất cả các trường';
-    }
+//    if (empty($fullname)
+//        || $country == -1
+//        || !isset($_POST['gender'])
+//        || !isset($_POST['jobs'])
+//    ) {
+//        $error = 'Không được để trống tất cả các trường';
+//    }
     //yêu cầu 1 từ phải có ít nhất 2 ký tự
 //    Na Manh -> hợp lệ
 //        N Manh -> ko hợp lệ
-    else if(!preg_match($pattern, $fullname)) {
+     if(!preg_match($pattern, $fullname)) {
         $error = 'Các từ trong họ tên phải chứa ít nhất 2 ký tự';
     }
     else {
