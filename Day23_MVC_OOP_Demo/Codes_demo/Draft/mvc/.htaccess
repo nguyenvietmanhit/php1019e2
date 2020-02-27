@@ -1,0 +1,8 @@
+RewriteEngine On
+#RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /show.php [L]
+#RewriteRule ^show.php?controller=$1&action=$2/$ /$1/$2
+RewriteRule ^(.*)/(.*)$ index.php?controller=$1&action=$2
+#RewriteRule . /show.php [L]
