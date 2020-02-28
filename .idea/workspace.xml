@@ -6,15 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/day22/.idea/day22.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/day22/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/day22/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/day22/book.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/day22/crud.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/day22/demo_db_oop.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/day22/demoopp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/day22/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/Nhan_xet_bai_tap_ngay_22.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/Nhan_xet_bai_tap_ngay_22.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Slides/4_Connect_MySQL_Use_PDO.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Slides/4_Connect_MySQL_Use_PDO.ppt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/assets/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/configs/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/controllers/BookController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/controllers/ParentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/models/Book.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/models/Model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/views/books/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/views/layouts/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/Draft/mvc/views/layouts/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Slides/2_MVC_OOP.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Slides/2_MVC_OOP.ppt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +34,7 @@
     <session id="1126690923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.0" value="15" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
@@ -42,11 +50,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="8" />
+          <entry key="css" value="9" />
+          <entry key="htaccess" value="1" />
           <entry key="html" value="56" />
           <entry key="iml" value="1" />
-          <entry key="js" value="3" />
-          <entry key="php" value="164" />
+          <entry key="js" value="4" />
+          <entry key="php" value="175" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
@@ -54,14 +63,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="8" />
+          <entry key="CSS" value="9" />
           <entry key="HTML" value="56" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="164" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PHP" value="175" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="3" />
+          <entry key="htaccess" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -69,7 +79,7 @@
           <entry key="css" value="373" />
           <entry key="html" value="1623" />
           <entry key="js" value="836" />
-          <entry key="php" value="63801" />
+          <entry key="php" value="70305" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -77,88 +87,94 @@
           <entry key="CSS" value="373" />
           <entry key="HTML" value="1631" />
           <entry key="JavaScript" value="836" />
-          <entry key="PHP" value="63759" />
-          <entry key="SQL" value="34" />
+          <entry key="PHP" value="70258" />
+          <entry key="SQL" value="39" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day01_HTML/Codes_demo/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="18" selection-end-line="124" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Codes_demo/demo_oop.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="232" column="1" selection-start-line="232" selection-start-column="1" selection-end-line="232" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/PHP1019E2_Pham_Le_Viet_Tu_BTVN_Day22/PHP1019E2_Pham_Le_Viet_Tu_BTVN_Day22.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/ThanhTrungday22/.idea/day22.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/QuangThuy/QuanLiSach.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="787">
-              <caret line="80" column="19" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/ThanhTrungday22/crud.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/ThanhTrungday22/demo_db_oop.php">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/controllers/BookController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+            <state relative-caret-position="318">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/ThanhTrungday22/demoopp.php">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/models/Book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1071" />
+            <state relative-caret-position="371">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/ThanhTrungday22/test.php">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/demo_pdo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/books/index.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/index.php">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/books/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="371">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/books/edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/layouts/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/layouts/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/.htaccess">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -189,14 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/demo_form.php" />
-        <option value="$PROJECT_DIR$/Day15_4_PHP_Form/Code_demo/demo_form_input.php" />
-        <option value="$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/chua_bai_tap.php" />
-        <option value="$PROJECT_DIR$/Day16_5_Frorm_Pratice_Form_Upload/Codes_demo/demo_upload_file.php" />
-        <option value="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/chua_bua_tap_ngay_16.php" />
-        <option value="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/demo_session.php" />
-        <option value="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/test_session.php" />
-        <option value="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/demo_cookie.php" />
         <option value="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/thua_hanh_1.php" />
         <option value="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/form_login.php" />
         <option value="$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Codes_demo/thuc_hanh_1/login_success.php" />
@@ -240,6 +248,14 @@
         <option value="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Codes_demo/crud.php" />
         <option value="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/PHP1019E2_Pham_Le_Viet_Tu_BTVN_Day22/PHP1019E2_Pham_Le_Viet_Tu_BTVN_Day22.php" />
         <option value="$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/QuangThuy/QuanLiSach.php" />
+        <option value="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/configs/database.php" />
+        <option value="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/index.php" />
+        <option value="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/layouts/header.php" />
+        <option value="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/layouts/footer.php" />
+        <option value="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/books/create.php" />
+        <option value="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/demo_pdo.php" />
+        <option value="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/controllers/BookController.php" />
+        <option value="$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/models/Book.php" />
       </list>
     </option>
   </component>
@@ -274,17 +290,6 @@
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day00_Setup_Tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day01_HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
@@ -344,27 +349,6 @@
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day19_8_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
-              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day19_8_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
-              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="Draft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day19_8_PHP_Connect_MySQL" type="462c0819:PsiDirectoryNode" />
-              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="Draft" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day20_9_PHP_MySQL_Ajax_SQL_Injection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -412,45 +396,85 @@
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day22_PHP_OOP_Basic" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day22_PHP_OOP_Basic" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
-              <item name="day22" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day22_PHP_OOP_Basic" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
-              <item name="QuangThuy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day22_PHP_OOP_Basic" type="462c0819:PsiDirectoryNode" />
-              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
-              <item name="DSNB" type="462c0819:PsiDirectoryNode" />
-              <item name="ThanhTrungday22" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day22_PHP_OOP_Basic" type="462c0819:PsiDirectoryNode" />
               <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
               <item name="Day22_PHP_OOP_Basic" type="462c0819:PsiDirectoryNode" />
+              <item name="Slides" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Bai_tap_ve_nha" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
               <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="Draft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Codes_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day23_MVC_OOP_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Slides" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -468,18 +492,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php1019e2\Day17_PHP_6_Session_Cookie\Codes_demo\thuc_hanh_1" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day11_Practice\Slides" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day04_Bootstrap\Bai_tap_ve_nha\DSNB" />
+      <recent name="C:\xampp\htdocs\php1019e2\Day03_Cut_HTML_CSS_From_PSD_File\Bai_tap_ve_nha" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php1019e2\Day22_PHP_OOP_Basic\Bai_tap_ve_nha\DSNB\QuangThuy" />
       <recent name="C:\xampp\htdocs\php1019e2\Day22_PHP_OOP_Basic\Bai_tap_ve_nha\DSNB" />
       <recent name="C:\xampp\htdocs\php1019e2\Day17_PHP_6_Session_Cookie\Bai_tap_ve_nha" />
       <recent name="C:\xampp\htdocs\php1019e2\Day19_8_PHP_Connect_MySQL\Bai_tap_ve_nha\DSNB" />
       <recent name="C:\xampp\htdocs\php1019e2\Day19_8_PHP_Connect_MySQL\Bai_tap_ve_nha" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php1019e2\Day17_PHP_6_Session_Cookie\Codes_demo\thuc_hanh_1" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day11_Practice\Slides" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day04_Bootstrap\Bai_tap_ve_nha\DSNB" />
-      <recent name="C:\xampp\htdocs\php1019e2\Day03_Cut_HTML_CSS_From_PSD_File\Bai_tap_ve_nha" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -550,12 +574,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194156000" />
+    <option name="totallyTimeSpent" value="204980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -583,55 +607,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="5" selection-start-column="7" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/get_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/BTVNDay19/BTVNDay19/config.php" />
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/css/all.css" />
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/confix.php" />
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/create.php" />
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/update.php" />
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/detail.php" />
-    <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/delete.php" />
     <entry file="file://$PROJECT_DIR$/Day19_8_PHP_Connect_MySQL/Bai_tap_ve_nha/DSNB/PHP1019E2_NguyenThiHienTrang_Day19/Day19/list.php" />
     <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai1/login_form.php" />
     <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/ThanhTrungBTVN_PHP_Day17/bai1/login_success.php" />
@@ -655,7 +630,7 @@
     <entry file="file://$PROJECT_DIR$/Day17_PHP_6_Session_Cookie/Bai_tap_ve_nha/bitpvnhngy17/login_success_3.php" />
     <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Codes_demo/compare_oop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
+        <state relative-caret-position="583">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
@@ -663,35 +638,38 @@
     <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Codes_demo/crud.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
-          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#59#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_sql_injection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
+        <state relative-caret-position="2332">
           <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh1/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="1802">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh2/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
+        <state relative-caret-position="2279">
           <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/form_contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="1113">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -704,7 +682,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day21_10_PHP_Basic_Pratice/Code_Demo/thuchanh3/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="212">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
@@ -713,36 +691,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="1" column="1825" selection-start-line="1" selection-start-column="1825" selection-end-line="1" selection-end-column="1825" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Codes_demo/demo_oop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="232" column="1" selection-start-line="232" selection-start-column="1" selection-end-line="232" selection-end-column="1" />
+        <state relative-caret-position="13303">
+          <caret line="251" column="1" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/ThanhTrungday22/.idea/day22.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/PHP1019E2_Pham_Le_Viet_Tu_BTVN_Day22/PHP1019E2_Pham_Le_Viet_Tu_BTVN_Day22.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/QuangThuy/QuanLiSach.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="787">
-          <caret line="80" column="19" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/PHP1019E2_Pham_Le_Viet_Tu_BTVN_Day22/PHP1019E2_Pham_Le_Viet_Tu_BTVN_Day22.php" />
+    <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/QuangThuy/QuanLiSach.php" />
     <entry file="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Bai_tap_ve_nha/DSNB/ThanhTrungday22/test.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -758,6 +721,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/configs/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/books/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/books/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/layouts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/views/books/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/demo_pdo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/models/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day23_MVC_OOP_Demo/Codes_demo/mvc/controllers/BookController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
