@@ -1,0 +1,1 @@
+<h3>Đây là footer chung</h3>
