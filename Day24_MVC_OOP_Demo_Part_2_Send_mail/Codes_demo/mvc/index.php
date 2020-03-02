@@ -1,56 +1,44 @@
 <?php
-//Mọi url trong mô hình mvc đều xuất phát từ file
-//index.php gốc của ứng dụng
-//Mọi url trong mô hình MVC sẽ đều có dạng do bạn tự quy định
-//, phải có 1 tham số tên là controler và 1 tham số tên là action
-///index.php?controller=book&action=create
-/// mục đích của file index.php gốc sẽ phân tích url
-/// lấy ra giá trị của controller và action
-/// nhúng file controller, khởi tạo đối tượng từ controller đó
-/// và gọi phương thức mà lấy được từ tham số action
-//echo "File index gốc của ứng dụng";
+session_start();
+//mục đích của file index.php gốc của ứng dụng
+//cần phải xử lý url trên trình duyệt để nhúng được class
+//controller tương ứng, sau đó khởi tạo đối tượng từ class
+//vừa nhúng, và gọi action tương ứng
 
+//theo mô hình mvc, url của bạn đang có dạng là:
+//index.php?controller=book&action=list
+
+//lấy ra tham số controller và action từ trình duyệt
+$controller = isset($_GET['controller']) ? $_GET['controller'] : 'book';
+$action = isset($_GET['action']) ? $_GET['action'] : 'index';
+
+//giả sử url đang là:
 //index.php?controller=book&action=create
-//lấy ra tham số controller từ trình duyệt
-$controller =
-    isset($_GET['controller']) ? $_GET['controller'] : 'book';
-print_r($controller);
-//lấy ra tham số action của trình duyệt
-$action = isset($_GET['action']) ? $_GET['action'] : 'create';
-print_r($action);
+//$controller=book
+//$action=create
 
-//Controller mục tiêu đang có tên là BookController.php
-//nên cần chuyển đổi giá trị controller lấy được từ trình duyệt
-//thành đúng định dạng file này
+//Nhúng được file BookController.php vào
 $controller = ucfirst($controller); //Book
-
 $controller .= "Controller"; //BookController
-
-//tạo biến chứa đường dẫn tới file controller
-//
-$path_controller = "controllers/" . $controller . ".php" ;
+//đường dẫn của file BookController.php đang nằm tại vị trí:
 //controllers/BookController.php
 
-//kiểm tra nếu file controller ko tồn tại, nghĩa là người dùng
-//đã gọi sai tên controller
-if (!file_exists($path_controller)) {
-    die("Trang bạn tìm không tồn tại");
-}
-//qua được bước die ở trên thì chắc chắc file đã tồn tại
-//nhúng file đó vào
-require_once "$path_controller"; //controllers/BookController.php
+$path_controller = "controllers/$controller.php";
+//controller/BookController.php
 
-//sau khi nhúng thành công file,
-// thì khởi tạo đối tượng từ class tương ứng
-$object = new $controller();  //new BookController()
-
-//kiểm tra xem phương thức có tồn tại hay không
-if (!method_exists($object, $action)) {
-   die("Không tồn tại phương thức $action trong controller $controller");
+//kiểm tra nếu đường dẫn ko tồn tại, thì báo trang ko tồn tại
+if (file_exists($path_controller) == false) {
+    die('Trang bạn tìm không tồn tại');
 }
 
-//dùng đối tượng truy cập phương thức đã bắt được từ tham số action
-$object->$action();
+require_once "$path_controller";
 
+//khởi tạo đối tượng sau khi nhúng file
+$object = new $controller(); //$object = new BookController()
 
+if (method_exists($object, $action) == false) {
+    die("Không tồn tại phương thức $action của class $controller");
+}
 //index.php?controller=book&action=create
+$object->$action();
+?>

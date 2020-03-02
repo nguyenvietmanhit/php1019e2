@@ -1,16 +1,26 @@
+<!-- views/books/create.php -->
 <?php
-//echo 'View create của bookcontroller';
-require_once 'views/layouts/header.php';
+    require_once 'views/layouts/header.php';
 ?>
-<form action="" method="get">
-    Tên sách:
-    <input type="text" name="name" />
+<h1>Form thêm mới</h1>
+
+<form action="" method="post" enctype="multipart/form-data">
+<!--  nếu sử dụng phương thức get trong form, thì cần phải
+  thêm 2 input ẩn là controller và action có giá trị đúng bằng
+  controller và action hiện tại
+  -->
+<!--    <input type="hidden" name="controller" value="book" />-->
+<!--    <input type="hidden" name="action" value="create" />-->
+    Tên sách (*): <input type="text" name="name" value="" />
     <br />
-    Số lượng sách:
-    <input type="number" name="amount" />
+    Số lượng sách: <input type="number" name="amount" value="" />
     <br />
-    <input type="submit" name="submit" value="Lưu" />
+    Ảnh đại diện: <input type="file" name="avatar" />
+    <br />
+    <input type="submit" value="Lưu" name="submit" />
+    <input type="reset" value="Reset" />
 </form>
+
 <?php
 require_once 'views/layouts/footer.php';
 ?>

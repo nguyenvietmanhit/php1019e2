@@ -1,37 +1,35 @@
 <?php
-
-class Book
-{
-    const DB_DSN = 'mysql:host=localhost;dbname=book_mvc;charset=utf8';
+//models/Book.php
+class Book {
+    const DB_DSN = 'mysql:host=localhost;dbname=book_mvc';
     const DB_USERNAME = 'root';
     const DB_PASSWORD = '';
-
     public $name;
+    public $avatar;
     public $amount;
-
-    public function connectDatabase() {
+    public function getConnection() {
         try {
             $connection = new PDO(self::DB_DSN,
                 self::DB_USERNAME, self::DB_PASSWORD);
         } catch (PDOException $e) {
-            die("Có lỗi: " . $e->getMessage());
+            die("Kết nối thất bại: " . $e->getMessage());
         }
-
         return $connection;
     }
     public function insert() {
-        $connection = $this->connectDatabase();
-        //cbi truy vấn
+        //chuẩn bị câu truy vấn
+        $connection = $this->getConnection();
         $obj_insert = $connection
-        ->prepare("INSERT INTO books(`name`, `amount`)
-        VALUES(:name, :amount)");
-
-        //gán giá trị
-        $arr_select = [
+            ->prepare("INSERT INTO
+  books(`name`, `avatar`, `amount`) VALUES (:name, :avatar, :amount)");
+        //gán giá trị cho các tham số trong câu truy vấn
+        $arr_insert = [
             ':name' => $this->name,
-            ':amount' => $this->amount,
+            ':avatar' => $this->avatar,
+            ':amount' => $this->amount
         ];
-        //thực thi truy vấn
-        return $obj_insert->execute($arr_select);
+        //thực thi câu truy vấn
+        $is_insert = $obj_insert->execute($arr_insert);
+        return $is_insert;
     }
 }

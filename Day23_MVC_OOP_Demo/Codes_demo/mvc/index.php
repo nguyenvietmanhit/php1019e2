@@ -1,4 +1,13 @@
 <?php
+//CREATE DATABASE book_mvc;
+//USE book_mvc;
+//CREATE TABLE books(
+//    id INT(11) PRIMARY KEY AUTO_INCREMENT,
+//    name VARCHAR(255),
+//    avatar VARCHAR(255),
+//    amount INT(11),
+//    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+//);
 //Mọi url trong mô hình mvc đều xuất phát từ file
 //index.php gốc của ứng dụng
 //Mọi url trong mô hình MVC sẽ đều có dạng do bạn tự quy định
