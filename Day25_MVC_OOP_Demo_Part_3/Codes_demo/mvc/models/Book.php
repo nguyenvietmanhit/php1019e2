@@ -1,12 +1,39 @@
 <?php
 //models/Book.php
 class Book {
-    const DB_DSN = 'mysql:host=localhost;dbname=book_mvc';
+    const DB_DSN = 'mysql:host=localhost;dbname=book_mvc;charset=utf8';
     const DB_USERNAME = 'root';
     const DB_PASSWORD = '';
     public $name;
     public $avatar;
     public $amount;
+
+    public function deleteBook($id) {
+        //cbi câu truy vấn
+        $connection = $this->getConnection();
+        $obj_delete = $connection
+            ->prepare("DELETE FROM books WHERE id = $id");
+
+        return $obj_delete->execute();
+    }
+
+    public function updateBook() {
+        //chuẩn bị câu truy vấn
+        $connection = $this->getConnection();
+        $obj_update = $connection
+        ->prepare("UPDATE books SET 
+        `name` = :name, `amount` = :amount,
+         `avatar` = :avatar WHERE id = :id");
+        //gán giá trị cho các định danh trong câu truy vấn
+        $arr_update = [
+            ':name' => $this->name,
+            ':amount' => $this->amount,
+            ':avatar' => $this->avatar,
+            ':id' => $this->id
+        ];
+
+        return $obj_update->execute($arr_update);
+    }
 
     public function getBookById($id) {
         //chuẩn bị câu truy vấn
@@ -39,6 +66,8 @@ class Book {
         try {
             $connection = new PDO(self::DB_DSN,
                 self::DB_USERNAME, self::DB_PASSWORD);
+            //thêm câu truy vấn sau để lấy dữ liệu có dấu ko bị lỗi
+//            $connection->exec("SET NAMES utf8");
         } catch (PDOException $e) {
             die("Kết nối thất bại: " . $e->getMessage());
         }

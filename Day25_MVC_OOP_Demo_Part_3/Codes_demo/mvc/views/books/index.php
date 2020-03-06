@@ -11,6 +11,7 @@ require_once 'views/layouts/header.php';
         <th>ID</th>
         <th>Tên sách</th>
         <th>Số lượng sách</th>
+        <th>Ảnh đại diện</th>
         <th>Ngày tạo</th>
         <th>Hành động</th>
     </tr>
@@ -29,6 +30,13 @@ require_once 'views/layouts/header.php';
                 </td>
                 <td>
                     <?php echo $book['amount']; ?>
+                </td>
+                <td>
+                    <?php if (!empty($book['avatar'])): ?>
+                <img src="assets/uploads/<?php echo $book['avatar']?>"
+                height="60"
+                />
+                    <?php endif; ?>
                 </td>
                 <td>
                     <?php

@@ -23,7 +23,27 @@ class BookController
     require_once 'views/books/index.php';
   }
 
+  public function delete() {
+      if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+          $_SESSION['error'] = 'ID không hợp lệ';
+          header("Location: index.php?controller=book");
+      }
+      $id = $_GET['id'];
+      //gọi model để thực hiện xóa bản ghi theo id bắt được
+      $book_model = new Book();
+      $is_delete = $book_model->deleteBook($id);
+      if ($is_delete) {
+          $_SESSION['success'] = 'Xóa thành công';
+      } else {
+          $_SESSION['error'] = 'Xóa thất bại';
+      }
+      header('Location: index.php?controller=book');
+      exit();
+  }
+
   public function update() {
+//      index.php/book/update/2
+//      sửa bản ghi có id = 2
       //gọi model để lấy bản ghi theo id truyền lên
       //kiểm tra nếu id không hợp lệ thì chuyển hướng về trang
 //      danh sách
@@ -41,7 +61,60 @@ class BookController
 //      print_r($book);
 
       //xử lý khi user submit form
-      
+      if(isset($_POST['submit'])) {
+          $name = $_POST['name'];
+          $amount = $_POST['amount'];
+          $avatar_arr = $_FILES['avatar'];
+          //check validate
+          //nếu như để trống tên hoặc upload file ko phải ảnh thì báo lỗi
+          if (empty($name)) {
+              $this->error = 'Không được để trống name';
+          } else if ($avatar_arr['error'] == 0) {
+              //tạo 1 mảng chứa danh sách các file ảnh hợp lệ
+              $arr_extension = ['png', 'jpg', 'jpeg', 'gif'];
+              //lấy ra đuôi file vừa upload lên
+              $extension = pathinfo($avatar_arr['name'],
+                  PATHINFO_EXTENSION);
+              //validate đuôi file
+              if (!in_array($extension, $arr_extension)) {
+                  $this->error = 'Phải upload định dạng ảnh';
+              }
+          }
+          //xử lý lưu vào csdl và upload file nếu có trong
+//          trường hợp validate thành công ko có lỗi
+          if (empty($this->error)) {
+              //upload đè file cũ nếu có hành động upload file
+              $avatar = $book['avatar'];
+              if ($avatar_arr['error'] == 0) {
+                  $dir_uploads = __DIR__ . '/../assets/uploads';
+                  if (!file_exists($dir_uploads)) {
+                      mkdir($dir_uploads);
+                  }
+                  //xóa file cũ trên hệ thống đi để tránh file rác
+                  //thêm ký tự @ để ko hiển thị lỗi khi xóa file ko tồn tại
+                  @unlink($dir_uploads . '/' . $avatar);
+                  //tạo tên file mới theo kiểu ngẫu nhiên để tránh trùng file
+                  $avatar = time() . '-' . $avatar_arr['name'];
+                  move_uploaded_file($avatar_arr['tmp_name'],
+                      $dir_uploads . '/' . $avatar);
+              }
+              //lưu vao csdl
+              //gọi model để thực hiện update
+              //gán các giá trị cho đối tượng book_model
+              $book_model->name = $name;
+              $book_model->amount = $amount;
+              $book_model->avatar = $avatar;
+              $book_model->id = $id;
+              $is_update = $book_model->updateBook();
+              if ($is_update) {
+                  $_SESSION['success'] = 'Update thành công';
+              } else {
+                  $_SESSION['error'] = 'Update thất bại';
+              }
+              header('Location: index.php?controller=book');
+              exit();
+          }
+      }
 
       //gọi view để hiển thị book
       require_once 'views/books/update.php';

@@ -1,5 +1,10 @@
 <html>
     <head>
+<!--    Khi sử dụng rewrite url, thì đường dẫn các file assets như
+    css, js, images sẽ bị sai hết, nên cần set lại đường dẫn gốc
+    bằng lệnh sau
+    -->
+        <base href="<?php echo $_SERVER['SCRIPT_NAME']?>" />
         <title>Demo MVC</title>
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
