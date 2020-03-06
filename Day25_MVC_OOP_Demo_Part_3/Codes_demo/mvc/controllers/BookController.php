@@ -8,6 +8,45 @@ class BookController
   //chứa thông tin liên quan đến lỗi
   public $error;
 
+    /**
+     * Phương thức liệt kê sách đang có trong CSDL
+     */
+  public function index() {
+      //controller gọi model nhờ lấy dữ liệu
+    $book_model = new Book();
+    $books = $book_model->getAllBook();
+
+//    echo "<pre>";
+//      print_r($books);
+
+    //truyền ra view
+    require_once 'views/books/index.php';
+  }
+
+  public function update() {
+      //gọi model để lấy bản ghi theo id truyền lên
+      //kiểm tra nếu id không hợp lệ thì chuyển hướng về trang
+//      danh sách
+      if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+          $_SESSION['error'] = 'ID không hợp lệ';
+          header("Location: index.php?controller=book");
+          exit();
+      }
+
+      $id = $_GET['id'];
+      //gọi model lấy bản ghi theo id vừa bắt được từ trình duyệt
+      $book_model = new Book();
+      $book = $book_model->getBookById($id);
+//      echo "<pre>";
+//      print_r($book);
+
+      //xử lý khi user submit form
+      
+
+      //gọi view để hiển thị book
+      require_once 'views/books/update.php';
+  }
+
   public function create()
   {
 
