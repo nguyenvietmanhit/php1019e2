@@ -7,7 +7,6 @@ session_start();
 
 //theo mô hình mvc, url của bạn đang có dạng là:
 //index.php?controller=book&action=list
-
 //lấy ra tham số controller và action từ trình duyệt
 $controller = isset($_GET['controller']) ? $_GET['controller'] : 'book';
 $action = isset($_GET['action']) ? $_GET['action'] : 'index';
@@ -22,7 +21,11 @@ $controller = ucfirst($controller); //Book
 $controller .= "Controller"; //BookController
 //đường dẫn của file BookController.php đang nằm tại vị trí:
 //controllers/BookController.php
-
+echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
+print_r($_REQUEST);
+//print_r($action);
+echo "</pre>";
+//die;
 $path_controller = "controllers/$controller.php";
 //controller/BookController.php
 

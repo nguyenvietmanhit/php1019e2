@@ -47,6 +47,10 @@ class BookController
       //gọi model để lấy bản ghi theo id truyền lên
       //kiểm tra nếu id không hợp lệ thì chuyển hướng về trang
 //      danh sách
+    echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
+    print_r($_REQUEST );
+    echo "</pre>";
+    die;
       if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
           $_SESSION['error'] = 'ID không hợp lệ';
           header("Location: index.php?controller=book");
