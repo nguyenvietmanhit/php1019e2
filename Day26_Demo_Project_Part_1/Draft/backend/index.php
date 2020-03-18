@@ -1,5 +1,7 @@
 <?php
 session_start();
+date_default_timezone_set("Asia/Ho_Chi_Minh");
+
 //mục đích của file index.php gốc của ứng dụng
 //cần phải xử lý url trên trình duyệt để nhúng được class
 //controller tương ứng, sau đó khởi tạo đối tượng từ class
