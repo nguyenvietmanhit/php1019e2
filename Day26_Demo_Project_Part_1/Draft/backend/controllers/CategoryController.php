@@ -7,7 +7,10 @@ class CategoryController extends Controller
 
   public function index()
   {
-    $this->content = $this->render('views/categories/index.php', ['abc' => 123]);
+    $category_model = new Category();
+    $categories = $category_model->getAll();
+
+    $this->content = $this->render('views/categories/index.php', ['categories' => $categories]);
     //gọi layout
     require_once 'views/layouts/main.php';
   }

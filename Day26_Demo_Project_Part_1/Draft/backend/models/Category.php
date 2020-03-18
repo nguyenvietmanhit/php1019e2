@@ -23,4 +23,13 @@ class Category extends Model {
 
     return $obj_insert->execute($arr_insert);
   }
+
+  public function getAll() {
+    $obj_select = $this->connection->prepare('SELECT * FROM categories');
+    $obj_select->execute();
+
+    $categories = $obj_select->fetchAll(PDO::FETCH_OBJ);
+
+    return $categories;
+  }
 }
