@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#viết các rules để rewrite url
+#book/update/3
+#http://localhost:8080/php1019e2/Day25_MVC_OOP_Demo_Part_3/Codes_demo/mvc/book/update/assets/css/style.css
+RewriteRule employee/update/([0-9]+) index.php?controller=employee&action=update&id=$1

@@ -1,0 +1,27 @@
+sup {
+    color: red;
+}
+
+label {
+    font-weight: bold;
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
+
+.white{
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.row{
+    margin-right: 0;
+}
