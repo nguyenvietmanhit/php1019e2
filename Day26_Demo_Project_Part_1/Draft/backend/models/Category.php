@@ -28,7 +28,7 @@ class Category extends Model {
     $obj_select = $this->connection->prepare('SELECT * FROM categories');
     $obj_select->execute();
 
-    $categories = $obj_select->fetchAll(PDO::FETCH_OBJ);
+    $categories = $obj_select->fetchAll(PDO::FETCH_ASSOC);
 
     return $categories;
   }

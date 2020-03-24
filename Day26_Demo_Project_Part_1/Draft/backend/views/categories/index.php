@@ -13,7 +13,39 @@
   <?php if (!empty($categories)): ?>
     <?php foreach ($categories as $category): ?>
           <tr>
-
+              <td>
+                <?php echo $category['id']; ?>
+              </td>
+              <td>
+                <?php echo $category['name']; ?>
+              </td>
+              <td>
+                <?php if (!empty($category['avatar'])): ?>
+                    <img src="assets/uploads/<?php echo $category['avatar'] ?>" width="60"/>
+                <?php endif; ?>
+              </td>
+              <td>
+                <?php echo $category['description']; ?>
+              </td>
+              <td>
+                <?php
+                $status_text = 'Active';
+                if ($category['status'] == 0) {
+                  $status_text = 'Disabled';
+                }
+                echo $status_text;
+                ?>
+              </td>
+              <td>
+                <?php echo date('d-m-Y H:i:s', strtotime($category['created_at'])); ?>
+              </td>
+              <td>
+                <?php
+                if (!empty($category['updated_at'])) {
+                  echo date('d-m-Y H:i:s', strtotime($category['updated_at']));
+                }
+                ?>
+              </td>
           </tr>
     <?php endforeach ?>
   <?php else: ?>
