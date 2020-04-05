@@ -13,6 +13,11 @@ class Controller
     //chứa nội dung lỗi validate
     public $error;
 
+    /**
+     * @param $file string Đường dẫn tới file
+     * @param array $variables array Danh sách các biến truyền vào file
+     * @return false|string
+     */
     public function render($file, $variables = []) {
         //Nhập các giá trị của mảng vào các biến có tên tương ứng chính là key của phần tử đó.
         //khi muốn sử dụng biến từ bên ngoài vào trong hàm
