@@ -27,11 +27,20 @@ class Category extends Model
         return $obj_insert->execute($arr_insert);
     }
 
-    public function getAll()
+    public function getAll($params = [])
     {
-        $obj_select = $this->connection->prepare('SELECT * FROM categories');
-        $obj_select->execute();
+        $str_like = '';
+        $arr_select = [];
+        //nếu có tham số name, hay search theo name, thì tạo câu truy vấn like theo cú pháp PDO
+        //và set key cho mảng arr_select tương ứng
+        if (isset($params['name'])) {
+            $str_like .= ' WHERE `name` LIKE :name';
+            $arr_select[':name'] = '%' . $params['name'] . '%';
+        }
+        //gán thêm chuỗi truy vấn like nếu có vào câu truy vấn
+        $obj_select = $this->connection->prepare("SELECT * FROM categories $str_like");
 
+        $obj_select->execute($arr_select);
         $categories = $obj_select->fetchAll(PDO::FETCH_ASSOC);
 
         return $categories;

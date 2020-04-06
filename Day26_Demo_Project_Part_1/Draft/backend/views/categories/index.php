@@ -1,5 +1,18 @@
-<h1>Danh sách category</h1>
+<h1>Tìm kiếm</h1>
+<form action="" method="get">
+    <input type="hidden" name="controller" value="category" />
+    <input type="hidden" name="action" value="index" />
+    <div class="form-group">
+        <label>Nhập tên danh mục</label>
+        <input type="text" name="name" value="<?php echo isset($_GET['name']) ? $_GET['name'] : ''?>" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" name="submit" value="Tìm kiếm" class="btn btn-success" />
+        <a href="index.php?controller=category" class="btn btn-secondary">Xóa filter</a>
+    </div>
+</form>
 
+<h1>Danh sách category</h1>
 <a href="index.php?controller=category&action=create" class="btn btn-primary">
     <i class="fa fa-plus"></i> Thêm mới
 </a>

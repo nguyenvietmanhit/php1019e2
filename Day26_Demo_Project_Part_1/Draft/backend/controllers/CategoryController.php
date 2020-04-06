@@ -7,8 +7,19 @@ class CategoryController extends Controller
 
     public function index()
     {
+        //khai báo mảng chứa các trường sẽ search
+        $params = [];
+        //xử lý form tìm kiếm
+        if (isset($_GET['submit'])) {
+            $name = $_GET['name'];
+            //gán biến name cho mảng params với key là name
+            $params['name'] = $name;
+        }
+
+        //hiển thị danh sách category
         $category_model = new Category();
-        $categories = $category_model->getAll();
+        //truyền param vào mảng nếu có
+        $categories = $category_model->getAll($params);
 
         $this->content = $this->render('views/categories/index.php', ['categories' => $categories]);
         //gọi layout
