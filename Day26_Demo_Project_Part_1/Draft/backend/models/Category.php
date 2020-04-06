@@ -68,4 +68,15 @@ class Category extends Model
 
         return $obj_update->execute($arr_update);
     }
+
+    public function delete($id)
+    {
+        $obj_delete = $this->connection->prepare("DELETE FROM categories WHERE id = $id");
+        $is_delete = $obj_delete->execute();;
+        //để đảm bảo toàn vẹn dữ liệu, sau khi xóa category thì cần xóa cả các product nào đang thuộc về category này
+        $obj_delete_product = $this->connection->prepare("DELETE FROM products WHERE category_id = $id");
+        $obj_delete_product->execute();
+
+        return $is_delete;
+    }
 }
