@@ -65,16 +65,16 @@
             <li class="header">LAOYOUT ADMIN</li>
 
             <li>
-                <a href="pages/widgets.html">
-                    <i class="fa fa-th"></i> <span>Quản lý tin tức</span>
+                <a href="index.php?controller=category&action=index">
+                    <i class="fa fa-th"></i> <span>Quản lý danh mục</span>
                     <span class="pull-right-container">
               <!--<small class="label pull-right bg-green">new</small>-->
             </span>
                 </a>
             </li>
             <li>
-                <a href="pages/widgets.html">
-                    <i class="fa fa-code"></i> <span>Quản lý user</span>
+                <a href="index.php?controller=product&action=index">
+                    <i class="fa fa-code"></i> <span>Quản lý sản phẩm</span>
                     <span class="pull-right-container">
               <!--<small class="label pull-right bg-green">new</small>-->
             </span>
