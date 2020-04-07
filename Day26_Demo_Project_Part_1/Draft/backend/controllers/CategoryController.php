@@ -18,7 +18,7 @@ class CategoryController extends Controller
 
         //hiển thị danh sách category
         $category_model = new Category();
-        //truyền param vào mảng nếu có
+        //truyền param search vào mảng nếu có
         $categories = $category_model->getAll($params);
 
         $this->content = $this->render('views/categories/index.php', ['categories' => $categories]);
