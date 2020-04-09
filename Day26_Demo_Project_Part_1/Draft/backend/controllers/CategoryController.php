@@ -1,6 +1,7 @@
 <?php
 require_once 'controllers/Controller.php';
 require_once 'models/Category.php';
+require_once 'models/Pagination.php';
 
 class CategoryController extends Controller
 {
@@ -22,6 +23,15 @@ class CategoryController extends Controller
         $categories = $category_model->getAll($params);
 
         $this->content = $this->render('views/categories/index.php', ['categories' => $categories]);
+
+        $config = [
+            'total' => 50,
+            'limit' => 5,
+            'full' => true,
+            'query_string' => 'page'
+        ];
+        $pagination = new Pagination($config);
+        echo $pagination->getPagination();
         //gọi layout
         require_once 'views/layouts/main.php';
     }

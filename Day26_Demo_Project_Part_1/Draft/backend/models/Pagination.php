@@ -31,10 +31,91 @@ class Pagination
         $this->config = $config;
     }
 
-    public function getTotalPage() {
+    /**
+     * Lấy ra tổng số trang
+     * @return float|int
+     */
+    public function getTotalPage()
+    {
         $total = $this->config['total'] / $this->config['limit'];
         //làm tròn lên, trong trường hợp phép chia ra số thập phân
         $total = ceil($total);
         return $total;
+    }
+
+    /**
+     * LẤy ra trang hiện tại
+     * @return float|int
+     */
+    public function getCurrentPage()
+    {
+        $page = 1;
+        $query_string = $this->config['query_string'];
+        //nếu tồn tại tham số query_string trên url, và giá trị của tham số này >= 1
+        if (isset($_GET[$query_string]) && $_GET[$query_string] >= 1) {
+            //kiểm tra tiếp nếu lớn hơn tổng số trang
+            //thì gán biến page bằng tổng số trang hiện tại
+            if ($_GET[$query_string] > $this->getTotalPage()) {
+                $page = $this->getTotalPage();
+            } else {
+                //ngược lại bằng giá trị của tham số đó
+                $page = $_GET[$query_string];
+            }
+        }
+
+        return $page;
+    }
+
+    /**
+     * Trả về trang ngay trước trang hiện tại, tương đưuong với link Prev
+     * @return string
+     */
+    public function getPrevPage()
+    {
+        $prev_page = '';
+        //nếu trang hiện tại lớn hơn 1 thì hiển thị link Prev
+        if ($this->getCurrentPage() > 1) {
+            $prev_link = $_SERVER['PHP_SELF'] . '?' . $this->config['query_string'] . '=' . ($this->getCurrentPage() + 1);
+            $prev_page = '<li><a href="' . $prev_link . '">Prev</a></li>';
+        }
+
+        return $prev_page;
+    }
+
+    /**
+     * Hiển thị trang ngay sau trang hiện tại, tương đương với link Next
+     * @return string
+     */
+    public function getNextPage()
+    {
+        $next_page = '';
+//        nếu trang hiện tại nhỏ hơn tổng số trang, thì hiển thị link Next
+        if ($this->getCurrentPage() < $this->getTotalPage()) {
+            $next_link = $_SERVER['PHP_SELF'] . '?' . $this->config['query_string'] . '=' . ($this->getCurrentPage() - 1);
+            $next_page = '<li><a href="' . $next_link . '"></a></li>';
+        }
+
+        return $next_page;
+    }
+
+    public function getPagination()
+    {
+        $data = '<ul>';
+        $data .= $this->getPrevPage();
+        if ($this->config['full']) {
+            for ($i = 1; $i <= $this->getTotalPage(); $i++) {
+                if ($i == $this->getCurrentPage()) {
+                    $data .= "<li class='active'><a href='#'>$i</a></li>";
+                } else {
+                    $link_current = $_SERVER['PHP_SELF'] . '?' . $this->config['query_string'] . '=' . $i;
+                    $data .= "<li><a href='$link_current'>$i</a></li>";
+                }
+            }
+
+        }
+
+        $data .= $this->getNextPage();
+        $data .= '</ul>';
+        return $data;
     }
 }
