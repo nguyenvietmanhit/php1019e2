@@ -17,21 +17,34 @@ class CategoryController extends Controller
             $params['name'] = $name;
         }
 
+
         //hiển thị danh sách category
         $category_model = new Category();
-        //truyền param search vào mảng nếu có
+      $count_total = $category_model->countTotal();
+      $config = [
+        'total' => $count_total,
+        'limit' => 5,
+        'full' => true,
+        'query_string' => 'page',
+        'controller' => 'category',
+        'action' => 'index',
+      ];
+      if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+        //gán biến name cho mảng params với key là name
+        $params['page'] = $page;
+      }
+      $params['limit'] = $config['limit'];
+      $pagination = new Pagination($config);
+      echo $pagination->getPagination();
+
+
+      //truyền param search vào mảng nếu có
         $categories = $category_model->getAll($params);
 
         $this->content = $this->render('views/categories/index.php', ['categories' => $categories]);
 
-        $config = [
-            'total' => 50,
-            'limit' => 5,
-            'full' => true,
-            'query_string' => 'page'
-        ];
-        $pagination = new Pagination($config);
-        echo $pagination->getPagination();
+
         //gọi layout
         require_once 'views/layouts/main.php';
     }

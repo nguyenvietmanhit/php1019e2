@@ -29,6 +29,10 @@ class Category extends Model
 
     public function getAll($params = [])
     {
+      echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
+      print_r($params);
+      echo "</pre>";
+//      die;
         $str_like = '';
         $arr_select = [];
         //nếu có tham số name, hay search theo name, thì tạo câu truy vấn like theo cú pháp PDO
@@ -37,9 +41,31 @@ class Category extends Model
             $str_like .= ' WHERE `name` LIKE :name';
             $arr_select[':name'] = '%' . $params['name'] . '%';
         }
+      $start = 0;
+      $limit = 10;
+        if (isset($params['limit']) && isset($params['page'])) {
+          $limit = $params['limit'];
+          $page = $params['page'];
+          $start = ($page - 1) * $limit;
+        }
+      echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
+      print_r($start);
+      print_r($limit);
+      echo "</pre>";
+//      die;
         //gán thêm chuỗi truy vấn like nếu có vào câu truy vấn
-        $obj_select = $this->connection->prepare("SELECT * FROM categories $str_like");
+        $obj_select = $this->connection->prepare("SELECT * FROM categories $str_like LIMIT :start, :limit");
 
+
+      $obj_select->bindValue(':limit', $limit, PDO::PARAM_INT);
+      $obj_select->bindValue(':start', $start, PDO::PARAM_INT);
+//      do PDO coi tất cả các param luôn là 1 string, nên sẽ không thể sử dụng đc limit theo cách placeholder array
+//      $arr_select = [
+//        ':start' => $start,
+//        ':limit' => $limit,
+//      ];
+//      $arr_select[':start'] = $start;
+//      $arr_select[':limit'] = $limit;
         $obj_select->execute($arr_select);
         $categories = $obj_select->fetchAll(PDO::FETCH_ASSOC);
 
@@ -87,5 +113,12 @@ class Category extends Model
         $obj_delete_product->execute();
 
         return $is_delete;
+    }
+
+    public function countTotal() {
+      $obj_select = $this->connection->prepare('SELECT COUNT(id) FROM categories');
+      $obj_select->execute();
+
+      return $obj_select->fetchColumn();
     }
 }

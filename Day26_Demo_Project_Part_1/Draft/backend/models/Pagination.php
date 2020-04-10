@@ -11,8 +11,12 @@ class Pagination
         'total' => 0, //tổng số bản ghi của table
         'limit' => 0, //số bản ghi trên 1 trang
         'full' => true, //true nếu muốn hiển thị full toàn bộ số trang, false trong trường hợp ngược lại
-        'query_string' => 'page' //tham số truyền lên url trình duyêt, sẽ có dang là ?page=1
+        'query_string' => 'page', //tham số truyền lên url trình duyêt, sẽ có dang là ?page=1
+        'controller' => '', //tên controller truyền vào
+        'action' => '', //tên action
     ];
+
+    public $param_url;
 
     public function __construct($config = [])
     {
@@ -29,6 +33,7 @@ class Pagination
         }
         //khởi tạo giá trị cho thuộc tính config bằng tham số config truyền vào constructor
         $this->config = $config;
+        $this->param_url = $_SERVER['PHP_SELF'] . '?controller=' . $this->config['controller'] .'&action=' . $this->config['action'] .'&' . $this->config['query_string'] . '=';
     }
 
     /**
@@ -75,7 +80,7 @@ class Pagination
         $prev_page = '';
         //nếu trang hiện tại lớn hơn 1 thì hiển thị link Prev
         if ($this->getCurrentPage() > 1) {
-            $prev_link = $_SERVER['PHP_SELF'] . '?' . $this->config['query_string'] . '=' . ($this->getCurrentPage() + 1);
+            $prev_link = $this->param_url . ($this->getCurrentPage() + 1);
             $prev_page = '<li><a href="' . $prev_link . '">Prev</a></li>';
         }
 
@@ -91,7 +96,7 @@ class Pagination
         $next_page = '';
 //        nếu trang hiện tại nhỏ hơn tổng số trang, thì hiển thị link Next
         if ($this->getCurrentPage() < $this->getTotalPage()) {
-            $next_link = $_SERVER['PHP_SELF'] . '?' . $this->config['query_string'] . '=' . ($this->getCurrentPage() - 1);
+            $next_link = $this->param_url  . ($this->getCurrentPage() - 1);
             $next_page = '<li><a href="' . $next_link . '"></a></li>';
         }
 
@@ -105,9 +110,9 @@ class Pagination
         if ($this->config['full']) {
             for ($i = 1; $i <= $this->getTotalPage(); $i++) {
                 if ($i == $this->getCurrentPage()) {
-                    $data .= "<li class='active'><a href='#'>$i</a></li>";
+                    $data .= "<li class='active'><a href=''>$i</a></li>";
                 } else {
-                    $link_current = $_SERVER['PHP_SELF'] . '?' . $this->config['query_string'] . '=' . $i;
+                    $link_current = $this->param_url . $i;
                     $data .= "<li><a href='$link_current'>$i</a></li>";
                 }
             }
