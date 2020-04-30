@@ -1,66 +1,48 @@
 <?php
-//1 - CONSTANT
-const ABC = 1;
-//echo abc;
-define("ABCD", 2, true);
-echo abcd;
+if(isset($_FILES['image'])){
+    $errors= array();
+    $file_name = $_FILES['image']['name'];
+    $file_size = $_FILES['image']['size'];
+    $file_tmp = $_FILES['image']['tmp_name'];
+    $file_type = $_FILES['image']['type'];
+    $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
 
-define("A", [1, 2, 3]);
-print_r(A);
+    echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
+    print_r($file_ext);
+    echo "</pre>";
+//    die;
+    $expensions= array("jpeg","jpg","png");
 
-if (1 > 2) {
-    define("A", 123);
-//    error
-//    const B = 5;
+    if(in_array($file_ext,$expensions)=== false){
+        $errors[]="Chỉ hỗ trợ upload file JPEG hoặc PNG.";
+    }
+
+    if($file_size > 2097152) {
+        $errors[]='Kích thước file không được lớn hơn 2MB';
+    }
+
+    if(empty($errors)==true) {
+        move_uploaded_file($file_tmp,"images/".$file_name);
+        echo "Success";
+    }else{
+        print_r($errors);
+    }
 }
+?>
+<html>
+<body>
 
-const B = 6;
-//const B = 4;
-echo B;
+<form action = "" method = "POST" enctype = "multipart/form-data">
+    <input type = "file" name = "image" />
+    <input type = "submit"/>
 
-define("C", 1 + 2);
-const D = 1 + 2;
-echo D;
-echo C;
-echo constant("D");
+    <ul>
+        <li>Sent file: <?php echo $_FILES['image']['name'];  ?>
+        <li>File size: <?php echo $_FILES['image']['size'];  ?>
+        <li>File type: <?php echo $_FILES['image']['type'] ?>
+    </ul>
 
-echo __LINE__;
-echo "<br />";
-echo __FILE__;
-echo "<br />";
-echo __DIR__;
+</form>
 
-//2 - Comment
-
-#comment one line
-//comment one line
-/*
-Comment
-multi
-line
-*/
-
-
-//$variable = 1;
-/**
- * @param $num1 number one
- * @param $num2 number two
- * @return mixed sum two number
- */
-function sum($num1, $num2) {
-    return $num1 + $num2;
-}
-
-
-//3 - OPERATOR
-
-$variable5 = (float)-123;
-
-$arr = [];
-//từ version 5.3 -5.4 trở xuống thì bắt
-//buộc phải sử dụng từ khóa aray
-$arr2 = array();
-
-$string = 'Today I \\\'ll learn PHP - "Variable"';
-echo "<br />";
-echo $string;
+</body>
+</html>
