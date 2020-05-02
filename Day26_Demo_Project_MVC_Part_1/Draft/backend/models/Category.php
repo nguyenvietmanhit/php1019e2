@@ -20,7 +20,9 @@ class Category extends Model
         //nếu có tham số name, hay search theo name, thì tạo câu truy vấn like theo cú pháp PDO
         //và set key cho mảng arr_select tương ứng
         if (isset($_GET['name']) && !empty($_GET['name'])) {
-            $this->query_params .= " AND `name` LIKE '%{$_GET['name']}%'";
+            $name = $_GET['name'];
+            $name = addslashes($name);
+            $this->query_params .= " AND `name` LIKE '%$name%'";
         }
     }
 
