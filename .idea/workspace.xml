@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/Day22_PHP_OOP_Basic/Codes_demo/demo_oop.php" line="22" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1e04974b-fc3a-475b-94bb-5b52d2449871" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +141,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day26_Demo_Project_MVC_Part_1/Draft/backend/models/Category.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -194,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day15_4_PHP_Form/Bai_tap_ve_nha_Form/bitpvnhngy15/bai_tap_ve_nha_15_2.php" />
         <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/detail.php" />
         <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/crud/update.php" />
         <option value="$PROJECT_DIR$/Day20_9_PHP_MySQL_Ajax_SQL_Injection/Codes_demo/demo_ajax/index.php" />
@@ -245,6 +246,7 @@
         <option value="$PROJECT_DIR$/Day25_MVC_OOP_Demo_Part_3/Codes_demo/mvc/controllers/BookController.php" />
         <option value="$PROJECT_DIR$/Day25_MVC_OOP_Demo_Part_3/Codes_demo/mvc/.htaccess" />
         <option value="$PROJECT_DIR$/Day25_MVC_OOP_Demo_Part_3/Codes_demo/mvc/views/layouts/header.php" />
+        <option value="$PROJECT_DIR$/Day26_Demo_Project_MVC_Part_1/Draft/backend/models/Category.php" />
       </list>
     </option>
   </component>
@@ -736,12 +738,12 @@
       <workItem from="1584977374765" duration="804000" />
       <workItem from="1585058700487" duration="598000" />
       <workItem from="1585227509918" duration="1014000" />
-      <workItem from="1588400665595" duration="623000" />
+      <workItem from="1588400665595" duration="876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230708000" />
+    <option name="totallyTimeSpent" value="230961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1052,7 +1054,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Day26_Demo_Project_MVC_Part_1/Draft/backend/models/Category.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
