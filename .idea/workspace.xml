@@ -107,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/Day27_Demo_Project_MVC_Part_2/Draft/backend/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -125,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/Day27_Demo_Project_MVC_Part_2/Draft/backend/views/layouts/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -256,11 +256,6 @@
               <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
               <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="php1019e2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php1019e2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day27_Demo_Project_MVC_Part_2" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -364,12 +359,12 @@
       <workItem from="1588400665595" duration="2365000" />
       <workItem from="1588480945651" duration="649000" />
       <workItem from="1588938235760" duration="9768000" />
-      <workItem from="1589078994855" duration="614000" />
+      <workItem from="1589078994855" duration="888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243481000" />
+    <option name="totallyTimeSpent" value="243755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -701,14 +696,14 @@
     <entry file="file://$PROJECT_DIR$/Day27_Demo_Project_MVC_Part_2/Draft/backend/views/layouts/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day27_Demo_Project_MVC_Part_2/Draft/backend/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
