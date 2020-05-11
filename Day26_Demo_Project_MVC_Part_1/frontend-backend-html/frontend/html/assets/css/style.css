@@ -914,6 +914,23 @@ ul.pagination a {
   text-decoration: none;
 }
 
+.product-price {
+  font-size: 30px;
+  color: #e10c00;
+}
+
+a.product-cart {
+  padding: 10px 30px;
+  background: #288ad6;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  display: inline-block;
+
+}
+
 .category-page-wrap .timeline-items {
   margin-top: 30px;
 }
