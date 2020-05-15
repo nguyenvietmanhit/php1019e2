@@ -1,20 +1,28 @@
 <?php
 //File index.php gốc của ứng dụng
-//Các bước dựng MVC từ đầu
-//1 - Chuẩn bị đầy đủ giao diện HTML
-// cho frontend và backend
-//2 - Dựng cấu trúc thư mục/file cho backend và frontend
-//theo cấu trúc đã học
-//3 - Phân tích CSDL dựa vào giao diện frontend
-//phân tích bảng categories
-//name: tên danh mục
-//avatar: ảnh đại diện
-//descripion: mô tả ngắn cho danh mục
-//type: loại danh mục
-//status: trạng thái danh mục 0- Disabled, 1 - ACtive
-//created_at: ngày tạo
-//updated_at: ngày update
-//bangr products: chứa thông tin về sản phẩm
-//bảng orders: chưa thông tin về đơn hàng trên hệ thống
-//bảng order_details: chứa thông tin chi tiết đơn hàng
-//trường order_id, amount, product_id
+session_start();
+//set múi giờ việt nam
+date_default_timezone_set("Asia/Ho_Chi_Minh");
+//index.php?controller=category&action=index
+//lấy giá trị của tham số controller và action từ url trình duyệt
+$controller = isset($_GET['controller']) ?
+    $_GET['controller'] : 'category';
+$action = isset($_GET['action']) ? $_GET['action'] : 'index';
+//chuyển ký tự đầu tiên của controller -> ký tự hoa
+$controller = ucfirst($controller); //Category
+//ghép chuỗi thành dạng CategoryController
+$controller .= "Controller"; //CategoryController
+//tạo biến chứa đường dẫn controller sẽ nhúng vào
+$path_controller = "controllers/$controller.php";
+//controllers/CategoryController.php
+if (!file_exists($path_controller)) {
+    die("Trang bạn tìm không tồn tại");
+}
+require_once "$path_controller";
+//sau khi nhúng file thì đã có thể sử dụng class Controller tương ứng
+$object = new $controller();
+
+if (!method_exists($object, $action)) {
+    die("Phương thức $action không tồn tại trong class $controller");
+}
+$object->$action();
