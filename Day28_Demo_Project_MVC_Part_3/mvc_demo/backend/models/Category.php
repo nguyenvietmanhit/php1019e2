@@ -37,4 +37,17 @@ class Category extends Model {
 
     return $obj_insert->execute($arr_insert);
   }
+
+  public function getAllPagination($params) {
+        $limit = $params['limit'];
+        $page = isset($_GET['page']) ? $_GET['page'] : 1;
+        //giả sử đang ở trang 2, mỗi trang hiển thị 5 bản ghi
+        //=> sẽ lấy từ bản ghi thứ máy trong bảng ?
+        $start = ($page - 1) * $limit; // 5 - > 10
+      $connection = $this->getConnection();
+      $obj_select = $connection
+          ->prepare("SELECT * FROM categories LIMIT $start,$limit");
+      $obj_select->execute();
+      return $obj_select->fetchAll(PDO::FETCH_ASSOC);
+  }
 }

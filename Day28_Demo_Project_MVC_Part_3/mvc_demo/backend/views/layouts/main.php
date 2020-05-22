@@ -1,4 +1,5 @@
 <?php
+
 //views/layouts/main.php
 //chứa toàn bộ cấu trúc HTML của hệ thống
 //nhúng các file header.php, breadcrumb.php vào đây
@@ -79,5 +80,10 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="assets/js/adminlte.min.js"></script>
+
+<!--tích hợp ckeditor thông qua file ckeditor.js của nó -->
+<script src="assets/ckeditor/ckeditor.js"></script>
+<!--nhúng file script.js tại đây-->
+<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
