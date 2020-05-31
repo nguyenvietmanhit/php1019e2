@@ -45,7 +45,7 @@ if ($is_insert) {
 
 //Chức năng Update
 //update tên = New Name cho các bản ghi mà có id < 5
-$sql_update = "UPDATE students SET `name` = 'New Name' WHERE id < 5";
+$sql_update = "UPDATE students SET `name` = 'New Name' WHERE id > 5";
 $is_update = mysqli_query($connection, $sql_update);
 if ($is_update) {
     echo "Update thành công";
@@ -90,4 +90,22 @@ $created_at = date('d-m-Y H:i:s', strtotime($student['created_at']));
     }
 //    crud
 }
+
+
+//lấy 1 bản ghi
+$sql_select_one = "SELECT * FROM students WHERE id = 1";
+$result = mysqli_query($connection, $sql_select_one);
+$student = mysqli_fetch_assoc($result);
+echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
+print_r($student);
+echo "</pre>";
+//die;
+
+$sql_count = "SELECT COUNT(id) AS count_id, COUNT(name) AS count_name FROM students";
+$result_count = mysqli_query($connection, $sql_count);
+$count = mysqli_fetch_assoc($result_count);
+echo "<pre>" . __LINE__ . ", " . __DIR__ . "<br />";
+print_r($count);
+echo "</pre>";
+die;
 ?>
