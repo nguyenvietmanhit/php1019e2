@@ -10,7 +10,7 @@ date_default_timezone_set("Asia/Ho_Chi_Minh");
 //theo mô hình mvc, url của bạn đang có dạng là:
 //index.php?controller=book&action=list
 //lấy ra tham số controller và action từ trình duyệt
-$controller = isset($_GET['controller']) ? $_GET['controller'] : 'category';
+$controller = isset($_GET['controller']) ? $_GET['controller'] : 'home';
 $action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
 //giả sử url đang là:

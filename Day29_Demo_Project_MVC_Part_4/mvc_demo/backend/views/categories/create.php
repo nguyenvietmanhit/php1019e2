@@ -13,14 +13,8 @@
 
     <div class="form-group">
         <label>Mô tả</label>
-<!--   CKEditor chỉ làm việc với thẻ <textarea>
-     , và bắt buộc phải khai báo thuộc tính name cho thẻ <textarea> này
-     để có thể tích hợp đc
-     -->
         <textarea class="form-control"
-                  name="description">
-            <?php echo isset($_POST['description']) ? $_POST['description'] : ''; ?>
-        </textarea>
+                  name="description"><?php echo isset($_POST['description']) ? $_POST['description'] : ''; ?></textarea>
     </div>
 
     <div class="form-group">

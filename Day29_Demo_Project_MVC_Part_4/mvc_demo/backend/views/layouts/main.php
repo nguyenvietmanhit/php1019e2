@@ -1,10 +1,3 @@
-<?php
-
-//views/layouts/main.php
-//chứa toàn bộ cấu trúc HTML của hệ thống
-//nhúng các file header.php, breadcrumb.php vào đây
-//để tạo ra 1 cấu trúc HTML hoàn chỉnh
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,24 +21,8 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-<!--    HEADER-->
-    <?php
-    require_once 'views/layouts/header.php';
-    ?>
-<!--    END HEADER-->
-    <!-- Left side column. contains the logo and sidebar -->
-    <?php
-    require_once 'views/layouts/left_sidebar.php';
-    ?>
 
-    <!-- Breadcrumd Wrapper. Contains breadcrumb -->
-    <?php
-    require_once 'views/layouts/breadcrumb.php';
-    ?>
-
-    <!-- Messaeg Wrapper. Contains messaege error and success -->
-    <?php
-    require_once 'views/layouts/error.php';
+    <?php require_once 'header.php';
     ?>
 
     <!-- Content Wrapper. Contains page content -->
@@ -53,22 +30,16 @@
         <!-- Main content -->
         <section class="content">
 <!--            Nội dung hiển thị ở đây-->
-            <?php
-            //sử dụng cơ chế render/hiển thị view động
-            //dựa vào nội dung view hiện tại
-//            $this chính là đối tượng controller tương ứng
-            echo $this->content;
-            ?>
+            <?php echo $this->content; ?>
         </section>
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-    <?php
-    require_once 'views/layouts/footer.php';
-    ?>
+
+    <?php require_once 'footer.php'; ?>
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
-    <div class="control-sidebar-bg"></div>
+
 </div>
 <!-- ./wrapper -->
 
@@ -80,10 +51,9 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="assets/js/adminlte.min.js"></script>
-
-<!--tích hợp ckeditor thông qua file ckeditor.js của nó -->
+<!--CKEditor -->
 <script src="assets/ckeditor/ckeditor.js"></script>
-<!--nhúng file script.js tại đây-->
-<script type="text/javascript" src="assets/js/script.js"></script>
+<!--My SCRIPT-->
+<script src="assets/js/script.js"></script>
 </body>
 </html>

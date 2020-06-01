@@ -8,7 +8,6 @@
 
 class Controller
 {
-
     //chứa nội dung view
     public $content;
     //chứa nội dung lỗi validate
