@@ -34,7 +34,7 @@
             12.490.000₫
           </div>
           <div class="timeline-post-info">
-            <a href="#" class="product-cart">
+            <a href="index.php?controller=cart&action=add&id=1" class="product-cart">
               Thêm vào giỏ hàng
             </a>
           </div>
@@ -68,7 +68,7 @@
             12.490.000₫
           </div>
           <div class="timeline-post-info">
-            <a href="#" class="product-cart">
+            <a href="index.php?controller=cart&action=add&id=2" class="product-cart">
               Thêm vào giỏ hàng
             </a>
           </div>

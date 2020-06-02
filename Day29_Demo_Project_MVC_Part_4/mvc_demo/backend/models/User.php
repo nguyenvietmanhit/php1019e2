@@ -47,4 +47,22 @@ VALUES (:username, :password);
     }
     return FALSE;
   }
+
+  public function getUserLogin($username, $password) {
+    //tạo câu truy vấn
+    $obj_select =
+        $this->connection
+        ->prepare("SELECT * FROM users WHERE
+        `username` = :username AND `password` = :password ");
+    //gán giá trị thật cho các placeholder nếu có
+    $arr_select = [
+      ':username' => $username,
+      ':password' => $password
+    ];
+    //thực thi truy vấn, với truy vấn select thì phải qua 1 số
+    //bước trung gian
+    $obj_select->execute($arr_select);
+    $user = $obj_select->fetch(PDO::FETCH_ASSOC);
+    return $user;
+  }
 }

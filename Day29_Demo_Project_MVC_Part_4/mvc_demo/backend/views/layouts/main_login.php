@@ -38,6 +38,20 @@
                     <?php echo $this->error; ?>
                 </div>
             <?php endif; ?>
+            <?php
+            //nếu tồn tại session error thì hiển thị
+            //sau đó xóa luôn
+            if(isset($_SESSION['error'])) {
+                echo $_SESSION['error'];
+                unset($_SESSION['error']);
+            }
+            //nếu tồn tại session success thì hiển thị
+            //sau đó xóa luôn
+            if(isset($_SESSION['success'])) {
+              echo $_SESSION['success'];
+              unset($_SESSION['success']);
+            }
+            ?>
 <!--            Nội dung hiển thị ở đây-->
             <?php echo $this->content; ?>
         </section>

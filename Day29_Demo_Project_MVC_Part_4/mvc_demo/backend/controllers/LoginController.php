@@ -82,4 +82,41 @@ class LoginController {
         $this->render('views/users/signup.php', []);
     require_once 'views/layouts/main_login.php';
   }
+
+  public function login() {
+    echo "<pre>";
+    print_r($_POST);
+    echo "</pre>";
+    if (isset($_POST['submit'])) {
+      //gán giá trị cho biến
+      $username = $_POST['username'];
+      $password = $_POST['password'];
+      //xử lý validate form, các trường ko đc để trống
+      if (empty($username) || empty($password)) {
+        $this->error = 'Ko đc để trống các trường';
+      }
+      //xử lý login khi ko có lỗi nào xảy ra
+      if (empty($this->error)) {
+        $user_model = new User();
+        //do đang sử dụng cơ chế mã hóa password = md5
+        //nên cần gán lại giá trị cho biến password như sau
+        $password = md5($password);
+        $user = $user_model->getUserLogin($username, $password);
+        //nếu đăng nhập thành công
+        if (!empty($user)) {
+          //tạo 1 session để lưu lại thông tin user
+          $_SESSION['user'] = $user;
+          $_SESSION['success'] = 'Đăng nhập thành công';
+          header('Location: index.php?controller=category');
+          exit();
+        } else {
+          $this->error = 'Sai toàn khoản hoăc mật khẩu';
+        }
+      }
+    }
+    //lấy nội dung view login, sau đó gọi layout main_login
+    $this->content =
+        $this->render('views/users/login.php', []);
+    require_once 'views/layouts/main_login.php';
+  }
 }

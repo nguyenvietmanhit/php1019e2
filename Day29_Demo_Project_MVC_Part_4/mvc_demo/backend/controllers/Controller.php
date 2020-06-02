@@ -1,15 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: nvmanh
- * Date: 3/13/2020
- * Time: 11:02 PM
- */
-
 class Controller
 {
+  //Lợi dụng phương thức khởi tạo tại class cha
+  //để check nếu user chưa đăng nhập thì ko cho truy câp
+  public function __construct() {
+    if (!isset($_SESSION['user'])) {
+      $_SESSION['error'] = 'Bạn chưa đăng nhập';
+      header
+      ('Location: index.php?controller=login&action=login');
+      exit();
+    }
+  }
 
-    //chứa nội dung view
+  //chứa nội dung view
     public $content;
     //chứa nội dung lỗi validate
     public $error;
