@@ -55,13 +55,25 @@ class LoginController {
         //còn ngược lại thì báo username đã tồn tại
         $is_exist_username =
             $user_model->checkExistUsername($username);
-
-        //chú ý khi lưu password vào csdl, cần
+        //nếu đã tồn tại username thì báo lỗi, ko cho đăng ký
+        if ($is_exist_username) {
+          $this->error = "Username $username đã tồn tại";
+        } else {
+          //chú ý khi lưu password vào csdl, cần
 //        sử dụng cơ chế mã hóa, chứ ko lưu thẳng text
-        $user_model->password = md5($password);
+          $user_model->password = md5($password);
+          $is_register = $user_model->register();
+          if ($is_register) {
+            $_SESSION['sucess'] = 'Đăng ký thành công';
+          } else {
+            $_SESSION['error'] = 'Đăng ký thất bại';
+          }
+          header
+          ('Location: index.php?controller=login&action=login');
+          exit();
+        }
 
-        $is_register = $user_model->register();
-        var_dump($is_register);die;
+
       }
     }
     //lấy nội dung view tương ứng,

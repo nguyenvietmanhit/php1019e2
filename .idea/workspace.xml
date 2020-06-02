@@ -66,7 +66,7 @@
           <entry key="htaccess" value="213" />
           <entry key="html" value="1623" />
           <entry key="js" value="1621" />
-          <entry key="php" value="106745" />
+          <entry key="php" value="107080" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -74,7 +74,7 @@
           <entry key="CSS" value="420" />
           <entry key="HTML" value="1633" />
           <entry key="JavaScript" value="1621" />
-          <entry key="PHP" value="106678" />
+          <entry key="PHP" value="107013" />
           <entry key="SQL" value="57" />
           <entry key="htaccess" value="213" />
         </counts>
@@ -111,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/controllers/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="357">
+              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
               <folding>
                 <element signature="e#74#231#0#PHP" />
                 <element signature="n#render#0;n#LoginController#0;n#!!top" />
@@ -124,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+            <state relative-caret-position="303">
+              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -246,8 +246,8 @@
         <option value="$PROJECT_DIR$/Day28_Demo_Project_MVC_Part_3/Draft/backend/models/Category.php" />
         <option value="$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/views/layouts/main_login.php" />
         <option value="$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/views/users/signup.php" />
-        <option value="$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/models/User.php" />
+        <option value="$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/controllers/LoginController.php" />
       </list>
     </option>
   </component>
@@ -436,12 +436,12 @@
       <workItem from="1589078994855" duration="888000" />
       <workItem from="1590146587818" duration="11552000" />
       <workItem from="1590314706444" duration="51000" />
-      <workItem from="1591097906790" duration="4846000" />
+      <workItem from="1591097906790" duration="5542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267497000" />
+    <option name="totallyTimeSpent" value="268193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -806,21 +806,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/controllers/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="357">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
           <folding>
             <element signature="e#74#231#0#PHP" />
             <element signature="n#render#0;n#LoginController#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day29_Demo_Project_MVC_Part_4/mvc_demo/backend/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
         </state>
       </provider>
     </entry>
