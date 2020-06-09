@@ -11,62 +11,58 @@
                 <th>Thành tiền</th>
                 <th></th>
             </tr>
-
+<!--          views/carts/index.php
+                lặp giỏ hàng để hiển thị ra thông tin các sản phẩm trong giỏ
+  -->       <?php
+            //tổng giá trị đơn hàng
+            $total_order = 0;
+            ?>
+            <?php foreach($_SESSION['cart'] AS $product_id => $product): ?>
             <tr>
                 <td>
-                    <img class="product-avatar img-responsive" src="../backend/assets/uploads/1584528663-1.JPEG"
+                    <img class="product-avatar img-responsive"
+                     src="../backend/assets/uploads/<?php echo $product['avatar']?>"
                          width="80">
                     <div class="content-product">
-                        <a href="chi-tiet-san-pham/samsung-s9/5" class="content-product-a">
-                            Vợt cầu lông </a>
+                        <a href="chi-tiet/<?php echo $product_id; ?>"
+                           class="content-product-a">
+                            <?php echo $product['name']; ?>
+                        </a>
                     </div>
                 </td>
                 <td>
-                    <input type="number" min="0" name="2" class="product-amount form-control" value="1">
+<!--                  cần chú ý, để đơn giản cho việc submit form, thì
+                       thì name của số lượng sp đặt chính là id sản phẩm -->
+                    <input type="number" min="0" name="<?php echo $product_id; ?>"
+                           class="product-amount form-control"
+                           value="<?php echo $product['quality']?>">
                 </td>
                 <td>
-                    121
+                    <?php echo number_format($product['price']); ?>đ
                 </td>
                 <td>
-                    121
+                    <?php
+                    //hiển thị Thành tiền tương ứng với từng sp
+                    $total_product = $product['quality'] * $product['price'];
+                    //cộng dồn vào biến Tổng giá trị đơn hàng
+                    $total_order += $total_product;
+                    echo number_format($total_product);
+                    ?>
                 </td>
                 <td>
-                    <a class="content-product-a" href="xoa-san-pham/2">
+                    <a class="content-product-a"
+                       href="xoa-san-pham/<?php echo $product_id; ?>">
                         Xóa
                     </a>
                 </td>
             </tr>
-
-            <tr>
-                <td>
-                    <img class="product-avatar img-responsive" src="../backend/assets/uploads/1584528663-1.JPEG"
-                         width="80">
-                    <div class="content-product">
-                        <a href="chi-tiet-san-pham/samsung-s9/5" class="content-product-a">
-                            Vợt cầu lông </a>
-                    </div>
-                </td>
-                <td>
-                    <input type="number" min="0" name="2" class="product-amount form-control" value="1">
-                </td>
-                <td>
-                    121
-                </td>
-                <td>
-                    121
-                </td>
-                <td>
-                    <a class="content-product-a" href="xoa-san-pham/2">
-                        Xóa
-                    </a>
-                </td>
-            </tr>
+            <?php endforeach; ?>
 
             <tr>
                 <td colspan="5" style="text-align: right">
                     Tổng giá trị đơn hàng:
                     <span class="product-price">
-                                            121 vnđ
+                        <?php echo number_format($total_order)?>đ
                                                 </span>
                 </td>
             </tr>

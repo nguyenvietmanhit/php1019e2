@@ -1,0 +1,17 @@
+#Rewrite URL sẽ viết ở file .htaccess, ngang hàng
+#với file index.php gốc của ứng dụng
+#Đây là file rất nhạy cảm, nên cần viết chính xác
+#ngoài ra code rất khó nhớ, nên thường sẽ nhớ máy móc
+#cho phép rewrite
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#khai báo các url dạng rewrite
+#khai báo các rule theo thứ tự sau
+#RewriteRule đường-dẫn-đẹp đường-dẫn-mvc
+#sử dụng regular expression cho các tham số động
+#nhu bên dưới thì ([0-9]+) nghĩa là chỉ cho phép là ký tự số,
+#và xuất hiện ít nhất 1 lần
+RewriteRule them-vao-gio-hang/([0-9]+) index.php?controller=cart&action=add&id=$1
+#rewrite cho trang Gio hàng của bạn
+RewriteRule gio-hang-cua-ban index.php?controller=cart&action=index

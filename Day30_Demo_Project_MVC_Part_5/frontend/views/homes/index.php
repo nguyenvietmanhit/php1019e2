@@ -10,32 +10,48 @@
                         <a href="#" class="link-category-item">Tin nổi bật</a>
                     </h1>
                 </div>
-
+<!--                views/homes/index.php-->
+                <?php if (!empty($products)): ?>
                 <div class="timeline-items">
+                    <?php foreach($products AS $product): ?>
                     <!--ITEM-->
                     <div class="timeline-item">
                         <div class="timeline-left">
                             <div class="timeline-left-wrapper">
-                                <a href="chi-tiet/2" class="timeline-category" data-zebra-tooltip="" title="Vợt cầu lông"><i class="material-icons"></i></a>
-                                <span class="timeline-date">2020-06-03 10:49:25</span>
+                                <a href="chi-tiet/<?php echo $product['id']?>"
+                                   class="timeline-category" data-zebra-tooltip=""
+                                   title="<?php echo $product['name']?>">
+                                    <i class="material-icons"></i>
+                                </a>
+                                <span class="timeline-date">
+                                    <?php echo $product['created_at']; ?>
+                                </span>
                             </div>
                         </div>
                         <div class="timeline-right">
                             <div class="timeline-post-image">
-                                <a href="chi-tiet/2">
-                                    <img src="../backend/assets/uploads/1584528663-1.JPEG" width="260">
+                                <a href="chi-tiet/<?php echo $product['id']; ?>">
+                                    <img
+                        src="../backend/assets/uploads/<?php echo $product['avatar']?>"
+                        width="260">
                                 </a>
                             </div>
                             <div class="home-page timeline-post-content">
-                                <a href="chi-tiet/2" class="timeline-category-name font-arial">Thể thao</a>
-                                <a href="not-defined.html">
-                                    <h3 class="timeline-post-title">Vợt cầu lông</h3>
+                                <a href="chi-tiet/<?php echo $product['id']; ?>"
+                                   class="timeline-category-name font-arial">
+                                    <?php echo $product['category_name']; ?>
+                                </a>
+                                <a href="chi-tiet/<?php echo $product['id']; ?>">
+                                    <h3 class="timeline-post-title">
+                                        <?php echo $product['title']?>
+                                    </h3>
                                 </a>
                                 <div class="product-price timeline-post-info">
-                                    121đ
+                                    <?php echo number_format($product['price'])?>đ
                                 </div>
                                 <div class="timeline-post-info">
-                                    <a href="them-vao-gio-hang/2" class="product-cart">
+                                    <a href="them-vao-gio-hang/<?php echo $product['id']?>"
+                                       class="product-cart">
                                         Thêm vào giỏ hàng
                                     </a>
                                 </div>
@@ -43,101 +59,9 @@
                         </div>
                     </div>
                     <!--END ITEM-->
-                    <!--ITEM-->
-                    <div class="timeline-item">
-                        <div class="timeline-left">
-                            <div class="timeline-left-wrapper">
-                                <a href="chi-tiet/3" class="timeline-category" data-zebra-tooltip="" title="Giày cầu lông"><i class="material-icons"></i></a>
-                                <span class="timeline-date">2020-06-03 10:49:41</span>
-                            </div>
-                        </div>
-                        <div class="timeline-right">
-                            <div class="timeline-post-image">
-                                <a href="chi-tiet/3">
-                                    <img src="../backend/assets/uploads/1584528663-1.JPEG" width="260">
-                                </a>
-                            </div>
-                            <div class="home-page timeline-post-content">
-                                <a href="chi-tiet/3" class="timeline-category-name font-arial">Thể thao</a>
-                                <a href="not-defined.html">
-                                    <h3 class="timeline-post-title">Giày cầu lông</h3>
-                                </a>
-                                <div class="product-price timeline-post-info">
-                                    88,888đ
-                                </div>
-                                <div class="timeline-post-info">
-                                    <a href="them-vao-gio-hang/3" class="product-cart">
-                                        Thêm vào giỏ hàng
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END ITEM-->
-                    <!--ITEM-->
-                    <div class="timeline-item">
-                        <div class="timeline-left">
-                            <div class="timeline-left-wrapper">
-                                <a href="chi-tiet/4" class="timeline-category" data-zebra-tooltip="" title="Sam Sung"><i class="material-icons"></i></a>
-                                <span class="timeline-date">2020-06-03 10:50:28</span>
-                            </div>
-                        </div>
-                        <div class="timeline-right">
-                            <div class="timeline-post-image">
-                                <a href="chi-tiet/4">
-                                    <img src="../backend/assets/uploads/1584529206-1" width="260">
-                                </a>
-                            </div>
-                            <div class="home-page timeline-post-content">
-                                <a href="chi-tiet/4" class="timeline-category-name font-arial">1</a>
-                                <a href="not-defined.html">
-                                    <h3 class="timeline-post-title">Sam Sung</h3>
-                                </a>
-                                <div class="product-price timeline-post-info">
-                                    666đ
-                                </div>
-                                <div class="timeline-post-info">
-                                    <a href="them-vao-gio-hang/4" class="product-cart">
-                                        Thêm vào giỏ hàng
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END ITEM-->
-                    <!--ITEM-->
-                    <div class="timeline-item">
-                        <div class="timeline-left">
-                            <div class="timeline-left-wrapper">
-                                <a href="chi-tiet/5" class="timeline-category" data-zebra-tooltip="" title="Iphone X"><i class="material-icons"></i></a>
-                                <span class="timeline-date">2020-06-03 10:50:41</span>
-                            </div>
-                        </div>
-                        <div class="timeline-right">
-                            <div class="timeline-post-image">
-                                <a href="chi-tiet/5">
-                                    <img src="../backend/assets/uploads/1584529206-1" width="260">
-                                </a>
-                            </div>
-                            <div class="home-page timeline-post-content">
-                                <a href="chi-tiet/5" class="timeline-category-name font-arial">Điện thoại</a>
-                                <a href="not-defined.html">
-                                    <h3 class="timeline-post-title">Iphone X</h3>
-                                </a>
-                                <div class="product-price timeline-post-info">
-                                    999đ
-                                </div>
-                                <div class="timeline-post-info">
-                                    <a href="them-vao-gio-hang/5" class="product-cart">
-                                        Thêm vào giỏ hàng
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END ITEM-->
-
+                    <?php endforeach; ?>
                 </div>
+                <?php endif; ?>
                 <!--Timeline items end -->
 
                 <!--Data load more button start  -->

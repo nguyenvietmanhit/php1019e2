@@ -8,10 +8,12 @@ class HomeController extends Controller {
 //    trang chủ
     $product_model = new Product();
     $products = $product_model->getProductHomePage();
-    echo "<pre>";
-    print_r($products);
-    echo "</pre>";
-    $this->content = $this->render('views/homes/index.php');
+//    echo "<pre>";
+//    print_r($products);
+//    echo "</pre>";
+    $this->content = $this->render('views/homes/index.php', [
+        'products' => $products
+    ]);
     require_once 'views/layouts/main.php';
   }
 }

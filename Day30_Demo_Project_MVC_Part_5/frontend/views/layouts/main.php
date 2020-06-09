@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--    views/layouts/main.php -->
+<!--  khi sử dụng rewrite url, thì bắt buộc phải khai báo
+   thẻ <base với href như sau để web của bạn set lại đc
+   đường dẫn gốc, nếu ko thì toàn bộ các link css, js, images
+   trên trang sẽ báo lỗi
+   -->
     <base href="<?php echo $_SERVER['SCRIPT_NAME'] ?>"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
