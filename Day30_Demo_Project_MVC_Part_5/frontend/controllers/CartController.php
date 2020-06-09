@@ -80,14 +80,33 @@ class CartController extends Controller{
 
     //xử lý update giỏ hàng khi user click nút Cập nhật giỏ hàng
     if (isset($_POST['submit'])) {
-      echo "<pre>";
-      print_r($_POST);
-      echo "</pre>";
-      die;
+      //lặp giỏ hàng, dựa theo product id để gán lại quality dựa
+//      vào mảng $_POST vừa bắt đc
+      foreach ($_SESSION['cart'] AS $product_id => $product) {
+        //gán lại số lượng từ việc submit form của user
+        $_SESSION['cart'][$product_id]['quality'] = $_POST[$product_id];
+      }
     }
 
     //lấy ra view index của cart
     $this->content = $this->render('views/carts/index.php');
     require_once 'views/layouts/main.php';
+  }
+
+  //xóa sản phẩm khỏi giỏ hàng
+  public function delete() {
+    //lấy id sp dựa vào url đã rewrite
+    $id = $_GET['id'];
+    //xóa phần tử khỏi mảng dựa theo id
+    unset($_SESSION['cart'][$id]);
+    //check nếu như xóa hết sản phẩm trong giỏ hàng
+    //thì tương đương giỏ hàng trống -> xóa luôn giỏ hàng
+    if (empty($_SESSION['cart'])) {
+      unset($_SESSION['cart']);
+    }
+    $_SESSION['success'] = 'Xóa sản phẩm thành công';
+    $url_redirect = $_SERVER['SCRIPT_NAME'] . '/gio-hang-cua-ban';
+    header("Location: $url_redirect");
+    exit();
   }
 }

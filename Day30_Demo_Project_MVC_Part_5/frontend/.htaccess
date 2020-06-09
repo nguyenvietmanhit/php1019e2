@@ -15,3 +15,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule them-vao-gio-hang/([0-9]+) index.php?controller=cart&action=add&id=$1
 #rewrite cho trang Gio hàng của bạn
 RewriteRule gio-hang-cua-ban index.php?controller=cart&action=index
+#Rewrite cho trang Xóa sản phẩm khỏi giỏ hàng
+RewriteRule xoa-san-pham/([0-9]+) index.php?controller=cart&action=delete&id=$1
+#Rewrite cho trang thanh toán
+RewriteRule thanh-toan index.php?controller=payment&action=index
