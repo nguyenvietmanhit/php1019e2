@@ -1,0 +1,30 @@
+<?php
+//models/Product.php
+//nhúng class cha vào để sử dụng đc biến $connection
+require_once 'models/Model.php';
+class Product extends Model {
+
+  //Lấy thông tin tất cả sản phẩm đang có trong bảng product
+  //với điều kiện sản phẩm đó đang ở chế độ active
+  //do đang cần lấy cả tên danh mục tương ứng với sản phẩm,
+  //nên cần phải join vào bảng categories
+  public function getProductHomePage() {
+    //tạo câu truy vấn
+    //nếu có join bảng thì cần chú ý khi thao tác với trường
+    //phải có tên bảng đi trước
+    $sql_select = "SELECT products.*, 
+    categories.name AS category_name
+    FROM products
+    INNER JOIN categories ON products.category_id = categories.id
+    WHERE products.status = 1 AND categories.status = 1
+    ";
+    //tạo đối tượng select
+    $obj_select = $this->connection
+        ->prepare($sql_select);
+    //thực thi truy vấn, do câu truy vấn ko có dạng placeholder
+    // nên ko cần bước gán dữ liệu thật
+    $obj_select->execute();
+    $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+    return $products;
+  }
+}
