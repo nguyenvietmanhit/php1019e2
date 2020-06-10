@@ -16,7 +16,6 @@ class Product extends Model {
     categories.name AS category_name
     FROM products
     INNER JOIN categories ON products.category_id = categories.id
-    WHERE products.status = 1 AND categories.status = 1
     ";
     //tạo đối tượng select
     $obj_select = $this->connection

@@ -19,3 +19,5 @@ RewriteRule gio-hang-cua-ban index.php?controller=cart&action=index
 RewriteRule xoa-san-pham/([0-9]+) index.php?controller=cart&action=delete&id=$1
 #Rewrite cho trang thanh toán
 RewriteRule thanh-toan index.php?controller=payment&action=index
+#Rewrite cho trang cảm ơn
+RewriteRule cam-on index.php?controller=payment&action=thank

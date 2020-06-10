@@ -20,7 +20,7 @@
                             <div class="timeline-left-wrapper">
                                 <a href="chi-tiet/<?php echo $product['id']?>"
                                    class="timeline-category" data-zebra-tooltip=""
-                                   title="<?php echo $product['name']?>">
+                                   title="<?php echo $product['title']?>">
                                     <i class="material-icons"></i>
                                 </a>
                                 <span class="timeline-date">
